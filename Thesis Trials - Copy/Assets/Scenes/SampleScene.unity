@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-24350
+  m_Name: pb_Mesh-347792
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1189,7 +1189,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-24366
+  m_Name: pb_Mesh-347808
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1353,7 +1353,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-24834
+  m_Name: pb_Mesh62226
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1521,7 +1521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 639704053}
   m_Layer: 0
-  m_Name: CameraHolder1
+  m_Name: CameraHolder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3545,10 +3545,10 @@ MonoBehaviour:
   flowchart: {fileID: 1838527025}
   CAM1: {fileID: 963194225}
   CAM2: {fileID: 609883202}
-  CAMholder1: {fileID: 639704052}
-  CAMholder2: {fileID: 1848388934}
-  CAMholder3: {fileID: 1723281418}
-  CAMholder4: {fileID: 0}
+  CAMholder1: {fileID: 0}
+  CAMholder2: {fileID: 639704052}
+  CAMholder3: {fileID: 1848388934}
+  CAMholder4: {fileID: 1723281418}
   CAMholder5: {fileID: 0}
   flowerpot: {fileID: 919132149155446097, guid: 103102de528cc0f45a34a732845f8f3d, type: 3}
 --- !u!4 &1600564556
@@ -3671,7 +3671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1723281419}
   m_Layer: 0
-  m_Name: CameraHolder3
+  m_Name: CameraHolder4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4555,7 +4555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1848388935}
   m_Layer: 0
-  m_Name: CameraHolder2
+  m_Name: CameraHolder3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8190,7 +8190,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2354819942661983252, guid: 1b07dc05d688e1847b490c06bc026708, type: 3}
       propertyPath: m_Name
-      value: Bed_01
+      value: Bed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2354819942661983252, guid: 1b07dc05d688e1847b490c06bc026708, type: 3}
+      propertyPath: m_TagString
+      value: interact
       objectReference: {fileID: 0}
     - target: {fileID: 3163164035712538286, guid: 1b07dc05d688e1847b490c06bc026708, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8383,6 +8387,10 @@ PrefabInstance:
     - target: {fileID: 7571741005010542425, guid: 814a7e395b981934bae637c331ee0b57, type: 3}
       propertyPath: m_Name
       value: Cupboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571741005010542425, guid: 814a7e395b981934bae637c331ee0b57, type: 3}
+      propertyPath: m_TagString
+      value: interact
       objectReference: {fileID: 0}
     - target: {fileID: 7571741005010542426, guid: 814a7e395b981934bae637c331ee0b57, type: 3}
       propertyPath: m_Mesh

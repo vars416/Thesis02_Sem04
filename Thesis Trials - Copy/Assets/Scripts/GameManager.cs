@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public GameObject CAMholder4;
     public GameObject CAMholder5;
 
+    //public GameObject[] CAMholder;
+
     AudioListener CAM1aud1; //Audio listener for camera 1
     AudioListener CAM2aud2; //Audio listener for camera 2
 
@@ -71,7 +73,8 @@ public class GameManager : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.transform.tag == "interact") //if ray hits a gameobject with transform having the tag "interact"
+                
+                if ((hit.transform.tag == "interact") && (hit.transform.name == "Desk")) //if ray hits a gameobject with transform having the tag "interact"
                 {
                     CAM2.transform.position = CAMholder1.transform.position;
                     CAM2.transform.rotation = CAMholder1.transform.rotation;
@@ -79,7 +82,14 @@ public class GameManager : MonoBehaviour
                     //clickcounter++;
                     //Debug.Log("This is it!");
 
-                    if (scene.name == "First_Scene")
+                    /*for (int i = 0; i < CAMholder.Length; i++)
+                    {
+                        CAM2.transform.position = CAMholder[i].transform.position;
+                        CAM2.transform.rotation = CAMholder[i].transform.rotation;
+                        cameraChangeCounter();
+                    }*/
+
+                    if ((scene.name == "First_Scene"))
                     {
                         flowchart.ExecuteBlock("Desk1"); //do this
                     }
@@ -90,7 +100,7 @@ public class GameManager : MonoBehaviour
                     }
                 }
 
-                else if (hit.transform.tag == "interact2")
+                else if ((hit.transform.tag == "interact") && (hit.transform.name == "Shelf"))
                 {
                     CAM2.transform.position = CAMholder2.transform.position;
                     CAM2.transform.rotation = CAMholder2.transform.rotation;
@@ -99,7 +109,7 @@ public class GameManager : MonoBehaviour
 
                     if (scene.name == "First_Scene")
                     {
-                        //flowchart.ExecuteBlock("Shelf1");
+
                     }
 
                     if (scene.name == "SampleScene")
@@ -108,14 +118,14 @@ public class GameManager : MonoBehaviour
                     }
                 }
 
-                else if (hit.transform.tag == "interact3")
+                else if ((hit.transform.tag == "interact") && (hit.transform.name == "Bed"))
                 {
                     CAM2.transform.position = CAMholder3.transform.position;
                     CAM2.transform.rotation = CAMholder3.transform.rotation;
                     cameraChangeCounter();
                     //clickcounter++;
 
-                    if (scene.name == "First_Scene")
+                    if ((scene.name == "First_Scene"))
                     {
                         flowchart.ExecuteBlock("Bed1");
                     }
@@ -126,31 +136,31 @@ public class GameManager : MonoBehaviour
                     }
                 }
 
-                else if (hit.transform.tag == "interact4")
+                else if ((hit.transform.tag == "interact") && (hit.transform.name == "Cupboard"))
                 {
                     CAM2.transform.position = CAMholder4.transform.position;
                     CAM2.transform.rotation = CAMholder4.transform.rotation;
                     cameraChangeCounter();
 
-                    if (scene.name == "First_Scene")
+                    if ((scene.name == "First_Scene"))
                     {
                         flowchart.ExecuteBlock("Cupboard1");
                     }
                 }
 
-                else if (hit.transform.tag == "interact5")
+                else if ((hit.transform.tag == "interact") && (hit.transform.name == "Temple"))
                 {
                     CAM2.transform.position = CAMholder5.transform.position;
                     CAM2.transform.rotation = CAMholder5.transform.rotation;
                     cameraChangeCounter();
 
-                    if (scene.name == "First_Scene")
+                    if ((scene.name == "First_Scene"))
                     {
                         flowchart.ExecuteBlock("Temple1");
                     }
                 }
 
-                else if (hit.transform.tag == "object") //if ray hits a gameobject with transform having the tag "object"
+                else if ((hit.transform.tag == "object") && (CAM2.activeInHierarchy == true)) //if ray hits a gameobject with transform having the tag "object"
                 {
                     //Debug.Log("one step closer!");
 
@@ -217,7 +227,7 @@ public class GameManager : MonoBehaviour
             cameraChangeCounter2(); //if rmb is pressed, go back to camera 2
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.C))
         {
             //flowchart.ExecuteBlock("Camera_Switch");
             if (clickcounter >= 5 && (scene.name == "First_Scene")) 
