@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     public GameObject CAMholder4;
     public GameObject CAMholder5;
 
-    //public GameObject[] CAMholder;
+    public GameObject[] CAMholderPos;
 
     AudioListener CAM1aud1; //Audio listener for camera 1
     AudioListener CAM2aud2; //Audio listener for camera 2
@@ -41,7 +41,6 @@ public class GameManager : MonoBehaviour
         else
         {
             //Destroy(gameObject); //if another instance is present then destroy this instance
-
         }
     }
     
@@ -59,10 +58,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (A[0].tag == B[0].tag) //&& (A[1] == B[1]))
-        {
-            print(A[0]);
-        }*/
 
         Scene scene = SceneManager.GetActiveScene();
 
@@ -73,153 +68,25 @@ public class GameManager : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                
-                if ((hit.transform.tag == "interact") && (hit.transform.name == "Desk")) //if ray hits a gameobject with transform having the tag "interact"
+                /*for (int i = 0; i < CAMholderPos.Length; i++)
                 {
-                    CAM2.transform.position = CAMholder1.transform.position;
-                    CAM2.transform.rotation = CAMholder1.transform.rotation;
-                    cameraChangeCounter(); //change camera position
-                    //clickcounter++;
-                    //Debug.Log("This is it!");
-
-                    /*for (int i = 0; i < CAMholder.Length; i++)
-                    {
-                        CAM2.transform.position = CAMholder[i].transform.position;
-                        CAM2.transform.rotation = CAMholder[i].transform.rotation;
-                        cameraChangeCounter();
-                    }*/
-
-                    if ((scene.name == "First_Scene"))
-                    {
-                        flowchart.ExecuteBlock("Desk1"); //do this
-                    }
-
-                    if (scene.name == "SampleScene") 
-                    {
-                        flowchart.ExecuteBlock("Audio_Shelf"); //execute this block in Fungus flowchart only if the particular scene is playing
-                    }
-                }
-
-                else if ((hit.transform.tag == "interact") && (hit.transform.name == "Shelf"))
-                {
-                    CAM2.transform.position = CAMholder2.transform.position;
-                    CAM2.transform.rotation = CAMholder2.transform.rotation;
+                    CAM2.transform.position = CAMholderPos[i].transform.position;
+                    CAM2.transform.rotation = CAMholderPos[i].transform.rotation;
                     cameraChangeCounter();
-                    //clickcounter++;
-
-                    if (scene.name == "First_Scene")
-                    {
-
-                    }
-
-                    if (scene.name == "SampleScene")
-                    {
-                        flowchart.ExecuteBlock("Audio_Shelf3");
-                    }
-                }
-
-                else if ((hit.transform.tag == "interact") && (hit.transform.name == "Bed"))
-                {
-                    CAM2.transform.position = CAMholder3.transform.position;
-                    CAM2.transform.rotation = CAMholder3.transform.rotation;
-                    cameraChangeCounter();
-                    //clickcounter++;
-
-                    if ((scene.name == "First_Scene"))
-                    {
-                        flowchart.ExecuteBlock("Bed1");
-                    }
-
-                    if (scene.name == "SampleScene")
-                    {
-                        flowchart.ExecuteBlock("Audio_Shelf2");
-                    }
-                }
-
-                else if ((hit.transform.tag == "interact") && (hit.transform.name == "Cupboard"))
-                {
-                    CAM2.transform.position = CAMholder4.transform.position;
-                    CAM2.transform.rotation = CAMholder4.transform.rotation;
-                    cameraChangeCounter();
-
-                    if ((scene.name == "First_Scene"))
-                    {
-                        flowchart.ExecuteBlock("Cupboard1");
-                    }
-                }
-
-                else if ((hit.transform.tag == "interact") && (hit.transform.name == "Temple"))
-                {
-                    CAM2.transform.position = CAMholder5.transform.position;
-                    CAM2.transform.rotation = CAMholder5.transform.rotation;
-                    cameraChangeCounter();
-
-                    if ((scene.name == "First_Scene"))
-                    {
-                        flowchart.ExecuteBlock("Temple1");
-                    }
-                }
-
-                else if ((hit.transform.tag == "object") && (CAM2.activeInHierarchy == true)) //if ray hits a gameobject with transform having the tag "object"
-                {
-                    //Debug.Log("one step closer!");
-
-                    if (scene.name == "First_Scene")
-                    {
-                        if (hit.transform.name == "Rubber Stamp1")
-                        {
-                            clickcounter++;
-                            flowchart.ExecuteBlock("Stamp1");
-                        }
-
-                        if (hit.transform.name == "Photograph1")
-                        {
-                            clickcounter++;
-                            flowchart.ExecuteBlock("Photo1");
-                        }
-
-                        if (hit.transform.name == "Bell1")
-                        {
-                            clickcounter++;
-                            flowchart.ExecuteBlock("Bell1");
-                        }
-
-                        if (hit.transform.name == "Orchids")
-                        {
-                            clickcounter++;
-                            flowchart.ExecuteBlock("Flowers1");
-                            flowerpot.SetActive(false);
-                        }
-
-                        if (hit.transform.name == "Herbarium_Book")
-                        {
-                            clickcounter++;
-                            flowchart.ExecuteBlock("Herbarium1");
-                        }
-                    }
-
-                    if (scene.name == "SampleScene")
-                    {
-                        flowchart.ExecuteBlock("Frieda_Test"); //execute this block in Fungus flowchart
-                    }
-                }
-
-                /*else if (hit.transform.tag == "object2") //if ray hits a gameobject with transform having the tag "object2"
-                {
-                    //Debug.Log("one step closer!");
-
-                    if (scene.name == "First_Scene")
-                    {
-                        flowchart.ExecuteBlock("Photo1");
-                    }
-
-                    if (scene.name == "SampleScene")
-                    {
-                        flowchart.ExecuteBlock("Frieda_Test"); //execute this block in Fungus flowchart
-                    }
+                    break;
                 }*/
-            }
+                DeskInteractions(hit, flowchart, scene);
 
+                ShelfInteractions(hit, flowchart, scene);
+
+                BedInterations(hit, flowchart, scene);
+
+                CupboardInteractions(hit, flowchart, scene);
+
+                TempleInteractions(hit, flowchart, scene);
+
+                ObjectInteractions(hit, flowchart, scene);
+            }
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -229,11 +96,7 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKey(KeyCode.C))
         {
-            //flowchart.ExecuteBlock("Camera_Switch");
-            if (clickcounter >= 5 && (scene.name == "First_Scene")) 
-            {
-                flowchart.ExecuteBlock("CallNajma");
-            }
+            CallingMaid(clickcounter, flowchart, scene);
         }
 
         if (Input.GetKey(KeyCode.H))
@@ -248,23 +111,169 @@ public class GameManager : MonoBehaviour
         GUIStyle style = new GUIStyle();
         style.fontSize = 20;
         GUI.Label(new Rect(40, 20, 200, 150), "MOMENTS COLLECTED: " + clickcounter, style);
-        
+    }
+
+    void DeskInteractions (RaycastHit hit, Flowchart flowchart, Scene scene)
+    {
+        if ((hit.transform.tag == "interact") && (hit.transform.name == "Desk")) //if ray hits a gameobject with transform having the tag "interact"
         {
-            /*if (clickcounter >=20)
+            CAM2.transform.position = CAMholder1.transform.position;
+            CAM2.transform.rotation = CAMholder1.transform.rotation;
+            cameraChangeCounter(); //change camera position
+            //clickcounter++;
+
+            if ((scene.name == "First_Scene"))
             {
-                
-            }*/
+                print("ITS WORKING!");
+                flowchart.ExecuteBlock("Desk1"); //do this
+            }
+
+            if (scene.name == "Puzzle_Scene")
+            {
+                flowchart.ExecuteBlock("Audio_Shelf"); //execute this block in Fungus flowchart only if the particular scene is playing
+            }
         }
     }
 
-    void cameraChangeCounter() //counter for changing camera
+    void ShelfInteractions (RaycastHit hit, Flowchart flowchart, Scene scene)
+    {
+        if ((hit.transform.tag == "interact") && (hit.transform.name == "Shelf"))
+        {
+            CAM2.transform.position = CAMholder2.transform.position;
+            CAM2.transform.rotation = CAMholder2.transform.rotation;
+            cameraChangeCounter();
+            //clickcounter++;
+
+            if (scene.name == "First_Scene")
+            {
+
+            }
+
+            if (scene.name == "Puzzle_Scene")
+            {
+                flowchart.ExecuteBlock("Audio_Shelf3");
+            }
+        }
+    }
+
+    void BedInterations (RaycastHit hit, Flowchart flowchart, Scene scene)
+    {
+        if ((hit.transform.tag == "interact") && (hit.transform.name == "Bed"))
+        {
+            CAM2.transform.position = CAMholder3.transform.position;
+            CAM2.transform.rotation = CAMholder3.transform.rotation;
+            cameraChangeCounter();
+            //clickcounter++;
+
+            if ((scene.name == "First_Scene"))
+            {
+                flowchart.ExecuteBlock("Bed1");
+            }
+
+            if (scene.name == "Puzzle_Scene")
+            {
+                flowchart.ExecuteBlock("Audio_Shelf2");
+            }
+        }
+    }
+
+    void TempleInteractions (RaycastHit hit, Flowchart flowchart, Scene scene)
+    {
+        if ((hit.transform.tag == "interact") && (hit.transform.name == "Temple"))
+        {
+            CAM2.transform.position = CAMholder5.transform.position;
+            CAM2.transform.rotation = CAMholder5.transform.rotation;
+            cameraChangeCounter();
+
+            if ((scene.name == "First_Scene"))
+            {
+                flowchart.ExecuteBlock("Temple1");
+            }
+        }
+    }
+
+    void CupboardInteractions (RaycastHit hit, Flowchart flowchart, Scene scene)
+    {
+        if ((hit.transform.tag == "interact") && (hit.transform.name == "Cupboard"))
+        {
+            CAM2.transform.position = CAMholder4.transform.position;
+            CAM2.transform.rotation = CAMholder4.transform.rotation;
+            cameraChangeCounter();
+
+            if ((scene.name == "First_Scene"))
+            {
+                flowchart.ExecuteBlock("Cupboard1");
+            }
+        }
+    }
+
+    void ObjectInteractions(RaycastHit hit, Flowchart flowchart, Scene scene)
+    {
+        if ((hit.transform.tag == "object") && (CAM2.activeInHierarchy == true)) //if ray hits a gameobject with transform having the tag "object"
+        {
+
+            if (scene.name == "First_Scene")
+            {
+                if (hit.transform.name == "Rubber Stamp1")
+                {
+                    clickcounter++;
+                    flowchart.ExecuteBlock("Stamp1");
+                }
+
+                if (hit.transform.name == "Photograph1")
+                {
+                    clickcounter++;
+                    flowchart.ExecuteBlock("Photo1");
+                }
+
+                if (hit.transform.name == "Bell1")
+                {
+                    clickcounter++;
+                    flowchart.ExecuteBlock("Bell1");
+                }
+
+                if (hit.transform.name == "Orchids")
+                {
+                    clickcounter++;
+                    flowchart.ExecuteBlock("Flowers1");
+                    flowerpot.SetActive(false);
+                }
+
+                if (hit.transform.name == "Herbarium_Book")
+                {
+                    clickcounter++;
+                    flowchart.ExecuteBlock("Herbarium1");
+                }
+            }
+
+            if (scene.name == "Puzzle_Scene")
+            {
+                flowchart.ExecuteBlock("Frieda_Test"); //execute this block in Fungus flowchart
+            }
+        }
+    }
+
+    void CallingMaid (int clickcounter, Flowchart flowchart, Scene scene)
+    {
+        if (clickcounter >= 5 && (scene.name == "First_Scene") && (CAM2.activeInHierarchy == false))
+        {
+            flowchart.ExecuteBlock("CallNajma1");
+        }
+
+        if (clickcounter >= 5 && (scene.name == "First_Scene") && (CAM2.activeInHierarchy == true))
+        {
+            flowchart.ExecuteBlock("CallNajma2");
+        }
+    }
+
+    void cameraChangeCounter() //counter for jumping to zoomed view
     {
         int cameraPositionCounter = PlayerPrefs.GetInt("CameraPosition"); //Get integer for camera position from Player Preferences and set it equal to camera position counter
         cameraPositionCounter++; //increase that int
         cameraPositionChange(cameraPositionCounter); //set camera postion to that increased int
     }
 
-    void cameraChangeCounter2() //counter for changing camera 2
+    void cameraChangeCounter2() //counter for coming back to original view
     {
         int cameraPositionCounter = PlayerPrefs.GetInt("CameraPosition");
         cameraPositionCounter++;
