@@ -15,40 +15,74 @@ public class AudioPlayer : MonoBehaviour
 
     public Slider Scrubber;
 
-    private bool slide = false;
+    private bool IsPlaying = false;
     // Start is called before the first frame update
     void Start()
     {
         audiosource = gameObject.GetComponent<AudioSource>();
-        Scrubber = GetComponent<Slider>();
+        Scrubber = Scrubber.GetComponent<Slider>();
+        Scrubber.maxValue = audiosource.clip.length;
     }
 
     // Update is called once per frame
     public void Update()
     {
-        //Scrubber.value += Time.deltaTime;
-        /*if (Scrubber.value >= audiosource.clip.length)
+        if (Scrubber.value > (int)audiosource.clip.length)
         {
-            Scrubber.value = audiosource.clip.length;
-        }*/
-        //Scrubber.value = audiosource.clip.length;
+            IsPlaying = false;
+            //print("Playing = false");
+            audiosource.time = 0;
+            Scrubber.value = 0;
+        }
+        if (IsPlaying && Scrubber.value < (int)audiosource.clip.length)
+        {
+            Scrubber.value = audiosource.time;
+            //print("end2");
+        }
     }
 
-    public void PlaySound()
+    public void PlaySound() //Play Sound
     {
         audiosource.Play();
-        Scrubber.maxValue = audiosource.clip.length;
-        Scrubber.value = 0;
-        Scrubbing();
+        IsPlaying = true;
     }
 
-    public void PauseSound ()
+    public void PauseSound () //Pause Sound
     {
+        IsPlaying = false;
         audiosource.Pause();
     }
 
-    public void Scrubbing ()
+    public void ScrubberDown()
     {
-        Scrubber.value += Time.deltaTime;
+        audiosource.Pause();
+        IsPlaying = false;
+    }
+
+    public void ScrubberUp()
+    {
+        if (Scrubber.value < audiosource.clip.length)
+        {
+            if (!IsPlaying)
+            {
+                audiosource.time = Mathf.Clamp(Scrubber.value, 0f, audiosource.clip.length);
+                audiosource.UnPause();
+                IsPlaying = true;
+            }
+            else
+            {
+                print("Stop1");
+                audiosource.Stop();
+                IsPlaying = false;
+                audiosource.time = 0;
+            }
+        }
+        else
+        {
+            print("Stop2");
+            audiosource.Stop();
+            audiosource.time = 0;
+            IsPlaying = false;
+        }
     }
 }

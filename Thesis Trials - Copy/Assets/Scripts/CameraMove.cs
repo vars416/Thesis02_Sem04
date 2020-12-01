@@ -33,5 +33,6 @@ public class CameraMove : MonoBehaviour
 
         transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
 
+        //transform.localRotation = Quaternion.identity;
     }
 }

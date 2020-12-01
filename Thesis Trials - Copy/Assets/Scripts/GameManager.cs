@@ -22,7 +22,8 @@ public class GameManager : MonoBehaviour
     public GameObject CAMholder4;
     public GameObject CAMholder5;
 
-    public GameObject[] CAMholderPos;
+    //public GameObject[] CAMholderPos;
+    //List<GameObject> CAMPos = new List<GameObject>();
 
     AudioListener CAM1aud1; //Audio listener for camera 1
     AudioListener CAM2aud2; //Audio listener for camera 2
@@ -53,6 +54,7 @@ public class GameManager : MonoBehaviour
         cameraPositionChange(PlayerPrefs.GetInt("CameraPosition")); //Get position of main camera
 
         flowerpot.GetComponent<GameObject>();
+
     }
 
     // Update is called once per frame
@@ -68,11 +70,20 @@ public class GameManager : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
+                /*foreach (GameObject Pos in CAMholderPos)
+                {
+                    CAM2.transform.position = Pos.transform.position;
+                    CAM2.transform.rotation = Pos.transform.rotation;
+                    cameraChangeCounter();
+                    print(Pos.name);
+                    break;
+                }*/
                 /*for (int i = 0; i < CAMholderPos.Length; i++)
                 {
                     CAM2.transform.position = CAMholderPos[i].transform.position;
                     CAM2.transform.rotation = CAMholderPos[i].transform.rotation;
                     cameraChangeCounter();
+                    print(CAMholderPos[i].name);
                     break;
                 }*/
                 DeskInteractions(hit, flowchart, scene);
@@ -124,7 +135,6 @@ public class GameManager : MonoBehaviour
 
             if ((scene.name == "First_Scene"))
             {
-                print("ITS WORKING!");
                 flowchart.ExecuteBlock("Desk1"); //do this
             }
 
