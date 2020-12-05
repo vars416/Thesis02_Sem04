@@ -24,7 +24,6 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         yaw += speedH * Input.GetAxis("Mouse X");
         pitch -= speedV * Input.GetAxis("Mouse Y");
 
@@ -32,7 +31,5 @@ public class CameraMove : MonoBehaviour
         pitch = Mathf.Clamp(pitch, gameObject.transform.position.y + Y_Min, gameObject.transform.position.y + Y_Max);//the rotation range
 
         transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
-
-        //transform.localRotation = Quaternion.identity;
     }
 }

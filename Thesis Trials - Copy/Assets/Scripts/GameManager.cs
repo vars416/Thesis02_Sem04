@@ -16,13 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject CAM1; //Camera 1
     public GameObject CAM2; //Camera 2
 
-    public GameObject CAMholder1;
-    public GameObject CAMholder2;
-    public GameObject CAMholder3;
-    public GameObject CAMholder4;
-    public GameObject CAMholder5;
-
-    //public GameObject[] CAMholderPos;
+    public GameObject[] CAMholderPos;
     //List<GameObject> CAMPos = new List<GameObject>();
 
     AudioListener CAM1aud1; //Audio listener for camera 1
@@ -41,7 +35,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            //Destroy(gameObject); //if another instance is present then destroy this instance
+            Destroy(gameObject); //if another instance is present then destroy this instance
         }
     }
     
@@ -70,22 +64,6 @@ public class GameManager : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                /*foreach (GameObject Pos in CAMholderPos)
-                {
-                    CAM2.transform.position = Pos.transform.position;
-                    CAM2.transform.rotation = Pos.transform.rotation;
-                    cameraChangeCounter();
-                    print(Pos.name);
-                    break;
-                }*/
-                /*for (int i = 0; i < CAMholderPos.Length; i++)
-                {
-                    CAM2.transform.position = CAMholderPos[i].transform.position;
-                    CAM2.transform.rotation = CAMholderPos[i].transform.rotation;
-                    cameraChangeCounter();
-                    print(CAMholderPos[i].name);
-                    break;
-                }*/
                 DeskInteractions(hit, flowchart, scene);
 
                 ShelfInteractions(hit, flowchart, scene);
@@ -115,6 +93,7 @@ public class GameManager : MonoBehaviour
             flowchart.ExecuteBlock("Help1");
         }
 
+        CounterMaintain();
     }
 
     void OnGUI()
@@ -124,14 +103,26 @@ public class GameManager : MonoBehaviour
         GUI.Label(new Rect(40, 20, 200, 150), "MOMENTS COLLECTED: " + clickcounter, style);
     }
 
+    void CameraHolding(int j)
+    {
+        for (int i = 0; i < CAMholderPos.Length; i++)
+        {
+            if (i == j)
+            {
+                CAM2.transform.position = CAMholderPos[i].transform.position;
+                CAM2.transform.rotation = CAMholderPos[i].transform.rotation;
+                cameraChangeCounter();
+                print(CAMholderPos[i].name);
+                //break;
+            }
+        }
+    }
+
     void DeskInteractions (RaycastHit hit, Flowchart flowchart, Scene scene)
     {
         if ((hit.transform.tag == "interact") && (hit.transform.name == "Desk")) //if ray hits a gameobject with transform having the tag "interact"
         {
-            CAM2.transform.position = CAMholder1.transform.position;
-            CAM2.transform.rotation = CAMholder1.transform.rotation;
-            cameraChangeCounter(); //change camera position
-            //clickcounter++;
+            CameraHolding(0);
 
             if ((scene.name == "First_Scene"))
             {
@@ -149,10 +140,7 @@ public class GameManager : MonoBehaviour
     {
         if ((hit.transform.tag == "interact") && (hit.transform.name == "Shelf"))
         {
-            CAM2.transform.position = CAMholder2.transform.position;
-            CAM2.transform.rotation = CAMholder2.transform.rotation;
-            cameraChangeCounter();
-            //clickcounter++;
+            CameraHolding(1);
 
             if (scene.name == "First_Scene")
             {
@@ -170,10 +158,7 @@ public class GameManager : MonoBehaviour
     {
         if ((hit.transform.tag == "interact") && (hit.transform.name == "Bed"))
         {
-            CAM2.transform.position = CAMholder3.transform.position;
-            CAM2.transform.rotation = CAMholder3.transform.rotation;
-            cameraChangeCounter();
-            //clickcounter++;
+            CameraHolding(2);
 
             if ((scene.name == "First_Scene"))
             {
@@ -187,32 +172,32 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void TempleInteractions (RaycastHit hit, Flowchart flowchart, Scene scene)
-    {
-        if ((hit.transform.tag == "interact") && (hit.transform.name == "Temple"))
-        {
-            CAM2.transform.position = CAMholder5.transform.position;
-            CAM2.transform.rotation = CAMholder5.transform.rotation;
-            cameraChangeCounter();
-
-            if ((scene.name == "First_Scene"))
-            {
-                flowchart.ExecuteBlock("Temple1");
-            }
-        }
-    }
-
-    void CupboardInteractions (RaycastHit hit, Flowchart flowchart, Scene scene)
+    void CupboardInteractions(RaycastHit hit, Flowchart flowchart, Scene scene)
     {
         if ((hit.transform.tag == "interact") && (hit.transform.name == "Cupboard"))
         {
-            CAM2.transform.position = CAMholder4.transform.position;
+            /*CAM2.transform.position = CAMholder4.transform.position;
             CAM2.transform.rotation = CAMholder4.transform.rotation;
-            cameraChangeCounter();
+            cameraChangeCounter();*/
+
+            CameraHolding(3);
 
             if ((scene.name == "First_Scene"))
             {
                 flowchart.ExecuteBlock("Cupboard1");
+            }
+        }
+    }
+
+    void TempleInteractions (RaycastHit hit, Flowchart flowchart, Scene scene)
+    {
+        if ((hit.transform.tag == "interact") && (hit.transform.name == "Temple"))
+        {
+            CameraHolding(4);
+
+            if ((scene.name == "First_Scene"))
+            {
+                flowchart.ExecuteBlock("Temple1");
             }
         }
     }
@@ -342,4 +327,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void CounterMaintain ()
+    {
+        if (clickcounter >= 5)
+        {
+            clickcounter = 5;
+        }
+    }
 }
