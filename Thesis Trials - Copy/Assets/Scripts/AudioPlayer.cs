@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
+//using UnityEngine.EventSystems;
 
 public class AudioPlayer : MonoBehaviour
 {
-    AudioSource audiosource;
+    public AudioSource audiosource;
 
     public Button Play;
 
@@ -15,7 +15,7 @@ public class AudioPlayer : MonoBehaviour
 
     public Slider Scrubber;
 
-    private bool IsPlaying = false;
+    public bool IsPlaying = false;
     // Start is called before the first frame update
     void Start()
     {

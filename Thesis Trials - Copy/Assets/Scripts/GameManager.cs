@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject flowerpot;
 
+    public UIManager ui;
+
+    public GameObject MusicPlayer;
+
     private void Awake()
     {
         if (instance == null)
@@ -49,12 +53,17 @@ public class GameManager : MonoBehaviour
 
         flowerpot.GetComponent<GameObject>();
 
+        MusicPlayer.SetActive(false);
+
+        //ui.RingStarting();
+        /*Color temp = ui.Bell1.color;
+        temp.a = 0.5f;*/
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        ui.RingStarting();
         Scene scene = SceneManager.GetActiveScene();
 
         if (Input.GetMouseButtonDown(0)) //if lmb is down
@@ -64,23 +73,35 @@ public class GameManager : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                DeskInteractions(hit, flowchart, scene);
+                var SD = SayDialog.GetSayDialog();
+                if (SD.isActiveAndEnabled == false)
+                {
+                    DeskInteractions(hit, flowchart, scene);
 
-                ShelfInteractions(hit, flowchart, scene);
+                    ShelfInteractions(hit, flowchart, scene);
 
-                BedInterations(hit, flowchart, scene);
+                    BedInterations(hit, flowchart, scene);
 
-                CupboardInteractions(hit, flowchart, scene);
+                    CupboardInteractions(hit, flowchart, scene);
 
-                TempleInteractions(hit, flowchart, scene);
+                    TempleInteractions(hit, flowchart, scene);
 
-                ObjectInteractions(hit, flowchart, scene);
+                    GramophoneInteractions(hit, flowchart, scene);
+
+                    ObjectInteractions(hit, flowchart, scene);
+                }
+
+                else
+                {
+
+                }
             }
         }
 
         if (Input.GetMouseButtonDown(1))
         {
             cameraChangeCounter2(); //if rmb is pressed, go back to camera 2
+            MusicPlayer.SetActive(false);
         }
 
         if (Input.GetKey(KeyCode.C))
@@ -94,6 +115,8 @@ public class GameManager : MonoBehaviour
         }
 
         CounterMaintain();
+
+        //DialogueChecker();
     }
 
     void OnGUI()
@@ -150,6 +173,8 @@ public class GameManager : MonoBehaviour
             if (scene.name == "Puzzle_Scene")
             {
                 flowchart.ExecuteBlock("Audio_Shelf3");
+                ui.MeherDialogue();
+                MusicPlayer.SetActive(true);
             }
         }
     }
@@ -202,6 +227,23 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void GramophoneInteractions (RaycastHit hit, Flowchart flowchart, Scene scene)
+    {
+        if ((hit.transform.tag == "interact") && (hit.transform.name == "Gramophone"))
+        {
+            CameraHolding(5);
+        }
+
+        if ((scene.name == "First_Scene") && (hit.transform.name == "Gramophone") && (CAM2.activeInHierarchy == true))
+        {
+            MusicPlayer.SetActive(true);
+            Color temp = ui.Bell1.color;
+            //Color temp2 = ui.Bell2.color;
+            temp.a = 1.0f;
+            //temp2.a = 1.0f;
+        }
+    }
+
     void ObjectInteractions(RaycastHit hit, Flowchart flowchart, Scene scene)
     {
         if ((hit.transform.tag == "object") && (CAM2.activeInHierarchy == true)) //if ray hits a gameobject with transform having the tag "object"
@@ -239,6 +281,12 @@ public class GameManager : MonoBehaviour
                     clickcounter++;
                     flowchart.ExecuteBlock("Herbarium1");
                 }
+
+                if (hit.transform.name == "Krishna_OBJ")
+                {
+                    clickcounter++;
+                    flowchart.ExecuteBlock("Krishna1");
+                }
             }
 
             if (scene.name == "Puzzle_Scene")
@@ -258,6 +306,19 @@ public class GameManager : MonoBehaviour
         if (clickcounter >= 5 && (scene.name == "First_Scene") && (CAM2.activeInHierarchy == true))
         {
             flowchart.ExecuteBlock("CallNajma2");
+        }
+    }
+
+    void DialogueChecker ()
+    {
+        var SD = SayDialog.GetSayDialog();
+        if (SD.isActiveAndEnabled)
+        {
+            print("dialogue coming");
+        }
+        else
+        {
+            print("dialogue not coming");
         }
     }
 
