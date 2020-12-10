@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
     public GameObject CAM2; //Camera 2
 
     public GameObject[] CAMholderPos;
-    //List<GameObject> CAMPos = new List<GameObject>();
 
     AudioListener CAM1aud1; //Audio listener for camera 1
     AudioListener CAM2aud2; //Audio listener for camera 2
@@ -27,8 +26,15 @@ public class GameManager : MonoBehaviour
     public GameObject flowerpot;
 
     public UIManager ui;
+    public AudioPlayer audioplay;
 
     public GameObject MusicPlayer;
+
+    public bool counterbool = false;
+    public bool BellBool = false;
+    public bool TutorialBool = false;
+    public bool Scene1Music = false;
+    public bool MemoryBool = false;
 
     private void Awake()
     {
@@ -55,26 +61,23 @@ public class GameManager : MonoBehaviour
 
         MusicPlayer.SetActive(false);
 
-        //ui.RingStarting();
-        /*Color temp = ui.Bell1.color;
-        temp.a = 0.5f;*/
+        audioplay = audioplay.GetComponent<AudioPlayer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        ui.RingStarting();
         Scene scene = SceneManager.GetActiveScene();
 
-        if (Input.GetMouseButtonDown(0)) //if lmb is down
+        var SD = SayDialog.GetSayDialog();
+        if (SD.isActiveAndEnabled == false) 
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); //hit raycast from screen/mouse pointer to wherever player is clicking
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit))
+            if (Input.GetMouseButtonDown(0)) //if lmb is down
             {
-                var SD = SayDialog.GetSayDialog();
-                if (SD.isActiveAndEnabled == false)
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); //hit raycast from screen/mouse pointer to wherever player is clicking
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit))
                 {
                     DeskInteractions(hit, flowchart, scene);
 
@@ -90,18 +93,32 @@ public class GameManager : MonoBehaviour
 
                     ObjectInteractions(hit, flowchart, scene);
                 }
+            }
 
-                else
+            if (Input.GetMouseButtonDown(1))
+            {
+                cameraChangeCounter2(); //if rmb is pressed, go back to camera 2
+                MusicPlayer.SetActive(false);
+                Color temp = ui.Bell1.color;
+                Color temp2 = ui.Bell2.color;
+                temp.a = 0.1f;
+                ui.Bell1.color = temp;
+                temp2.a = 0.1f;
+                ui.Bell2.color = temp2;
+
+                if (scene.name == "Puzzle_Scene")
                 {
-
+                    ui.Feroz.enabled = (false);
+                    ui.Frieda.enabled = (false);
+                    ui.Meher.enabled = (false);
+                    ui.TutorialText.text = "";
+                }
+                if (scene.name == "First_Scene")
+                {
+                    DisableBabyHerbarium();
+                    ui.TutorialText.text = "";
                 }
             }
-        }
-
-        if (Input.GetMouseButtonDown(1))
-        {
-            cameraChangeCounter2(); //if rmb is pressed, go back to camera 2
-            MusicPlayer.SetActive(false);
         }
 
         if (Input.GetKey(KeyCode.C))
@@ -114,16 +131,68 @@ public class GameManager : MonoBehaviour
             flowchart.ExecuteBlock("Help1");
         }
 
-        CounterMaintain();
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if (scene.name == "First_Scene")
+            {
+                ui.RingOpaque1();
+                ui.HerbariumPopUp();
+            }
 
-        //DialogueChecker();
+            if (scene.name == "Puzzle_Scene")
+            {
+                ui.RingOpaque2();
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.I))
+        {
+            if ((scene.name == "First_Scene") || (scene.name == "Puzzle_Scene"))
+            {
+                ui.RingStarting(scene);
+            }
+            if (scene.name == "First_Scene")
+            {
+                ui.HerbariumPopDown();
+            }
+        }
+
+        ui.CounterText.text = clickcounter.ToString();
+        CounterMaintain();
+        CounterBools();
+        if ((ui.TutorialText.text == "") && (ui.Baby_Herbarium.enabled == true) && (CAM1.activeInHierarchy == true) && (TutorialBool == false))
+        {
+            ui.TutorialText.fontSize = 12;
+            ui.TutorialText.text = "You are here in a stifling afternoon of 1966. But Frieda's time in this room extends several periods. These are arcs of time that will help keep track of the period of time attached to a moment, or memory. Hold down 'I' to see which time period you are currently in";
+            Invoke("ClearTutorialText", 8);
+            TutorialBool = true;
+        }
     }
 
-    void OnGUI()
+    /*void OnGUI()
     {
         GUIStyle style = new GUIStyle();
         style.fontSize = 20;
         GUI.Label(new Rect(40, 20, 200, 150), "MOMENTS COLLECTED: " + clickcounter, style);
+    }*/
+
+    void EnableBaby ()
+    {
+        ui.Baby_Herbarium.enabled = true;
+    }
+
+    void DisableBabyHerbarium ()
+    {
+        if ((ui.Herbarium.enabled == true) && (CAM1.activeInHierarchy == true))
+        {
+            Color temp = ui.Herbarium.color;
+            temp.a = 0.1f;
+            ui.Herbarium.color = temp;
+
+            Color temp2 = ui.Baby_Herbarium.color;
+            temp2.a = 0.1f;
+            ui.Baby_Herbarium.color = temp;
+        }
+        
     }
 
     void CameraHolding(int j)
@@ -172,9 +241,15 @@ public class GameManager : MonoBehaviour
 
             if (scene.name == "Puzzle_Scene")
             {
+                ui.BellUpDown2();
                 flowchart.ExecuteBlock("Audio_Shelf3");
-                ui.MeherDialogue();
+                ui.FriedaDialogue();
                 MusicPlayer.SetActive(true);
+                ui.TutorialText.text = "Listen closely to what they are saying... And then play the audio snippet to get a clue to the object you are searching for";
+                if ((audioplay.IsPlaying == true) && (MemoryBool == false))
+                {
+                    MemoryBool = true;
+                }
             }
         }
     }
@@ -193,6 +268,8 @@ public class GameManager : MonoBehaviour
             if (scene.name == "Puzzle_Scene")
             {
                 flowchart.ExecuteBlock("Audio_Shelf2");
+                ui.MeherDialogue();
+                ui.TutorialText.text = "Listen closely to what they are saying...";
             }
         }
     }
@@ -210,6 +287,13 @@ public class GameManager : MonoBehaviour
             if ((scene.name == "First_Scene"))
             {
                 flowchart.ExecuteBlock("Cupboard1");
+            }
+
+            if (scene.name == "Puzzle_Scene")
+            {
+                flowchart.ExecuteBlock("Audio_Shelf");
+                ui.FerozDialogue();
+                ui.TutorialText.text = "Listen closely to what they are saying...";
             }
         }
     }
@@ -237,10 +321,19 @@ public class GameManager : MonoBehaviour
         if ((scene.name == "First_Scene") && (hit.transform.name == "Gramophone") && (CAM2.activeInHierarchy == true))
         {
             MusicPlayer.SetActive(true);
+            //ui.Bell1.enabled = true;
             Color temp = ui.Bell1.color;
-            //Color temp2 = ui.Bell2.color;
+            Color temp2 = ui.Bell2.color;
             temp.a = 1.0f;
-            //temp2.a = 1.0f;
+            ui.Bell1.color = temp;
+            temp2.a = 1.0f;
+            ui.Bell2.color = temp2;
+            ui.BellUpDown1();
+            if ((audioplay.IsPlaying == true) && (ui.Herbarium.enabled == true) && (Scene1Music == false))
+            {
+                flowchart.ExecuteBlock("Temple2");
+                Scene1Music = true;
+            }
         }
     }
 
@@ -265,7 +358,8 @@ public class GameManager : MonoBehaviour
 
                 if (hit.transform.name == "Bell1")
                 {
-                    clickcounter++;
+                    //clickcounter++;
+                    BoolTrigger();
                     flowchart.ExecuteBlock("Bell1");
                 }
 
@@ -278,8 +372,14 @@ public class GameManager : MonoBehaviour
 
                 if (hit.transform.name == "Herbarium_Book")
                 {
-                    clickcounter++;
+                    //clickcounter++;
+                    counterbool = true;
                     flowchart.ExecuteBlock("Herbarium1");
+                    ui.Herbarium.enabled = true;
+                    ui.Bell1.enabled = true;
+                    Invoke("EnableBaby", 2);
+                    ui.TutorialText.text = "The Herbarium is the archive of what Frieda has kept. It holds names and traces of the most important pieces of her life.";
+                    
                 }
 
                 if (hit.transform.name == "Krishna_OBJ")
@@ -291,7 +391,11 @@ public class GameManager : MonoBehaviour
 
             if (scene.name == "Puzzle_Scene")
             {
-                flowchart.ExecuteBlock("Frieda_Test"); //execute this block in Fungus flowchart
+                if ((hit.transform.name == "Ticket") && (MemoryBool == true) && (audioplay.IsPlaying == false))
+                {
+                    flowchart.ExecuteBlock("Frieda_Test"); //execute this block in Fungus flowchart
+                    Invoke("MemoryComing", 5);
+                }
             }
         }
     }
@@ -306,19 +410,6 @@ public class GameManager : MonoBehaviour
         if (clickcounter >= 5 && (scene.name == "First_Scene") && (CAM2.activeInHierarchy == true))
         {
             flowchart.ExecuteBlock("CallNajma2");
-        }
-    }
-
-    void DialogueChecker ()
-    {
-        var SD = SayDialog.GetSayDialog();
-        if (SD.isActiveAndEnabled)
-        {
-            print("dialogue coming");
-        }
-        else
-        {
-            print("dialogue not coming");
         }
     }
 
@@ -394,5 +485,33 @@ public class GameManager : MonoBehaviour
         {
             clickcounter = 5;
         }
+    }
+
+    void CounterBools ()
+    {
+        if (counterbool == true)
+        {
+            ui.CounterText.enabled = true;
+        }
+    }
+
+    void BoolTrigger ()
+    {
+        if ((BellBool == false))
+        {
+            clickcounter++;
+            BellBool = true;
+        }
+    }
+
+    void MemoryComing ()
+    {
+        ui.MemoryAppear();
+        MusicPlayer.SetActive(false);
+    }
+
+    void ClearTutorialText ()
+    {
+        ui.TutorialText.text = "";
     }
 }
