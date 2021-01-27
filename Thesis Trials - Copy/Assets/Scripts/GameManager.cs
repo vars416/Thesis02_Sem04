@@ -35,6 +35,9 @@ public class GameManager : MonoBehaviour
     public bool TutorialBool = false;
     public bool Scene1Music = false;
     public bool MemoryBool = false;
+    public bool KrishBool = false;
+    public bool PhotoBool = false;
+    public bool StampBool = false;
 
     private void Awake()
     {
@@ -62,6 +65,8 @@ public class GameManager : MonoBehaviour
         MusicPlayer.SetActive(false);
 
         audioplay = audioplay.GetComponent<AudioPlayer>();
+
+        MemoryBool = false;
     }
 
     // Update is called once per frame
@@ -137,6 +142,8 @@ public class GameManager : MonoBehaviour
             {
                 ui.RingOpaque1();
                 ui.HerbariumPopUp();
+                ui.TutorialText.fontSize = 12;
+                ui.TutorialText.text = "You are here in a stifling afternoon of 1966. But Frieda's time in this room extends several periods. These are arcs of time that will help keep track of the period of time attached to a moment, or memory.";
             }
 
             if (scene.name == "Puzzle_Scene")
@@ -153,6 +160,7 @@ public class GameManager : MonoBehaviour
             if (scene.name == "First_Scene")
             {
                 ui.HerbariumPopDown();
+                ui.TutorialText.text = "";
             }
         }
 
@@ -161,9 +169,10 @@ public class GameManager : MonoBehaviour
         CounterBools();
         if ((ui.TutorialText.text == "") && (ui.Baby_Herbarium.enabled == true) && (CAM1.activeInHierarchy == true) && (TutorialBool == false))
         {
-            ui.TutorialText.fontSize = 12;
-            ui.TutorialText.text = "You are here in a stifling afternoon of 1966. But Frieda's time in this room extends several periods. These are arcs of time that will help keep track of the period of time attached to a moment, or memory. Hold down 'I' to see which time period you are currently in";
-            Invoke("ClearTutorialText", 8);
+            //ui.TutorialText.fontSize = 12;
+            ui.TutorialText.text = "Hold down 'I' to see which time period you are currently in";
+            //ui.TutorialText.text = "You are here in a stifling afternoon of 1966. But Frieda's time in this room extends several periods. These are arcs of time that will help keep track of the period of time attached to a moment, or memory. Hold down 'I' to see which time period you are currently in";
+            Invoke("ClearTutorialText", 4);
             TutorialBool = true;
         }
     }
@@ -245,11 +254,17 @@ public class GameManager : MonoBehaviour
                 flowchart.ExecuteBlock("Audio_Shelf3");
                 ui.FriedaDialogue();
                 MusicPlayer.SetActive(true);
-                ui.TutorialText.text = "Listen closely to what they are saying... And then play the audio snippet to get a clue to the object you are searching for";
-                if ((audioplay.IsPlaying == true) && (MemoryBool == false))
+                ui.TutorialText.text = "Listen closely to what they are saying... And then play the audio snippet. The Bells are sounds that tell you that what is important to Frieda is near.";
+                //ui.TutorialText.text = "Listen closely to what they are saying... And then play the audio snippet to get a clue to the object you are searching for";
+                /*if (*//*(audioplay.IsPlaying == false) && *//* (MemoryBool == false))
                 {
                     MemoryBool = true;
-                }
+                    print("wtf");
+                }*/
+                /*if (MemoryBool == false)
+                {
+
+                }*/
             }
         }
     }
@@ -293,6 +308,11 @@ public class GameManager : MonoBehaviour
             {
                 flowchart.ExecuteBlock("Audio_Shelf");
                 ui.FerozDialogue();
+                if ((MemoryBool == false))
+                {
+                    MemoryBool = true;
+                    //print("wtf");
+                }
                 ui.TutorialText.text = "Listen closely to what they are saying...";
             }
         }
@@ -346,13 +366,15 @@ public class GameManager : MonoBehaviour
             {
                 if (hit.transform.name == "Rubber Stamp1")
                 {
-                    clickcounter++;
+                    //clickcounter++;
+                    BoolTrigger4();
                     flowchart.ExecuteBlock("Stamp1");
                 }
 
                 if (hit.transform.name == "Photograph1")
                 {
-                    clickcounter++;
+                    //clickcounter++;
+                    BoolTrigger3();
                     flowchart.ExecuteBlock("Photo1");
                 }
 
@@ -363,7 +385,7 @@ public class GameManager : MonoBehaviour
                     flowchart.ExecuteBlock("Bell1");
                 }
 
-                if (hit.transform.name == "Orchids")
+                if ((hit.transform.name == "Orchids") && (ui.Herbarium.enabled == true))
                 {
                     clickcounter++;
                     flowchart.ExecuteBlock("Flowers1");
@@ -378,23 +400,32 @@ public class GameManager : MonoBehaviour
                     ui.Herbarium.enabled = true;
                     ui.Bell1.enabled = true;
                     Invoke("EnableBaby", 2);
-                    ui.TutorialText.text = "The Herbarium is the archive of what Frieda has kept. It holds names and traces of the most important pieces of her life.";
+                    ui.TutorialText.fontSize = 12;
+                    ui.TutorialText.text = "The Herbarium is the archive of what Frieda has kept. It holds names and traces of the most important pieces of her life. The Counter number showing up on the bookmark shows you the number of memories you have collected.";
                     
                 }
 
                 if (hit.transform.name == "Krishna_OBJ")
                 {
-                    clickcounter++;
+                    //clickcounter++;
+                    BoolTrigger2();
                     flowchart.ExecuteBlock("Krishna1");
                 }
             }
 
             if (scene.name == "Puzzle_Scene")
             {
-                if ((hit.transform.name == "Ticket") && (MemoryBool == true) && (audioplay.IsPlaying == false))
+                if ((hit.transform.name == "Ticket") /*&& (MemoryBool == true) && (audioplay.IsPlaying == false)*/)
                 {
-                    flowchart.ExecuteBlock("Frieda_Test"); //execute this block in Fungus flowchart
-                    Invoke("MemoryComing", 5);
+                    if (MemoryBool == false)
+                    {
+                        ui.TutorialText.text = "You are still missing some clues, listen to the other audio tracks in the room and then come back";
+                    }
+                    if ((MemoryBool == true) && (audioplay.IsPlaying == false))
+                    {
+                        flowchart.ExecuteBlock("Frieda_Test"); //execute this block in Fungus flowchart
+                        Invoke("MemoryComing", 5);
+                    }
                 }
             }
         }
@@ -501,6 +532,33 @@ public class GameManager : MonoBehaviour
         {
             clickcounter++;
             BellBool = true;
+        }
+    }
+
+    void BoolTrigger2 ()
+    {
+        if (KrishBool == false)
+        {
+            clickcounter++;
+            KrishBool = true;
+        }
+    }
+
+    void BoolTrigger3 ()
+    {
+        if (PhotoBool == false)
+        {
+            clickcounter++;
+            PhotoBool = true;
+        }
+    }
+
+    void BoolTrigger4 ()
+    {
+        if (StampBool == false)
+        {
+            clickcounter++;
+            StampBool = true;
         }
     }
 

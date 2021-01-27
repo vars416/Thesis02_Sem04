@@ -157,7 +157,8 @@ public class UIManager : MonoBehaviour
                 Bell1.enabled = (true);
                 Bell2.enabled = false;
             }
-            TutorialText.text = "Hit play, click on the screen and see the Bell go down. When the Bell is down, give special attention to the soundtrack. It will guide you to the next item or place of importance. The Bells are sounds that tell you that what is important to Frieda is near.";
+            TutorialText.text = "You can play, pause and scrub through sound here. When the Bell is down, give special attention to the soundtrack and dialogue.";
+            //TutorialText.text = "Hit play, click on the screen and see the Bell go down. When the Bell is down, give special attention to the soundtrack. It will guide you to the next item or place of importance. The Bells are sounds that tell you that what is important to Frieda is near.";
         }
         else if ((Herbarium.enabled == false) /*&& (GM)*/)
         {

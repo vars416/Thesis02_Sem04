@@ -2384,7 +2384,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-176176
+  m_Name: pb_Mesh-3634
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2820,7 +2820,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-176180
+  m_Name: pb_Mesh-3638
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3132,7 +3132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2354819942661983252, guid: 1b07dc05d688e1847b490c06bc026708, type: 3}
       propertyPath: m_TagString
-      value: interact
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3163164035712538286, guid: 1b07dc05d688e1847b490c06bc026708, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3197,7 +3197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7571741005010542425, guid: 814a7e395b981934bae637c331ee0b57, type: 3}
       propertyPath: m_TagString
-      value: interact
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7571741005010542426, guid: 814a7e395b981934bae637c331ee0b57, type: 3}
       propertyPath: m_Mesh
@@ -4045,7 +4045,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-175488
+  m_Name: pb_Mesh-2938
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4203,17 +4203,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &759292556 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1534915515837761236, guid: fb2b750cfcb79c44b9d395b5d9e9ea85, type: 3}
-  m_PrefabInstance: {fileID: 1534915517016580093}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!43 &822745921
 Mesh:
   m_ObjectHideFlags: 0
@@ -4817,7 +4806,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-176174
+  m_Name: pb_Mesh-3632
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5138,7 +5127,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-176178
+  m_Name: pb_Mesh-3636
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5747,7 +5736,7 @@ GameObject:
   - component: {fileID: 1366959779}
   m_Layer: 0
   m_Name: Temple
-  m_TagString: interact
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29553,7 +29542,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-176182
+  m_Name: pb_Mesh-3640
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30229,19 +30218,7 @@ GameObject:
   - component: {fileID: 1458593211}
   - component: {fileID: 1458593210}
   - component: {fileID: 1458593209}
-  - component: {fileID: 1458593220}
-  - component: {fileID: 1458593219}
-  - component: {fileID: 1458593218}
-  - component: {fileID: 1458593217}
-  - component: {fileID: 1458593216}
-  - component: {fileID: 1458593215}
-  - component: {fileID: 1458593214}
-  - component: {fileID: 1458593212}
-  - component: {fileID: 1458593224}
-  - component: {fileID: 1458593223}
-  - component: {fileID: 1458593222}
   - component: {fileID: 1458593221}
-  - component: {fileID: 1458593281}
   - component: {fileID: 1458593274}
   - component: {fileID: 1458593238}
   - component: {fileID: 1458593228}
@@ -30250,6 +30227,15 @@ GameObject:
   - component: {fileID: 1458593226}
   - component: {fileID: 1458593225}
   - component: {fileID: 1458593208}
+  - component: {fileID: 1458593212}
+  - component: {fileID: 1458593215}
+  - component: {fileID: 1458593214}
+  - component: {fileID: 1458593219}
+  - component: {fileID: 1458593218}
+  - component: {fileID: 1458593217}
+  - component: {fileID: 1458593216}
+  - component: {fileID: 1458593222}
+  - component: {fileID: 1458593220}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -30259,7 +30245,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &1458593208
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30302,18 +30288,15 @@ MonoBehaviour:
   eventHandler: {fileID: 1458593238}
   commandList:
   - {fileID: 1458593221}
-  - {fileID: 1458593220}
+  - {fileID: 1458593212}
+  - {fileID: 1458593214}
+  - {fileID: 1458593215}
   - {fileID: 1458593219}
   - {fileID: 1458593218}
-  - {fileID: 1458593216}
-  - {fileID: 1458593215}
-  - {fileID: 1458593214}
   - {fileID: 1458593217}
-  - {fileID: 1458593212}
-  - {fileID: 1458593224}
-  - {fileID: 1458593223}
+  - {fileID: 1458593216}
   - {fileID: 1458593222}
-  - {fileID: 1458593281}
+  - {fileID: 1458593220}
   - {fileID: 1458593228}
   - {fileID: 1458593226}
   - {fileID: 1458593274}
@@ -30343,9 +30326,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1458593213}
+  - {fileID: 1458593209}
   selectedCommands:
-  - {fileID: 1458593208}
+  - {fileID: 1458593220}
   variables: []
   description: 
   stepPause: 0
@@ -30383,12 +30366,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 13
+  itemId: 87
   indentLevel: 0
-  storyText: "I think the last time was a month ago. I heard you haven\u2019t been
-    in Bombay in a while."
+  storyText: Who was the person who gave her flowers?
   description: 
-  character: {fileID: 759292556}
+  character: {fileID: 1799788558424812481}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30428,7 +30410,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1458593214
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30438,11 +30420,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 12
+  itemId: 89
   indentLevel: 0
-  storyText: Ok Aapa.
+  storyText: Was she having an affair outside of her marriage?
   description: 
-  character: {fileID: 1844474985}
+  character: {fileID: 1799788558424812481}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30455,7 +30437,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1458593215
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30465,11 +30447,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 11
+  itemId: 88
   indentLevel: 0
-  storyText: Not 'aunty' beta (son)! Call me 'aapa' (elder sister)
+  storyText: You can say so
   description: 
-  character: {fileID: 759292556}
+  character: {fileID: 1534915517016580094}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30482,7 +30464,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1458593216
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30492,11 +30474,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 10
+  itemId: 93
   indentLevel: 0
-  storyText: Yeah, I have been told so... Thank you aunty
+  storyText: What!
   description: 
-  character: {fileID: 1844474985}
+  character: {fileID: 1799788558424812481}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30509,7 +30491,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1458593217
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30519,12 +30501,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 9
+  itemId: 92
   indentLevel: 0
-  storyText: Sorry to hear about your papa... He used to visit Frieda madam sometimes,
-    maybe a bit more in the last year.
+  storyText: Her...
   description: 
-  character: {fileID: 759292556}
+  character: {fileID: 1534915517016580094}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30537,7 +30518,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1458593218
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30547,11 +30528,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 8
+  itemId: 91
   indentLevel: 0
-  storyText: You look exactly like him!
+  storyText: Not him....
   description: 
-  character: {fileID: 759292556}
+  character: {fileID: 1534915517016580094}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30564,7 +30545,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1458593219
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30574,11 +30555,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 7
+  itemId: 90
   indentLevel: 0
-  storyText: Yes. How did you...
+  storyText: Who was this person? Did you know him Aapa?
   description: 
-  character: {fileID: 1844474985}
+  character: {fileID: 1799788558424812481}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30591,7 +30572,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1458593220
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30601,11 +30582,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 6
+  itemId: 95
   indentLevel: 0
-  storyText: You are Feroz Saab's (Sir's) son, right
+  storyText: The Prototype is now over, thank you for playing it. You can now restart
+    or quit in the next menu.
   description: 
-  character: {fileID: 759292556}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30643,93 +30625,25 @@ MonoBehaviour:
   rotTweenType: 4
 --- !u!114 &1458593222
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458593207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 16
+  itemId: 94
   indentLevel: 0
-  storyText: '**Look around the room to find a rubber signature stamp**
-
-    Press
-    H for Help'
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1458593223
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 15
-  indentLevel: 0
-  storyText: Yes, you're welcome to look around! Madam-ji knew you were coming. She's
-    heard a lot about you.
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1458593224
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 14
-  indentLevel: 0
-  storyText: Yes, I came back recently... Is it ok that I am in here? I just want
-    to use her signature stamp on these papers once.
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 3
+  durationOLD: 0
 --- !u!114 &1458593225
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30743,7 +30657,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1458593226
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30847,34 +30761,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 79
   indentLevel: 0
---- !u!114 &1458593281
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 75
-  indentLevel: 0
-  storyText: '**Aapa is busy in the kitchen. Find 5 Moments in the room before you
-    call out to her again**'
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &1493303299 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7904503064264776291, guid: 769d65c1913fce846a92ba44a47cc8b0, type: 3}
@@ -31268,7 +31154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8213856920312373501, guid: 60e6f3afea084cc4c94e4378f8e8a7bb, type: 3}
       propertyPath: m_TagString
-      value: interact
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8213856920312373502, guid: 60e6f3afea084cc4c94e4378f8e8a7bb, type: 3}
       propertyPath: m_ReceiveShadows
@@ -31959,17 +31845,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1844474985 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2773039511533363536, guid: 43fd21972aa127940ae6fd148d07a162, type: 3}
-  m_PrefabInstance: {fileID: 1799788558424812480}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1859300449
@@ -33097,6 +32972,9 @@ MonoBehaviour:
   TutorialBool: 0
   Scene1Music: 0
   MemoryBool: 0
+  KrishBool: 0
+  PhotoBool: 0
+  StampBool: 0
 --- !u!4 &2049747554
 Transform:
   m_ObjectHideFlags: 0
@@ -33118,14 +32996,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049747552}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 15897802d42a0c3498bc0c08912e9371, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -33309,7 +33187,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh108484
+  m_Name: pb_Mesh20614
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33542,7 +33420,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-176008
+  m_Name: pb_Mesh-3458
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38490,7 +38368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 307023814870468718, guid: 5a1f78175e4946a448226665feda6383, type: 3}
       propertyPath: m_TagString
-      value: interact
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a1f78175e4946a448226665feda6383, type: 3}
@@ -38724,7 +38602,7 @@ GameObject:
   - component: {fileID: 253043423}
   m_Layer: 0
   m_Name: Gramophone
-  m_TagString: interact
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43114,6 +42992,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb2b750cfcb79c44b9d395b5d9e9ea85, type: 3}
+--- !u!114 &1534915517016580094 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1534915515837761236, guid: fb2b750cfcb79c44b9d395b5d9e9ea85, type: 3}
+  m_PrefabInstance: {fileID: 1534915517016580093}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1584040826508114531
 GameObject:
   m_ObjectHideFlags: 0
@@ -43365,6 +43254,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fd21972aa127940ae6fd148d07a162, type: 3}
+--- !u!114 &1799788558424812481 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2773039511533363536, guid: 43fd21972aa127940ae6fd148d07a162, type: 3}
+  m_PrefabInstance: {fileID: 1799788558424812480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1816114741403228237
 GameObject:
   m_ObjectHideFlags: 0
