@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
 
     private Scene scene;
 
+    public GameObject currentCam;
+
+    //public Camera RTCam;
     public GameObject CAM1; //Camera 1
     public GameObject CAM2; //Camera 2
 
@@ -65,6 +68,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         CAM1aud1 = CAM1.GetComponent<AudioListener>(); //get and set audio listeners to their respective cameras
         CAM2aud2 = CAM2.GetComponent<AudioListener>();
 
@@ -90,12 +94,14 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0)) //if lmb is down
             {
+                /*CAM1.GetComponent<Camera>()*/
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); //hit raycast from screen/mouse pointer to wherever player is clicking
                 Debug.Log(Camera.main.transform.gameObject.name);
                 RaycastHit hit;
 
                 if (Physics.Raycast(ray, out hit))
                 {
+                    Debug.Log(hit.transform.name);
                     if (hit.transform.gameObject.layer != 5)
                     {
                         DeskInteractions(hit, flowchart, scene);
@@ -523,19 +529,10 @@ public class GameManager : MonoBehaviour
         //crossfade.ScreenFade();
     }
 
-    /*void cameraChangeCounter2() //counter for coming back to original view
-    {
-        int cameraPositionCounter = PlayerPrefs.GetInt("CameraPosition");
-        print("ChangeCounter2: " + cameraPositionCounter);
-        cameraPositionCounter++;
-        cameraPositionChange2(cameraPositionCounter);
-        //print(cameraPositionCounter);
-        //camerafade1.RedoFade();
-        //crossfade.ScreenFade();
-    }*/
-
     void FadeRT(MeshRenderer mr, int dest)
     {
+ 
+
         const float duration = 2;
         int o = Mathf.Abs(dest - 1);
         float timer = 0;
@@ -554,6 +551,12 @@ public class GameManager : MonoBehaviour
             mr.material.SetColor("_Color", col);
 
         }
+    }
+
+    public void SetActiveCamera(bool back = false)
+    {
+        currentCam = back ? CAM1 : CAM2;
+        
     }
 
     void cameraPositionChange(int camPosition)
@@ -586,6 +589,18 @@ public class GameManager : MonoBehaviour
             //CAM1.GetComponent<Camera>().enabled = false;
         }
     }
+
+
+    /*void cameraChangeCounter2() //counter for coming back to original view
+    {
+        int cameraPositionCounter = PlayerPrefs.GetInt("CameraPosition");
+        print("ChangeCounter2: " + cameraPositionCounter);
+        cameraPositionCounter++;
+        cameraPositionChange2(cameraPositionCounter);
+        //print(cameraPositionCounter);
+        //camerafade1.RedoFade();
+        //crossfade.ScreenFade();
+    }*/
 
     /*void cameraPositionChange2(int camPosition)
     {

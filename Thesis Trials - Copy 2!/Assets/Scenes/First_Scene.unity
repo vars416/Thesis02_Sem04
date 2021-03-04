@@ -3023,7 +3023,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: -2
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -7276,7 +7276,7 @@ MeshCollider:
   m_GameObject: {fileID: 900206527}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -9322,6 +9322,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6981cc7cdac7ed4aaae61a7c348384f, type: 3}
+--- !u!1 &1207099027 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 307023813335022585, guid: 5a1f78175e4946a448226665feda6383, type: 3}
+  m_PrefabInstance: {fileID: 307023814894330591}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1207099033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207099027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 0.35265732, z: 1.9999999}
+  m_Center: {x: 0, y: -0.07367134, z: 0}
 --- !u!1001 &1213587915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9890,7 +9908,7 @@ GameObject:
   - component: {fileID: 1364410186}
   m_Layer: 5
   m_Name: Render Camera
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10023,7 +10041,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -41567,7 +41585,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983337727}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fae9933c687babe4bb1c81f872a2dca6, type: 3}
   m_Name: 
@@ -41967,6 +41985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowchart: {fileID: 1458593210}
   crossfade: {fileID: 0}
+  currentCam: {fileID: 0}
   CAM1: {fileID: 575856665}
   CAM2: {fileID: 463588914}
   CAMholderPos:
@@ -46862,6 +46881,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 971573389}
+    - target: {fileID: 307023813335022583, guid: 5a1f78175e4946a448226665feda6383, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 307023813582293222, guid: 5a1f78175e4946a448226665feda6383, type: 3}
       propertyPath: m_Mesh
       value: 
