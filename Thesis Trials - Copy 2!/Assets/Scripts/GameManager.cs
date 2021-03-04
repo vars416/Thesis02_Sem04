@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     public CrossFade crossfade;
 
+    //public GameObject crossfade;
+
     private Scene scene;
 
     public GameObject CAM1; //Camera 1
@@ -43,14 +45,9 @@ public class GameManager : MonoBehaviour
 
     public Clocks clocks;
 
+    //private int layermask = 5;
     //public bool counterbool = false;
-    public bool BellBool = false;
-    public bool TutorialBool = false;
-    public bool Scene1Music = false;
-    public bool MemoryBool = false;
-    public bool KrishBool = false;
-    public bool PhotoBool = false;
-    public bool StampBool = false;
+    //public bool MemoryBool = false;
 
     private void Awake()
     {
@@ -79,12 +76,12 @@ public class GameManager : MonoBehaviour
 
         //audioplay = audioplay.GetComponent<AudioPlayer>();
 
-        MemoryBool = false;
+        //MemoryBool = false;
 
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
         Scene scene = SceneManager.GetActiveScene();
 
@@ -99,25 +96,37 @@ public class GameManager : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit))
                 {
-                    DeskInteractions(hit, flowchart, scene);
+                    if (hit.transform.gameObject.layer != 5)
+                    {
+                        DeskInteractions(hit, flowchart, scene);
 
-                    ShelfInteractions(hit, flowchart, scene);
+                        ShelfInteractions(hit, flowchart, scene);
 
-                    BedInterations(hit, flowchart, scene);
+                        BedInterations(hit, flowchart, scene);
 
-                    CupboardInteractions(hit, flowchart, scene);
+                        CupboardInteractions(hit, flowchart, scene);
 
-                    TempleInteractions(hit, flowchart, scene);
+                        TempleInteractions(hit, flowchart, scene);
 
-                    BedsideTableInteraction(hit, flowchart, scene);
+                        BedsideTableInteraction(hit, flowchart, scene);
 
-                    ObjectInteractions(hit, flowchart, scene);
+                        ObjectInteractions(hit, flowchart, scene);
+                    }
+
+                    /*else if (hit.transform.gameObject.layer == 5)
+                    {
+
+                    }*/
+                    
                 }
+
             }
 
             if (Input.GetMouseButtonDown(1))
             {
-                cameraChangeCounter2(); //if rmb is pressed, go back to camera 2
+                cameraPositionChange(0);
+                //cameraChangeCounter();
+                //cameraChangeCounter2(); //if rmb is pressed, go back to camera 2
                 MusicPlayer.SetActive(false);
                 audioplay.PauseSound();
                 /*Color temp = ui.Bell1.color; //BELLS
@@ -136,7 +145,7 @@ public class GameManager : MonoBehaviour
                 }
                 if (scene.name == "First_Scene")
                 {
-                    DisableBabyHerbarium();
+                    DisableUI_Herbarium();
                 }
             }
         }
@@ -191,7 +200,15 @@ public class GameManager : MonoBehaviour
         BackButtonEnabler();
     }
 
-    void DisableBabyHerbarium ()
+    /*void RayCast_Ignore_UI(RaycastHit hit, Ray ray)
+    {
+        if (Physics.Raycast(ray, out hit, layermask))
+        {
+
+        }
+    }*/
+
+    void DisableUI_Herbarium ()
     {
         if ((ui.Herbarium.enabled == true) && (CAM1.activeInHierarchy == true))
         {
@@ -313,11 +330,11 @@ public class GameManager : MonoBehaviour
             {
                 flowchart.ExecuteBlock("Audio_Shelf");
                 ui.FerozDialogue();
-                if ((MemoryBool == false))
+                /*if ((MemoryBool == false))
                 {
                     MemoryBool = true;
                     //print("wtf");
-                }
+                }*/
             }
         }
     }
@@ -340,6 +357,12 @@ public class GameManager : MonoBehaviour
         if ((hit.transform.tag == "interact") && (hit.transform.name == "Bedside Table"))
         {
             CameraHolding(5);
+
+            if (clocks.HerbSwitch == true)  //Bring the Herbarium again when players
+            {
+                ui.HerbariumPopUp();
+                //HerbImageDelay();
+            }
         }
 
         /*if ((scene.name == "First_Scene") && (hit.transform.name == "Gramophone") && (CAM2.activeInHierarchy == true))
@@ -447,6 +470,11 @@ public class GameManager : MonoBehaviour
                         //ui.Herbarium_Button_Up();
                         SwitchHerbariumBook();
                     }
+
+                    /*if ((clocks.TimeSwap == true) && (clocks.HerbSwitch == true))
+                    {
+                        SwitchHerbariumBook();
+                    }*/
                 }
 
                 if (hit.transform.name == "Krishna_OBJ")
@@ -470,15 +498,15 @@ public class GameManager : MonoBehaviour
             {
                 if ((hit.transform.name == "Ticket") /*&& (MemoryBool == true) && (audioplay.IsPlaying == false)*/)
                 {
-                    if (MemoryBool == false)
+                    /*if (MemoryBool == false)
                     {
                         ui.TutorialText.text = "You are still missing some clues, listen to the other audio tracks in the room and then come back";
                     }
-                    if ((MemoryBool == true) /*&& (audioplay.IsPlaying == false)*/)
+                    if ((MemoryBool == true) *//*&& (audioplay.IsPlaying == false)*//*)
                     {
                         flowchart.ExecuteBlock("Frieda_Test"); //execute this block in Fungus flowchart
                         Invoke("MemoryComing", 5);
-                    }
+                    }*/
                 }
             }
         }
@@ -489,24 +517,22 @@ public class GameManager : MonoBehaviour
         int cameraPositionCounter = PlayerPrefs.GetInt("CameraPosition"); //Get integer for camera position from Player Preferences and set it equal to camera position counter
         cameraPositionCounter++; //increase that int
         cameraPositionChange(cameraPositionCounter); //set camera postion to that increased int
-        crossfade.Crossfade_fadeout();
         print(cameraPositionCounter);
+        //crossfade.Crossfade_fadeout();
         //camerafade2.RedoFade();
         //crossfade.ScreenFade();
     }
 
-    void cameraChangeCounter2() //counter for coming back to original view
+    /*void cameraChangeCounter2() //counter for coming back to original view
     {
         int cameraPositionCounter = PlayerPrefs.GetInt("CameraPosition");
         print("ChangeCounter2: " + cameraPositionCounter);
         cameraPositionCounter++;
         cameraPositionChange2(cameraPositionCounter);
         //print(cameraPositionCounter);
-        //crossfade.Crossfade_fadein();
         //camerafade1.RedoFade();
         //crossfade.ScreenFade();
-
-    }
+    }*/
 
     void FadeRT(MeshRenderer mr, int dest)
     {
@@ -541,22 +567,27 @@ public class GameManager : MonoBehaviour
         {
             CAM1.SetActive(true);
             CAM1aud1.enabled = true;
+            //CAM1.GetComponent<Camera>().enabled = true;
 
             CAM2.SetActive(false);
             CAM2aud2.enabled = false;
+            //CAM2.GetComponent<Camera>().enabled = false;
         }
 
         if (camPosition == 1)
         {
+
             CAM2.SetActive(true);
             CAM2aud2.enabled = true;
+            //CAM2.GetComponent<Camera>().enabled = true;
 
             CAM1.SetActive(false);
             CAM1aud1.enabled = false;
+            //CAM1.GetComponent<Camera>().enabled = false;
         }
     }
 
-    void cameraPositionChange2(int camPosition)
+    /*void cameraPositionChange2(int camPosition)
     {
         if (camPosition > 1)
         {
@@ -567,9 +598,11 @@ public class GameManager : MonoBehaviour
         {
             CAM2.SetActive(true);
             CAM2aud2.enabled = true;
+            //CAM2.GetComponent<Camera>().enabled = true;
 
             CAM1.SetActive(false);
             CAM1aud1.enabled = false;
+            //CAM1.GetComponent<Camera>().enabled = false;
             print("CAM1: " + CAM1.activeSelf + " CAM2: " + CAM2.activeSelf);
         }
 
@@ -577,12 +610,14 @@ public class GameManager : MonoBehaviour
         {
             CAM1.SetActive(true);
             CAM1aud1.enabled = true;
+            //CAM1.GetComponent<Camera>().enabled = true;
 
             CAM2.SetActive(false);
             CAM2aud2.enabled = false;
+            //CAM2.GetComponent<Camera>().enabled = false;
             print("CAM1: " + CAM1.activeSelf + " CAM2: " + CAM2.activeSelf);
         }
-    }
+    }*/
 
     void MemoryComing ()
     {
@@ -616,7 +651,8 @@ public class GameManager : MonoBehaviour
     {
         if (flowchart.GetExecutingBlocks().Count == 0)
         {
-            cameraChangeCounter2();
+            cameraPositionChange(0);
+            //cameraChangeCounter2();
             if (clocks.HerbSwitch == true)
             {
                 ui.HerbariumPopDown();

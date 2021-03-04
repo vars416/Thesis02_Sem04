@@ -10,6 +10,8 @@ public class CrossFade : MonoBehaviour
     //public GameObject RenderScreen;
     public GameObject Cam1Img1;
     public Animator Cam1Img1Anim;
+
+    public bool fader = false;
     //public GameObject Cam2Img2;
 
     void Start()
@@ -25,7 +27,9 @@ public class CrossFade : MonoBehaviour
 
     public void Crossfade_fadeout ()
     {
+        //Cam1Img1.GetComponent<Animation>().Play("ShaderOut");
         Cam1Img1Anim.SetTrigger("Fade");
+        fader = true;
         //Cam1Img1Anim.SetBool("FadeOut", true);
         //Cam1Img1Anim.SetBool("FadeIn", false);
         //RenderScreen.GetComponent<Animation>().Play("CrossFade");
@@ -36,6 +40,7 @@ public class CrossFade : MonoBehaviour
     public void Crossfade_fadein ()
     {
         Cam1Img1Anim.SetTrigger("Fade");
+        
         //Cam1Img1Anim.SetBool("FadeOut", false);
         //Cam1Img1Anim.SetBool("FadeIn", true);
         print("fading in");
