@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour
 
     public Transform[] cameraPositions;
 
-    const float fadeDuration = 1.0f;
+    const float fadeDuration = 0.5f;
     private float timer = 0;
 
     private GameManager gameManager;
@@ -116,7 +116,7 @@ public class CameraController : MonoBehaviour
         int value = 0;
         for (int i = 0; i < sceneCams.Length; i++)
         {
-            if (currentSceneCam = sceneCams[i])
+            if (currentSceneCam == sceneCams[i])
             {
                 value = Mathf.Abs(i-1);
                 break;

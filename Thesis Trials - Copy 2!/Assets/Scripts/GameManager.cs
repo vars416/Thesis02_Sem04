@@ -11,16 +11,7 @@ public class GameManager : MonoBehaviour
 
     public Flowchart flowchart; //Add Fungus flowchart
 
-    //public CameraFade camerafade1;
-    //public CameraFade camerafade2;
-
-    //public CrossFade crossfade;
-
-    //public GameObject crossfade;
-
     private Scene scene;
-
-    //private GameObject[] InteractLayerObj;
 
     public CameraController camControl;
     //public Camera RTCam;
@@ -49,6 +40,8 @@ public class GameManager : MonoBehaviour
 
     public Clocks clocks;
 
+    public GameObject[] InteractiveFurniture;
+
     //private int layermask = 5;
     //public bool counterbool = false;
     //public bool MemoryBool = false;
@@ -69,7 +62,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //InteractLayerObj = GetComponent<GameObject>().layer(9);
         //CAM1aud1 = CAM1.GetComponent<AudioListener>(); //get and set audio listeners to their respective cameras
         //CAM2aud2 = CAM2.GetComponent<AudioListener>();
 
@@ -92,7 +84,8 @@ public class GameManager : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
 
         var SD = SayDialog.GetSayDialog();
-        if (SD.isActiveAndEnabled == false)
+        var MD = MenuDialog.GetMenuDialog();
+        if ((SD.isActiveAndEnabled == false) && (MD.isActiveAndEnabled == false))
         {
             if (Input.GetMouseButtonDown(0)) //if lmb is down
             {
@@ -534,22 +527,32 @@ public class GameManager : MonoBehaviour
 
     void ColliderDisabler(RaycastHit hit)
     {
-        if ((hit.collider.transform.gameObject.layer == 9) && (hit.transform.tag == "interact"))
+        for (int i = 0; i < InteractiveFurniture.Length; i++)
+        {
+            /*if ((hit.transform.gameObject == InteractiveFurniture[i].transform.gameObject) && (camControl.currentSceneCam == camControl.sceneCams[0]))
+            {
+                InteractiveFurniture[i].GetComponent<Collider>().enabled = false;
+            }*/
+
+            if ((InteractiveFurniture[i].GetComponent<Collider>().enabled == true) && (camControl.currentSceneCam == camControl.sceneCams[0]))
+            {
+                InteractiveFurniture[i].GetComponent<Collider>().enabled = false;
+            }
+        }
+        /*if ((hit.collider.transform.gameObject.layer == 9) && (hit.transform.tag == "interact"))
         {
             hit.collider.transform.gameObject.layer = 10;
             hit.collider.enabled = false;
-        }
+        }*/
     }
 
     void ColliderEnabler ()
     {
-        GameObject[] go = GameObject.FindGameObjectsWithTag("interact");
-
-        for (int i = 0; i < go.Length; i++)
+        for (int i = 0; i < InteractiveFurniture.Length; i++)
         {
-            if (go[i].transform.gameObject.layer == 10)
+            if ((InteractiveFurniture[i].GetComponent<Collider>().enabled == false) && (camControl.currentSceneCam == camControl.sceneCams[1]))
             {
-                go[i].transform.gameObject.layer = 9;
+                InteractiveFurniture[i].GetComponent<Collider>().enabled = true;
             }
         }
     }
@@ -676,6 +679,7 @@ public class GameManager : MonoBehaviour
         if (flowchart.GetExecutingBlocks().Count == 0)
         {
             camControl.ReturnCamPositionOnBack();
+            ColliderEnabler();
             //cameraPositionChange(0);
             //cameraChangeCounter2();
             if (clocks.HerbSwitch == true)
