@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using Fungus;
 
@@ -14,22 +14,23 @@ public class GameManager : MonoBehaviour
     //public CameraFade camerafade1;
     //public CameraFade camerafade2;
 
-    public CrossFade crossfade;
+    //public CrossFade crossfade;
 
     //public GameObject crossfade;
 
     private Scene scene;
 
-    public GameObject currentCam;
+    //private GameObject[] InteractLayerObj;
 
+    public CameraController camControl;
     //public Camera RTCam;
-    public GameObject CAM1; //Camera 1
-    public GameObject CAM2; //Camera 2
+    //public GameObject CAM1; //Camera 1
+    //public GameObject CAM2; //Camera 2
 
-    public GameObject[] CAMholderPos;
+    //public GameObject[] CAMholderPos;
 
-    AudioListener CAM1aud1; //Audio listener for camera 1
-    AudioListener CAM2aud2; //Audio listener for camera 2
+    //AudioListener CAM1aud1; //Audio listener for camera 1
+    //AudioListener CAM2aud2; //Audio listener for camera 2
 
     //public RenderTexture rt1;
     //public RenderTexture rt2;
@@ -64,15 +65,15 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject); //if another instance is present then destroy this instance
         }
     }
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        
-        CAM1aud1 = CAM1.GetComponent<AudioListener>(); //get and set audio listeners to their respective cameras
-        CAM2aud2 = CAM2.GetComponent<AudioListener>();
+        //InteractLayerObj = GetComponent<GameObject>().layer(9);
+        //CAM1aud1 = CAM1.GetComponent<AudioListener>(); //get and set audio listeners to their respective cameras
+        //CAM2aud2 = CAM2.GetComponent<AudioListener>();
 
-        cameraPositionChange(PlayerPrefs.GetInt("CameraPosition")); //Get position of main camera
+        //cameraPositionChange(PlayerPrefs.GetInt("CameraPosition")); //Get position of main camera
 
         flowerpot.GetComponent<GameObject>();
 
@@ -85,21 +86,23 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update ()
+    void Update()
     {
+        Debug.Log("Current scene cam is " + camControl.currentSceneCam.name);
         Scene scene = SceneManager.GetActiveScene();
 
         var SD = SayDialog.GetSayDialog();
-        if (SD.isActiveAndEnabled == false) 
+        if (SD.isActiveAndEnabled == false)
         {
             if (Input.GetMouseButtonDown(0)) //if lmb is down
             {
                 /*CAM1.GetComponent<Camera>()*/
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); //hit raycast from screen/mouse pointer to wherever player is clicking
-                Debug.Log(Camera.main.transform.gameObject.name);
+
+                Ray ray = camControl.currentSceneCam.ScreenPointToRay(Input.mousePosition); //hit raycast from screen/mouse pointer to wherever player is clicking
+                //Debug.Log(Camera.main.transform.gameObject.name);
                 RaycastHit hit;
 
-                if (Physics.Raycast(ray, out hit))
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity, LayerMask.GetMask("Interact")))
                 {
                     Debug.Log(hit.transform.name);
                     if (hit.transform.gameObject.layer != 5)
@@ -123,16 +126,20 @@ public class GameManager : MonoBehaviour
                     {
 
                     }*/
-                    
+                    ColliderDisabler(hit);
+
                 }
 
             }
 
             if (Input.GetMouseButtonDown(1))
             {
-                cameraPositionChange(0);
+                //cameraPositionChange(0);
                 //cameraChangeCounter();
                 //cameraChangeCounter2(); //if rmb is pressed, go back to camera 2
+                camControl.ReturnCamPositionOnBack();
+                ColliderEnabler();
+                
                 MusicPlayer.SetActive(false);
                 audioplay.PauseSound();
                 /*Color temp = ui.Bell1.color; //BELLS
@@ -214,9 +221,9 @@ public class GameManager : MonoBehaviour
         }
     }*/
 
-    void DisableUI_Herbarium ()
+    void DisableUI_Herbarium()
     {
-        if ((ui.Herbarium.enabled == true) && (CAM1.activeInHierarchy == true))
+        if ((ui.Herbarium.enabled == true) && (camControl.currentSceneCam == camControl.sceneCams[0]))
         {
             Color temp = ui.Herbarium.color;
             temp.a = 0.1f;
@@ -228,30 +235,32 @@ public class GameManager : MonoBehaviour
 
             ui.Herbarium_Button_Down();
         }
-        
+
     }
 
-    void CameraHolding(int j)
-    {
-        for (int i = 0; i < CAMholderPos.Length; i++)
-        {
-            if (i == j)
-            {
-                CAM2.transform.position = CAMholderPos[i].transform.position;
-                CAM2.transform.rotation = CAMholderPos[i].transform.rotation;
-                cameraChangeCounter();
-                print(CAMholderPos[i].name);
-                //camerafade2.RedoFade();
-                //break;
-            }
-        }
-    }
+    //void CameraHolding(int j)
+    //{
+    //    for (int i = 0; i < CAMholderPos.Length; i++)
+    //    {
+    //        if (i == j)
+    //        {
+    //            CAM2.transform.position = CAMholderPos[i].transform.position;
+    //            CAM2.transform.rotation = CAMholderPos[i].transform.rotation;
+    //            cameraChangeCounter();
+    //            print(CAMholderPos[i].name);
+    //            //camerafade2.RedoFade();
+    //            //break;
+    //        }
+    //    }
+    //}
 
-    void DeskInteractions (RaycastHit hit, Flowchart flowchart, Scene scene)
+    void DeskInteractions(RaycastHit hit, Flowchart flowchart, Scene scene)
     {
-        if ((hit.transform.tag == "interact") && (hit.transform.name == "Desk")) //if ray hits a gameobject with transform having the tag "interact"
+        if (hit.transform.name == "Desk") //if ray hits a gameobject with transform having the tag "interact"
         {
-            CameraHolding(0);
+            //Debug.Log("Registering Desk condition");
+            //CameraHolding(0);
+            camControl.SetCamPosition(0);
 
             if ((scene.name == "First_Scene"))
             {
@@ -265,11 +274,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void ShelfInteractions (RaycastHit hit, Flowchart flowchart, Scene scene)
+    void ShelfInteractions(RaycastHit hit, Flowchart flowchart, Scene scene)
     {
         if ((hit.transform.tag == "interact") && (hit.transform.name == "Shelf"))
         {
-            CameraHolding(1);
+            //CameraHolding(1);
+            camControl.SetCamPosition(1);
 
             if (scene.name == "First_Scene")
             {
@@ -297,11 +307,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void BedInterations (RaycastHit hit, Flowchart flowchart, Scene scene)
+    void BedInterations(RaycastHit hit, Flowchart flowchart, Scene scene)
     {
         if ((hit.transform.tag == "interact") && (hit.transform.name == "Bed"))
         {
-            CameraHolding(2);
+            //CameraHolding(2);
+            camControl.SetCamPosition(2);
 
             if ((scene.name == "First_Scene"))
             {
@@ -325,7 +336,8 @@ public class GameManager : MonoBehaviour
             CAM2.transform.rotation = CAMholder4.transform.rotation;
             cameraChangeCounter();*/
 
-            CameraHolding(3);
+            //CameraHolding(3);
+            camControl.SetCamPosition(3);
 
             if ((scene.name == "First_Scene"))
             {
@@ -345,11 +357,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void TempleInteractions (RaycastHit hit, Flowchart flowchart, Scene scene)
+    void TempleInteractions(RaycastHit hit, Flowchart flowchart, Scene scene)
     {
         if ((hit.transform.tag == "interact") && (hit.transform.name == "Temple"))
         {
-            CameraHolding(4);
+            //CameraHolding(4);
+            camControl.SetCamPosition(4);
 
             if ((scene.name == "First_Scene"))
             {
@@ -358,11 +371,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void BedsideTableInteraction (RaycastHit hit, Flowchart flowchart, Scene scene)
+    void BedsideTableInteraction(RaycastHit hit, Flowchart flowchart, Scene scene)
     {
         if ((hit.transform.tag == "interact") && (hit.transform.name == "Bedside Table"))
         {
-            CameraHolding(5);
+            //CameraHolding(5);
+            camControl.SetCamPosition(5);
 
             if (clocks.HerbSwitch == true)  //Bring the Herbarium again when players
             {
@@ -397,7 +411,7 @@ public class GameManager : MonoBehaviour
 
     void ObjectInteractions(RaycastHit hit, Flowchart flowchart, Scene scene)
     {
-        if ((hit.transform.tag == "object") && (CAM2.activeInHierarchy == true)) //if ray hits a gameobject with transform having the tag "object"
+        if ((hit.transform.tag == "object") && (camControl.currentSceneCam == camControl.sceneCams[1])) //if ray hits a gameobject with transform having the tag "object"
         {
 
             if (scene.name == "First_Scene")
@@ -440,7 +454,7 @@ public class GameManager : MonoBehaviour
                 {
                     //counterbool = true;
                     //flowchart.ExecuteBlock("Herbarium1");
-                    
+
                     //ui.Bell1.enabled = true;
                     //Invoke("EnableBaby", 2);
                     //ui.TutorialText.fontSize = 12;
@@ -518,77 +532,71 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void cameraChangeCounter() //counter for jumping to zoomed view
+    void ColliderDisabler(RaycastHit hit)
     {
-        int cameraPositionCounter = PlayerPrefs.GetInt("CameraPosition"); //Get integer for camera position from Player Preferences and set it equal to camera position counter
-        cameraPositionCounter++; //increase that int
-        cameraPositionChange(cameraPositionCounter); //set camera postion to that increased int
-        print(cameraPositionCounter);
-        //crossfade.Crossfade_fadeout();
-        //camerafade2.RedoFade();
-        //crossfade.ScreenFade();
-    }
-
-    void FadeRT(MeshRenderer mr, int dest)
-    {
- 
-
-        const float duration = 2;
-        int o = Mathf.Abs(dest - 1);
-        float timer = 0;
-        float alpha;
-        Color col = mr.material.color;
-
-
-        if (timer < duration)
+        if ((hit.collider.transform.gameObject.layer == 9) && (hit.transform.tag == "interact"))
         {
-            timer += Time.deltaTime;
-
-            alpha = Mathf.Lerp(o, dest, timer / duration);
-
-            col = new Color(col.r, col.g, col.b, alpha);
-
-            mr.material.SetColor("_Color", col);
-
+            hit.collider.transform.gameObject.layer = 10;
+            hit.collider.enabled = false;
         }
     }
 
-    public void SetActiveCamera(bool back = false)
+    void ColliderEnabler ()
     {
-        currentCam = back ? CAM1 : CAM2;
-        
+        GameObject[] go = GameObject.FindGameObjectsWithTag("interact");
+
+        for (int i = 0; i < go.Length; i++)
+        {
+            if (go[i].transform.gameObject.layer == 10)
+            {
+                go[i].transform.gameObject.layer = 9;
+            }
+        }
     }
 
-    void cameraPositionChange(int camPosition)
-    {
-        if (camPosition > 1) 
-        {
-            camPosition = 0;
-        }
+    //void cameraChangeCounter() //counter for jumping to zoomed view
+    //{
+    //    int cameraPositionCounter = PlayerPrefs.GetInt("CameraPosition"); //Get integer for camera position from Player Preferences and set it equal to camera position counter
+    //    cameraPositionCounter++; //increase that int
+    //    //cameraPositionChange(cameraPositionCounter); //set camera postion to that increased int
+    //    print(cameraPositionCounter);
+    //    //crossfade.Crossfade_fadeout();
+    //    //camerafade2.RedoFade();
+    //    //crossfade.ScreenFade();
+    //}
 
-        if (camPosition == 0)
-        {
-            CAM1.SetActive(true);
-            CAM1aud1.enabled = true;
-            //CAM1.GetComponent<Camera>().enabled = true;
 
-            CAM2.SetActive(false);
-            CAM2aud2.enabled = false;
-            //CAM2.GetComponent<Camera>().enabled = false;
-        }
 
-        if (camPosition == 1)
-        {
+    //void cameraPositionChange(int camPosition)
+    //{
+    //    if (camPosition > 1) 
+    //    {
+    //        camPosition = 0;
+    //    }
 
-            CAM2.SetActive(true);
-            CAM2aud2.enabled = true;
-            //CAM2.GetComponent<Camera>().enabled = true;
+    //    if (camPosition == 0)
+    //    {
+    //        CAM1.SetActive(true);
+    //        CAM1aud1.enabled = true;
+    //        //CAM1.GetComponent<Camera>().enabled = true;
 
-            CAM1.SetActive(false);
-            CAM1aud1.enabled = false;
-            //CAM1.GetComponent<Camera>().enabled = false;
-        }
-    }
+    //        CAM2.SetActive(false);
+    //        CAM2aud2.enabled = false;
+    //        //CAM2.GetComponent<Camera>().enabled = false;
+    //    }
+
+    //    if (camPosition == 1)
+    //    {
+
+    //        CAM2.SetActive(true);
+    //        CAM2aud2.enabled = true;
+    //        //CAM2.GetComponent<Camera>().enabled = true;
+
+    //        CAM1.SetActive(false);
+    //        CAM1aud1.enabled = false;
+    //        //CAM1.GetComponent<Camera>().enabled = false;
+    //    }
+    //}
 
 
     /*void cameraChangeCounter2() //counter for coming back to original view
@@ -634,26 +642,27 @@ public class GameManager : MonoBehaviour
         }
     }*/
 
-    void MemoryComing ()
+    void MemoryComing()
     {
         ui.MemoryAppear();
         MusicPlayer.SetActive(false);
     }
 
-    void BackButtonEnabler ()
+    void BackButtonEnabler()
     {
-        if (CAM1.activeInHierarchy == true)
+
+        if (camControl.currentSceneCam == camControl.sceneCams[0])
         {
             ui.Back_Button.gameObject.SetActive(false);
         }
 
-        else if (CAM2.activeInHierarchy == true)
+        else if (camControl.currentSceneCam == camControl.sceneCams[1])
         {
             ui.Back_Button.gameObject.SetActive(true);
         }
     }
 
-    void SwitchHerbariumBook ()
+    void SwitchHerbariumBook()
     {
         if (open_book.activeSelf == false)
         {
@@ -662,11 +671,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void BackButton ()
+    public void BackButton()
     {
         if (flowchart.GetExecutingBlocks().Count == 0)
         {
-            cameraPositionChange(0);
+            camControl.ReturnCamPositionOnBack();
+            //cameraPositionChange(0);
             //cameraChangeCounter2();
             if (clocks.HerbSwitch == true)
             {
@@ -675,30 +685,30 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void HerbAnim1Delay ()
+    void HerbAnim1Delay()
     {
         clocks.TimeChange1();
     }
 
-    void HerbAnim2Delay ()
+    void HerbAnim2Delay()
     {
         clocks.TimeChange2();
     }
 
-    void HerbDialogueDelay ()
+    void HerbDialogueDelay()
     {
         if (clocks.TimeSwap == false)
         {
             flowchart.ExecuteBlock("Clock Time Tutorial 2");
         }
-        
+
         else if (clocks.TimeSwap == true)
         {
             flowchart.ExecuteBlock("Herbarium2");
         }
     }
 
-    void HerbImageDelay ()
+    void HerbImageDelay()
     {
         ui.Herbarium.enabled = true;
         ui.Feroz_Wedding_Full.enabled = true;
