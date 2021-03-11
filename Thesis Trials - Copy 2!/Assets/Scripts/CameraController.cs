@@ -76,7 +76,7 @@ public class CameraController : MonoBehaviour
         if (isCrossFading)
         {
             FadeRT(GetFadeDirection());
-        }     
+        } 
     }
 
 

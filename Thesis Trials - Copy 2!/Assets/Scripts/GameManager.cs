@@ -98,34 +98,40 @@ public class GameManager : MonoBehaviour
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, LayerMask.GetMask("Interact")))
                 {
                     Debug.Log(hit.transform.name);
-                    if (hit.transform.gameObject.layer != 5)
+
+                    DeskInteractions(hit, flowchart, scene);
+
+                    ShelfInteractions(hit, flowchart, scene);
+
+                    BedInterations(hit, flowchart, scene);
+
+                    CupboardInteractions(hit, flowchart, scene);
+
+                    TempleInteractions(hit, flowchart, scene);
+
+                    BedsideTableInteraction(hit, flowchart, scene);
+
+                    ObjectInteractions(hit, flowchart, scene);
+
+                    if (hit.transform.gameObject.layer != 10)
                     {
-                        DeskInteractions(hit, flowchart, scene);
 
-                        ShelfInteractions(hit, flowchart, scene);
-
-                        BedInterations(hit, flowchart, scene);
-
-                        CupboardInteractions(hit, flowchart, scene);
-
-                        TempleInteractions(hit, flowchart, scene);
-
-                        BedsideTableInteraction(hit, flowchart, scene);
-
-                        ObjectInteractions(hit, flowchart, scene);
                     }
 
                     /*else if (hit.transform.gameObject.layer == 5)
                     {
 
                     }*/
-                    ColliderDisabler(hit);
 
                 }
-
             }
 
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetKey(KeyCode.H))
+            {
+                flowchart.ExecuteBlock("Help1");
+            }
+            
+            /*if (Input.GetMouseButtonDown(1))
             {
                 //cameraPositionChange(0);
                 //cameraChangeCounter();
@@ -133,14 +139,8 @@ public class GameManager : MonoBehaviour
                 camControl.ReturnCamPositionOnBack();
                 ColliderEnabler();
                 
-                MusicPlayer.SetActive(false);
-                audioplay.PauseSound();
-                /*Color temp = ui.Bell1.color; //BELLS
-                Color temp2 = ui.Bell2.color;
-                temp.a = 0.1f;
-                ui.Bell1.color = temp;
-                temp2.a = 0.1f;
-                ui.Bell2.color = temp2;*/
+                //MusicPlayer.SetActive(false);
+                //audioplay.PauseSound();
 
                 if (scene.name == "Puzzle_Scene")
                 {
@@ -149,19 +149,15 @@ public class GameManager : MonoBehaviour
                     ui.Meher.enabled = (false);
                     ui.TutorialText.text = "";
                 }
-                if (scene.name == "First_Scene")
+                *//*if (scene.name == "First_Scene")
                 {
                     DisableUI_Herbarium();
-                }
-            }
+                }*//*
+            }*/
         }
+        BackButtonEnabler();
 
-        if (Input.GetKey(KeyCode.H))
-        {
-            flowchart.ExecuteBlock("Help1");
-        }
-
-        if (Input.GetKeyDown(KeyCode.I))
+        /*if (Input.GetKeyDown(KeyCode.I))
         {
             if (scene.name == "First_Scene")
             {
@@ -189,7 +185,7 @@ public class GameManager : MonoBehaviour
                 ui.HerbariumPopDown();
                 flowchart.StopBlock("Time Period Tutorial");
             }
-        }
+        }*/
 
         /*if ((ui.Herbarium.enabled == true) && (CAM1.activeInHierarchy == true) && (TutorialBool == false))
         {
@@ -203,7 +199,7 @@ public class GameManager : MonoBehaviour
             //flowchart.ExecuteBlock("Horse1"); //show Horse dialogues
         }*/
 
-        BackButtonEnabler();
+
     }
 
     /*void RayCast_Ignore_UI(RaycastHit hit, Ray ray)
@@ -254,6 +250,7 @@ public class GameManager : MonoBehaviour
             //Debug.Log("Registering Desk condition");
             //CameraHolding(0);
             camControl.SetCamPosition(0);
+            ColliderDisabler(hit);
 
             if ((scene.name == "First_Scene"))
             {
@@ -273,6 +270,7 @@ public class GameManager : MonoBehaviour
         {
             //CameraHolding(1);
             camControl.SetCamPosition(1);
+            ColliderDisabler(hit);
 
             if (scene.name == "First_Scene")
             {
@@ -306,6 +304,7 @@ public class GameManager : MonoBehaviour
         {
             //CameraHolding(2);
             camControl.SetCamPosition(2);
+            ColliderDisabler(hit);
 
             if ((scene.name == "First_Scene"))
             {
@@ -331,6 +330,7 @@ public class GameManager : MonoBehaviour
 
             //CameraHolding(3);
             camControl.SetCamPosition(3);
+            ColliderDisabler(hit);
 
             if ((scene.name == "First_Scene"))
             {
@@ -356,6 +356,7 @@ public class GameManager : MonoBehaviour
         {
             //CameraHolding(4);
             camControl.SetCamPosition(4);
+            ColliderDisabler(hit);
 
             if ((scene.name == "First_Scene"))
             {
@@ -370,6 +371,7 @@ public class GameManager : MonoBehaviour
         {
             //CameraHolding(5);
             camControl.SetCamPosition(5);
+            ColliderDisabler(hit);
 
             if (clocks.HerbSwitch == true)  //Bring the Herbarium again when players
             {
@@ -406,7 +408,7 @@ public class GameManager : MonoBehaviour
     {
         if ((hit.transform.tag == "object") && (camControl.currentSceneCam == camControl.sceneCams[1])) //if ray hits a gameobject with transform having the tag "object"
         {
-
+            print("hit!!!!");
             if (scene.name == "First_Scene")
             {
 
@@ -676,7 +678,8 @@ public class GameManager : MonoBehaviour
 
     public void BackButton()
     {
-        if (flowchart.GetExecutingBlocks().Count == 0)
+        var MD = MenuDialog.GetMenuDialog();
+        if ((flowchart.GetExecutingBlocks().Count == 0) && (MD.isActiveAndEnabled == false))
         {
             camControl.ReturnCamPositionOnBack();
             ColliderEnabler();
@@ -686,6 +689,7 @@ public class GameManager : MonoBehaviour
             {
                 ui.HerbariumPopDown();
             }
+            DisableUI_Herbarium();
         }
     }
 
