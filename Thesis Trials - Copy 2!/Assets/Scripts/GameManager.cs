@@ -411,100 +411,108 @@ public class GameManager : MonoBehaviour
             print("hit!!!!");
             if (scene.name == "First_Scene")
             {
-
-                if (hit.transform.name == "Photograph1")
+                if (camControl.sceneCams[1].transform.position == camControl.cameraPositions[1].transform.position)
                 {
-                    if ((clocks.TimeSwap == false) && (clocks.PhotoSwitch == false))
+                    if ((hit.transform.name == "Orchids") /*&& (ui.Herbarium.enabled == true)*/)
                     {
-                        Invoke("HerbAnim1Delay", 3);
-                        //clocks.TimeChange1();
-                        clocks.PhotoSwitch = true;
-                        flowchart.ExecuteBlock("Clock Time Tutorial 1");
-                        print("working");
+                        flowchart.ExecuteBlock("Flowers1");
+                        flowerpot.SetActive(false);
                     }
 
-                    if ((clocks.TimeSwap == true) && (clocks.PhotoSwitch == false))
+                    if (hit.transform.name == "Photograph1")
                     {
-                        Invoke("HerbAnim2Delay", 3);
-                        //clocks.TimeChange2();
-                        clocks.PhotoSwitch = true;
-                        flowchart.ExecuteBlock("Photo2");
+                        if ((clocks.TimeSwap == false) && (clocks.PhotoSwitch == false))
+                        {
+                            Invoke("HerbAnim1Delay", 3);
+                            //clocks.TimeChange1();
+                            clocks.PhotoSwitch = true;
+                            flowchart.ExecuteBlock("Clock Time Tutorial 1");
+                            print("working");
+                        }
+
+                        if ((clocks.TimeSwap == true) && (clocks.PhotoSwitch == false))
+                        {
+                            Invoke("HerbAnim2Delay", 3);
+                            //clocks.TimeChange2();
+                            clocks.PhotoSwitch = true;
+                            flowchart.ExecuteBlock("Photo2");
+                        }
+
+                        //flowchart.ExecuteBlock("Photo1");
+
+                        if (hit.transform.name == "Gramophone")
+                        {
+                            /*MusicPlayer.SetActive(true);
+                            audioplay.PlaySound();
+                            if ((audioplay.IsPlaying == true) *//*&& (ui.Herbarium.enabled == true) && (Scene1Music == false)*//*)
+                            {
+                                flowchart.ExecuteBlock("Temple2");
+                            }*/
+                        }
+                    }
+                }
+
+                if (camControl.sceneCams[1].transform.position == camControl.cameraPositions[4].transform.position)
+                {
+                    if (hit.transform.name == "Bell1")
+                    {
+                        flowchart.ExecuteBlock("Bell1");
                     }
 
-                    //flowchart.ExecuteBlock("Photo1");
-                }
-
-                if (hit.transform.name == "Bell1")
-                {
-                    flowchart.ExecuteBlock("Bell1");
-                }
-
-                if ((hit.transform.name == "Orchids") /*&& (ui.Herbarium.enabled == true)*/)
-                {
-                    flowchart.ExecuteBlock("Flowers1");
-                    flowerpot.SetActive(false);
-                }
-
-                if (hit.transform.name == "Herbarium_Book")
-                {
-                    //counterbool = true;
-                    //flowchart.ExecuteBlock("Herbarium1");
-
-                    //ui.Bell1.enabled = true;
-                    //Invoke("EnableBaby", 2);
-                    //ui.TutorialText.fontSize = 12;
-                    //ui.TutorialText.text = "The Herbarium is the archive of what Frieda has kept. It holds names and traces of the most important pieces of her life. The Counter number showing up on the bookmark shows you the number of memories you have collected.";
-                    //ui.Baby_Herbarium.enabled = true;
-
-                    //ui.Herbarium_Button_Up();
-
-                    if ((clocks.TimeSwap == false) && (clocks.HerbSwitch == false))
+                    if (hit.transform.name == "Krishna_OBJ")
                     {
-                        //clocks.TimeChange1();
-                        //ui.Herbarium.enabled = true;
-                        //ui.Feroz_Wedding_Full.enabled = true;
-                        Invoke("HerbAnim1Delay", 3);
-                        Invoke("HerbDialogueDelay", 1);
-                        Invoke("HerbImageDelay", 6);
-                        clocks.HerbSwitch = true;
-                        //flowchart.ExecuteBlock("Clock Time Tutorial 2");
+                        flowchart.ExecuteBlock("Krishna1");
+                    }
+                }
+
+                if (camControl.sceneCams[1].transform.position == camControl.cameraPositions[5].transform.position)
+                {
+                    if (hit.transform.name == "Herbarium_Book")
+                    {
+                        //counterbool = true;
+                        //flowchart.ExecuteBlock("Herbarium1");
+
+                        //ui.Bell1.enabled = true;
+                        //Invoke("EnableBaby", 2);
+                        //ui.TutorialText.fontSize = 12;
+                        //ui.TutorialText.text = "The Herbarium is the archive of what Frieda has kept. It holds names and traces of the most important pieces of her life. The Counter number showing up on the bookmark shows you the number of memories you have collected.";
+                        //ui.Baby_Herbarium.enabled = true;
+
                         //ui.Herbarium_Button_Up();
-                        SwitchHerbariumBook();
+
+                        if ((clocks.TimeSwap == false) && (clocks.HerbSwitch == false))
+                        {
+                            //clocks.TimeChange1();
+                            //ui.Herbarium.enabled = true;
+                            //ui.Feroz_Wedding_Full.enabled = true;
+                            Invoke("HerbAnim1Delay", 3);
+                            Invoke("HerbDialogueDelay", 1);
+                            Invoke("HerbImageDelay", 6);
+                            clocks.HerbSwitch = true;
+                            //flowchart.ExecuteBlock("Clock Time Tutorial 2");
+                            //ui.Herbarium_Button_Up();
+                            SwitchHerbariumBook();
+                        }
+
+                        if ((clocks.TimeSwap == true) && (clocks.HerbSwitch == false))
+                        {
+                            //ui.Herbarium.enabled = true;
+                            //ui.Feroz_Wedding_Full.enabled = true;
+                            //clocks.TimeChange2();
+                            Invoke("HerbAnim2Delay", 4);
+                            Invoke("HerbDialogueDelay", 1);
+                            Invoke("HerbImageDelay", 2);
+                            clocks.HerbSwitch = true;
+                            //flowchart.ExecuteBlock("Herbarium2");
+                            //ui.Herbarium_Button_Up();
+                            SwitchHerbariumBook();
+                        }
+
+                        /*if ((clocks.TimeSwap == true) && (clocks.HerbSwitch == true))
+                        {
+                            SwitchHerbariumBook();
+                        }*/
                     }
-
-                    if ((clocks.TimeSwap == true) && (clocks.HerbSwitch == false))
-                    {
-                        //ui.Herbarium.enabled = true;
-                        //ui.Feroz_Wedding_Full.enabled = true;
-                        //clocks.TimeChange2();
-                        Invoke("HerbAnim2Delay", 4);
-                        Invoke("HerbDialogueDelay", 1);
-                        Invoke("HerbImageDelay", 2);
-                        clocks.HerbSwitch = true;
-                        //flowchart.ExecuteBlock("Herbarium2");
-                        //ui.Herbarium_Button_Up();
-                        SwitchHerbariumBook();
-                    }
-
-                    /*if ((clocks.TimeSwap == true) && (clocks.HerbSwitch == true))
-                    {
-                        SwitchHerbariumBook();
-                    }*/
-                }
-
-                if (hit.transform.name == "Krishna_OBJ")
-                {
-                    flowchart.ExecuteBlock("Krishna1");
-                }
-
-                if (hit.transform.name == "Gramophone")
-                {
-                    /*MusicPlayer.SetActive(true);
-                    audioplay.PlaySound();
-                    if ((audioplay.IsPlaying == true) *//*&& (ui.Herbarium.enabled == true) && (Scene1Music == false)*//*)
-                    {
-                        flowchart.ExecuteBlock("Temple2");
-                    }*/
                 }
 
             }
