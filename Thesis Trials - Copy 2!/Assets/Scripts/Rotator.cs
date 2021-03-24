@@ -5,11 +5,12 @@ using UnityEngine;
 public class Rotator : MonoBehaviour
 {
     public float degrees;
-    public bool slow = false;
+    //public bool slow = false;
+    public float targetDegrees;
     // Start is called before the first frame update
     void Start()
     {
-        
+        targetDegrees = degrees;
     }
 
     // Update is called once per frame
@@ -17,16 +18,23 @@ public class Rotator : MonoBehaviour
     {
         transform.RotateAround(this.transform.position, Vector3.up, degrees * Time.deltaTime);
 
-        /*if (slow == true)
+        UpdateDegrees();
+        /*
+        if (slow == true)
         {
             SlowDown();
-        }*/
+        }
+        */
     }
 
-    public void SlowDown()
+    public void UpdateDegrees()
     {
-        print("doing");
-        degrees = Mathf.Lerp(degrees, 0, Time.deltaTime *50);
-        slow = false;
+        degrees = Mathf.Lerp(degrees, targetDegrees, Time.deltaTime * 5);
     }
+
+    public void SetTargetDegreesTo10()
+    {
+        this.targetDegrees = 10f;
+    }
+
 }

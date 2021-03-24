@@ -12,6 +12,11 @@ public class MemorySceneManager : MonoBehaviour
     public Rotator rotator;
 
     public Flowchart flowchart;
+
+    private bool trigger1 = false;
+    private bool trigger2 = false;
+    private bool trigger3 = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,9 +42,12 @@ public class MemorySceneManager : MonoBehaviour
                     print(hit.transform.name);
                     Bat_Memory(hit, flowchart, scene);
                     Sewing_Machine_Memory(hit, flowchart, scene);
+                    Degree_Memory(hit, flowchart, scene);
                 }
             }
-        }  
+        }
+
+        ContinueButton();
     }
 
     void Bat_Memory(RaycastHit hit, Flowchart flowchart, Scene scene)
@@ -49,10 +57,8 @@ public class MemorySceneManager : MonoBehaviour
             //Play sound
             //Run dialogues and UI
             flowchart.ExecuteBlock("Bat");
-            //rotator.slow = true;
-            //rotator.SlowDown(0);
-            //rotator.degrees = 0f;
-            //Invoke("Resume_Rotation", 4);
+            rotator.targetDegrees = 0f;
+            trigger1 = true;
         }
     }
 
@@ -62,18 +68,34 @@ public class MemorySceneManager : MonoBehaviour
         {
             //Play sound
             //Run dialogues and UI
-            if (hit.transform.name == "Sewing_Machine_Reduced")
-            {
-                //Play sound
-                //Run dialogues and UI
-                flowchart.ExecuteBlock("Sewing Machine");
-                //Invoke("Resume_Rotation", 4);
-            }
+            flowchart.ExecuteBlock("Sewing Machine");
+            rotator.targetDegrees = 0f;
+            trigger2 = true;
+        }
+    }
+
+    void Degree_Memory(RaycastHit hit, Flowchart flowchart, Scene scene)
+    {
+        if (hit.transform.name == "Degree")
+        {
+            //Play sound
+            //Run dialogues and UI
+            flowchart.ExecuteBlock("Degree");
+            rotator.targetDegrees = 0f;
+            trigger3 = true;
         }
     }
 
     public void Resume_Rotation()
     {
         rotator.degrees = 10.0f;
+    }
+
+    void ContinueButton ()
+    {
+        if ((trigger1 == true) && (trigger2 == true) && (trigger3 == true))
+        {
+            flowchart.ExecuteBlock("Continue");
+        }
     }
 }
