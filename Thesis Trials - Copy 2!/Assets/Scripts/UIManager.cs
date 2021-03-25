@@ -55,7 +55,7 @@ public class UIManager : MonoBehaviour
         Right_Herbarium.GetComponent<Button>();
         Left_Herbarium.GetComponent<Button>();
 
-        if (scene.name == "First_Scene")
+        if ((scene.name == "First_Scene") || (scene.name == "Second_Scene"))
         {
             Herbarium.enabled = false;
             Baby_Herbarium.enabled = false;
@@ -78,7 +78,7 @@ public class UIManager : MonoBehaviour
             Left_Herbarium.gameObject.SetActive(false);
         }
 
-        if (scene.name == "Puzzle_Scene")
+        /*if (scene.name == "Second_Scene")
         {
             Herbarium.enabled = true;
             Baby_Herbarium.enabled = false;
@@ -91,7 +91,7 @@ public class UIManager : MonoBehaviour
             CounterText.enabled = false;
             RingStarting(scene);
             //Bell2.enabled = false;
-        }
+        }*/
 
     }
 
@@ -132,7 +132,7 @@ public class UIManager : MonoBehaviour
     public void RingStarting(Scene scene)
     {
         
-        if ((scene.name == "First_Scene") || (scene.name == "Puzzle_Scene"))
+        if ((scene.name == "First_Scene") || (scene.name == "Second_Scene"))
         {
             Ring1.GetComponent<Image>();
             Ring2.GetComponent<Image>();

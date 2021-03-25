@@ -13,6 +13,10 @@ public class MemorySceneManager : MonoBehaviour
 
     public Flowchart flowchart;
 
+    public Image Slot1;
+    public Image Slot2;
+    public Image Slot3;
+
     private bool trigger1 = false;
     private bool trigger2 = false;
     private bool trigger3 = false;
@@ -21,6 +25,11 @@ public class MemorySceneManager : MonoBehaviour
     void Start()
     {
         CAM.GetComponent<Camera>();
+
+        Slot1.GetComponent<Transform>();
+        Slot2.GetComponent<Transform>();
+        Slot3.GetComponent<Transform>();
+
     }
 
     // Update is called once per frame
@@ -98,4 +107,11 @@ public class MemorySceneManager : MonoBehaviour
             flowchart.ExecuteBlock("Continue");
         }
     }
+
+    public void OnPressContinue ()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    
 }
