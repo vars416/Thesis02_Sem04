@@ -17,6 +17,9 @@ public class MemorySceneManager : MonoBehaviour
     public Image Slot2;
     public Image Slot3;
 
+    public Light SpotLights;
+    float intensity = 1.0f;
+
     private bool trigger1 = false;
     private bool trigger2 = false;
     private bool trigger3 = false;
@@ -30,6 +33,7 @@ public class MemorySceneManager : MonoBehaviour
         Slot2.GetComponent<Transform>();
         Slot3.GetComponent<Transform>();
 
+        SpotLights.GetComponent<Light>();
     }
 
     // Update is called once per frame
@@ -57,6 +61,7 @@ public class MemorySceneManager : MonoBehaviour
         }
 
         ContinueButton();
+        BlinkingLight();
     }
 
     void Bat_Memory(RaycastHit hit, Flowchart flowchart, Scene scene)
@@ -113,5 +118,19 @@ public class MemorySceneManager : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
-    
+    void BlinkingLight ()
+    {
+
+        if (SpotLights.intensity > 0.01f)
+        {
+            SpotLights.intensity = Mathf.Lerp(SpotLights.intensity, 0.0f, Time.deltaTime);
+        }
+
+        else if (SpotLights.intensity < 0.01f)
+        {
+            SpotLights.intensity = Mathf.Lerp(SpotLights.intensity, 0.4f, Time.deltaTime);
+        }
+    }
+
+
 }

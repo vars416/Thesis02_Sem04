@@ -7559,7 +7559,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23916
+  m_Name: pb_Mesh24012
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9804,7 +9804,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22408
+  m_Name: pb_Mesh22484
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10142,7 +10142,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23932
+  m_Name: pb_Mesh24028
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12823,7 +12823,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23934
+  m_Name: pb_Mesh24030
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16971,7 +16971,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21588
+  m_Name: pb_Mesh21632
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42934,7 +42934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -57.67061, y: -66.95349}
+  scrollPos: {x: -119.67061, y: -19.953491}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 280
@@ -42946,8 +42946,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1458593258}
-  selectedCommands: []
+  - {fileID: 1458593255}
+  selectedCommands:
+  - {fileID: 1458593264}
   variables: []
   description: 
   stepPause: 0
@@ -44105,8 +44106,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 245
   indentLevel: 0
-  storyText: '**As Najma Aapa starts talking about the early days of your father''s
-    first marriage, you start drawing out details of the room in your mind.**'
+  storyText: '**Details of the room''s past emerge in your mind, as Najma Aapa tells
+    you of the early days of your father''s first marriage. **'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -44264,8 +44265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 250
   indentLevel: 0
-  storyText: '**Hearing her talk about the past, you wonder how much this room has
-    seen and been through...**'
+  storyText: '**So many traces of your family here, more than you thought. What this
+    room must have seen and heard...**'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -44280,7 +44281,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1641702685}
 --- !u!114 &1458593262
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -44292,8 +44293,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 251
   indentLevel: 0
-  storyText: Here, you can click on the lit up objects in the room to watch and listen
-    to their role in the story of this family.
+  storyText: Lit it up objects in this memory room can tell you more about the things
+    that have marked and changed those who lived here.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -44328,7 +44329,7 @@ MonoBehaviour:
   fadeTweenType: 4
 --- !u!114 &1458593264
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -44340,8 +44341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 254
   indentLevel: 0
-  storyText: Once you have gone through the objects and filled up the ring, you will
-    get the option to continue ahead.
+  storyText: Once this time ring is complete, you can return to the main scene and
+    your august afternoon.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -44356,7 +44357,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1458593265
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -44376,7 +44377,7 @@ MonoBehaviour:
     booleanVal: 1
   duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 2
   fadeMode: 0
   targetColor:
     colorRef: {fileID: 0}
@@ -44386,7 +44387,7 @@ MonoBehaviour:
     floatVal: 1
 --- !u!114 &1458593266
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -44398,8 +44399,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 252
   indentLevel: 0
-  storyText: As you click on them, you will notice that the incomplete ring of the
-    current time period is slowly filling up.
+  storyText: Notice the incomplete ring, marking the memories' current time period.
+    It will fill up as you discover significant parts of the family story.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -49923,6 +49924,7 @@ MonoBehaviour:
   Slot1: {fileID: 1902125506}
   Slot2: {fileID: 575081699}
   Slot3: {fileID: 192977133}
+  SpotLights: {fileID: 138560566}
 --- !u!4 &2049747554
 Transform:
   m_ObjectHideFlags: 0
@@ -56556,8 +56558,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &919132148156797101
-BoxCollider:
+--- !u!64 &919132148156797101
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -56565,10 +56567,11 @@ BoxCollider:
   m_GameObject: {fileID: 919132148156797100}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 3.3699818, y: 4.7612634, z: 1.0208577}
-  m_Center: {x: 0.027366577, y: 2.1256154, z: -0.010429143}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &919132148588725273
 GameObject:
   m_ObjectHideFlags: 0
