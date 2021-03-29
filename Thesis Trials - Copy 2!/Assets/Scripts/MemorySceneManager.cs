@@ -17,8 +17,9 @@ public class MemorySceneManager : MonoBehaviour
     public Image Slot2;
     public Image Slot3;
 
-    public Light SpotLights;
+    public Light[] SpotLights;
     float intensity = 1.0f;
+    public bool lighter = false;
 
     private bool trigger1 = false;
     private bool trigger2 = false;
@@ -32,8 +33,6 @@ public class MemorySceneManager : MonoBehaviour
         Slot1.GetComponent<Transform>();
         Slot2.GetComponent<Transform>();
         Slot3.GetComponent<Transform>();
-
-        SpotLights.GetComponent<Light>();
     }
 
     // Update is called once per frame
@@ -61,7 +60,7 @@ public class MemorySceneManager : MonoBehaviour
         }
 
         ContinueButton();
-        BlinkingLight();
+        //HitBlinkingLight();
     }
 
     void Bat_Memory(RaycastHit hit, Flowchart flowchart, Scene scene)
@@ -72,6 +71,7 @@ public class MemorySceneManager : MonoBehaviour
             //Run dialogues and UI
             flowchart.ExecuteBlock("Bat");
             rotator.targetDegrees = 0f;
+            HitBlinkingLight();
             trigger1 = true;
         }
     }
@@ -84,6 +84,7 @@ public class MemorySceneManager : MonoBehaviour
             //Run dialogues and UI
             flowchart.ExecuteBlock("Sewing Machine");
             rotator.targetDegrees = 0f;
+            HitBlinkingLight();
             trigger2 = true;
         }
     }
@@ -96,13 +97,22 @@ public class MemorySceneManager : MonoBehaviour
             //Run dialogues and UI
             flowchart.ExecuteBlock("Degree");
             rotator.targetDegrees = 0f;
+            HitBlinkingLight();
             trigger3 = true;
         }
     }
 
-    public void Resume_Rotation()
+    public void Resume_LightAnim()
     {
-        rotator.degrees = 10.0f;
+        for (int i = 0; i < SpotLights.Length; i++)
+        {
+            if (SpotLights[i].GetComponent<Animator>().enabled == false)
+            {
+                SpotLights[i].GetComponent<Animator>().enabled = true;
+                print("Anim working");
+            }
+            //SpotLights[i].intensity = 0.5f;
+        }
     }
 
     void ContinueButton ()
@@ -116,19 +126,15 @@ public class MemorySceneManager : MonoBehaviour
     public void OnPressContinue ()
     {
         SceneManager.LoadScene(3);
+        flowchart.ExecuteBlock("Fade_Out");
     }
 
-    void BlinkingLight ()
+    void HitBlinkingLight ()
     {
-
-        if (SpotLights.intensity > 0.01f)
+        for (int i = 0; i < SpotLights.Length; i++)
         {
-            SpotLights.intensity = Mathf.Lerp(SpotLights.intensity, 0.0f, Time.deltaTime);
-        }
-
-        else if (SpotLights.intensity < 0.01f)
-        {
-            SpotLights.intensity = Mathf.Lerp(SpotLights.intensity, 0.4f, Time.deltaTime);
+            SpotLights[i].GetComponent<Animator>().enabled = false;
+            SpotLights[i].intensity = 0.5f;
         }
     }
 

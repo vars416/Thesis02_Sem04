@@ -55,7 +55,7 @@ public class UIManager : MonoBehaviour
         Right_Herbarium.GetComponent<Button>();
         Left_Herbarium.GetComponent<Button>();
 
-        if ((scene.name == "First_Scene") || (scene.name == "Second_Scene"))
+        if (scene.name == "First_Scene")
         {
             Herbarium.enabled = false;
             Baby_Herbarium.enabled = false;
@@ -78,9 +78,26 @@ public class UIManager : MonoBehaviour
             Left_Herbarium.gameObject.SetActive(false);
         }
 
-        /*if (scene.name == "Second_Scene")
+        if (scene.name == "Second_Scene")
         {
-            Herbarium.enabled = true;
+
+            //Herbarium.enabled = false;
+            //Baby_Herbarium.enabled = false;
+            HerbariumPopDown();
+            Feroz_Wedding_Full.enabled = false;
+            Memory_Layout.enabled = false;
+            Memory_Completed.enabled = false;
+            PortraitsStarting();
+            RingStarting(scene);
+            Feroz.enabled = false;
+            Frieda.enabled = false;
+            Meher.enabled = false;
+            CounterText.enabled = false;
+
+            //Right_Herbarium.gameObject.SetActive(false);
+            //Left_Herbarium.gameObject.SetActive(false);
+
+            /*Herbarium.enabled = true;
             Baby_Herbarium.enabled = false;
             Memory_Herbarium.enabled = true;
             Memory_Layout.enabled = false;
@@ -89,9 +106,9 @@ public class UIManager : MonoBehaviour
             Frieda.enabled = false;
             Meher.enabled = false;
             CounterText.enabled = false;
-            RingStarting(scene);
+            RingStarting(scene);*/
             //Bell2.enabled = false;
-        }*/
+        }
 
     }
 
