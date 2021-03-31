@@ -117,7 +117,7 @@ public class MemorySceneManager : MonoBehaviour
 
     void ContinueButton ()
     {
-        if ((trigger1 == true) && (trigger2 == true) && (trigger3 == true))
+        if ((trigger1 == true) && (trigger2 == true) && (trigger3 == true) /*&& (flowchart.isActiveAndEnabled == false)*/)
         {
             flowchart.ExecuteBlock("Continue");
         }

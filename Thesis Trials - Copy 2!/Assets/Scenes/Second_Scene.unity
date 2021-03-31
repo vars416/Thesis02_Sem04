@@ -1653,7 +1653,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2218
+  m_Name: pb_Mesh-13536
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1935,10 +1935,10 @@ RectTransform:
   m_Father: {fileID: 385226817}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 650, y: -50}
-  m_SizeDelta: {x: 1300, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &298902160
 MonoBehaviour:
@@ -2117,7 +2117,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2036
+  m_Name: pb_Mesh-13354
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2379,7 +2379,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22602
+  m_Name: pb_Mesh31562
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2575,7 +2575,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000018477, y: -118}
-  m_SizeDelta: {x: 1300, y: 310}
+  m_SizeDelta: {x: 1300, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &385226818
 MonoBehaviour:
@@ -29489,7 +29489,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21274
+  m_Name: pb_Mesh30234
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29947,7 +29947,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21392
+  m_Name: pb_Mesh30352
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30781,10 +30781,10 @@ RectTransform:
   m_Father: {fileID: 385226817}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 650, y: -260}
-  m_SizeDelta: {x: 1300, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &868713151
 MonoBehaviour:
@@ -30963,7 +30963,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22626
+  m_Name: pb_Mesh31586
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -55270,7 +55270,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21814
+  m_Name: pb_Mesh30776
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -56220,7 +56220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1137112138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56364,7 +56364,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2206
+  m_Name: pb_Mesh-13524
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -81154,10 +81154,10 @@ RectTransform:
   m_Father: {fileID: 385226817}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 650, y: -155}
-  m_SizeDelta: {x: 1300, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390504353
 MonoBehaviour:
@@ -81267,7 +81267,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21838
+  m_Name: pb_Mesh30798
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -82212,7 +82212,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22600
+  m_Name: pb_Mesh31560
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -82590,135 +82590,12 @@ GameObject:
   - component: {fileID: 1458593210}
   - component: {fileID: 1458593209}
   - component: {fileID: 1458593219}
-  - component: {fileID: 1458593231}
-  - component: {fileID: 1458593230}
-  - component: {fileID: 1458593229}
-  - component: {fileID: 1458593228}
-  - component: {fileID: 1458593227}
-  - component: {fileID: 1458593226}
-  - component: {fileID: 1458593225}
-  - component: {fileID: 1458593213}
-  - component: {fileID: 1458593237}
-  - component: {fileID: 1458593236}
-  - component: {fileID: 1458593235}
-  - component: {fileID: 1458593234}
-  - component: {fileID: 1458593233}
-  - component: {fileID: 1458593232}
-  - component: {fileID: 1458593242}
-  - component: {fileID: 1458593241}
-  - component: {fileID: 1458593244}
-  - component: {fileID: 1458593243}
-  - component: {fileID: 1458593208}
-  - component: {fileID: 1458593247}
-  - component: {fileID: 1458593246}
-  - component: {fileID: 1458593245}
-  - component: {fileID: 1458593249}
-  - component: {fileID: 1458593248}
-  - component: {fileID: 1458593250}
-  - component: {fileID: 1458593255}
-  - component: {fileID: 1458593254}
-  - component: {fileID: 1458593251}
-  - component: {fileID: 1458593259}
-  - component: {fileID: 1458593258}
-  - component: {fileID: 1458593252}
-  - component: {fileID: 1458593262}
-  - component: {fileID: 1458593261}
-  - component: {fileID: 1458593260}
-  - component: {fileID: 1458593257}
-  - component: {fileID: 1458593256}
-  - component: {fileID: 1458593267}
-  - component: {fileID: 1458593266}
-  - component: {fileID: 1458593265}
-  - component: {fileID: 1458593264}
-  - component: {fileID: 1458593273}
-  - component: {fileID: 1458593272}
-  - component: {fileID: 1458593271}
-  - component: {fileID: 1458593270}
-  - component: {fileID: 1458593269}
-  - component: {fileID: 1458593278}
-  - component: {fileID: 1458593277}
-  - component: {fileID: 1458593276}
-  - component: {fileID: 1458593280}
-  - component: {fileID: 1458593279}
   - component: {fileID: 1458593274}
-  - component: {fileID: 1458593282}
   - component: {fileID: 1458593238}
-  - component: {fileID: 1458593275}
-  - component: {fileID: 1458593239}
-  - component: {fileID: 1458593283}
-  - component: {fileID: 1458593268}
-  - component: {fileID: 1458593285}
-  - component: {fileID: 1458593284}
-  - component: {fileID: 1458593286}
-  - component: {fileID: 1458593288}
-  - component: {fileID: 1458593290}
-  - component: {fileID: 1458593289}
-  - component: {fileID: 1458593292}
-  - component: {fileID: 1458593291}
-  - component: {fileID: 1458593293}
-  - component: {fileID: 1458593297}
-  - component: {fileID: 1458593296}
-  - component: {fileID: 1458593298}
-  - component: {fileID: 1458593306}
-  - component: {fileID: 1458593308}
-  - component: {fileID: 1458593307}
-  - component: {fileID: 1458593311}
-  - component: {fileID: 1458593309}
-  - component: {fileID: 1458593310}
-  - component: {fileID: 1458593312}
-  - component: {fileID: 1458593299}
-  - component: {fileID: 1458593323}
-  - component: {fileID: 1458593322}
-  - component: {fileID: 1458593321}
-  - component: {fileID: 1458593320}
-  - component: {fileID: 1458593319}
-  - component: {fileID: 1458593317}
-  - component: {fileID: 1458593316}
-  - component: {fileID: 1458593315}
-  - component: {fileID: 1458593314}
-  - component: {fileID: 1458593313}
-  - component: {fileID: 1458593305}
-  - component: {fileID: 1458593304}
-  - component: {fileID: 1458593303}
-  - component: {fileID: 1458593302}
-  - component: {fileID: 1458593301}
-  - component: {fileID: 1458593325}
-  - component: {fileID: 1458593349}
-  - component: {fileID: 1458593347}
-  - component: {fileID: 1458593346}
-  - component: {fileID: 1458593345}
-  - component: {fileID: 1458593344}
-  - component: {fileID: 1458593343}
-  - component: {fileID: 1458593341}
-  - component: {fileID: 1458593340}
-  - component: {fileID: 1458593339}
-  - component: {fileID: 1458593338}
-  - component: {fileID: 1458593335}
-  - component: {fileID: 1458593334}
-  - component: {fileID: 1458593331}
-  - component: {fileID: 1458593327}
-  - component: {fileID: 1458593330}
-  - component: {fileID: 1458593329}
-  - component: {fileID: 1458593326}
-  - component: {fileID: 1458593328}
-  - component: {fileID: 1458593350}
-  - component: {fileID: 1458593355}
-  - component: {fileID: 1458593354}
-  - component: {fileID: 1458593353}
-  - component: {fileID: 1458593359}
-  - component: {fileID: 1458593358}
-  - component: {fileID: 1458593357}
-  - component: {fileID: 1458593356}
-  - component: {fileID: 1458593253}
-  - component: {fileID: 1458593361}
-  - component: {fileID: 1458593360}
   - component: {fileID: 1458593263}
-  - component: {fileID: 1458593287}
-  - component: {fileID: 1458593300}
   - component: {fileID: 1458593332}
   - component: {fileID: 1458593324}
   - component: {fileID: 1458593318}
-  - component: {fileID: 1458593295}
   - component: {fileID: 1458593294}
   - component: {fileID: 1458593281}
   - component: {fileID: 1458593240}
@@ -82733,6 +82610,15 @@ GameObject:
   - component: {fileID: 1458593215}
   - component: {fileID: 1458593214}
   - component: {fileID: 1458593212}
+  - component: {fileID: 1458593213}
+  - component: {fileID: 1458593208}
+  - component: {fileID: 1458593229}
+  - component: {fileID: 1458593228}
+  - component: {fileID: 1458593227}
+  - component: {fileID: 1458593226}
+  - component: {fileID: 1458593225}
+  - component: {fileID: 1458593231}
+  - component: {fileID: 1458593230}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -82749,25 +82635,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458593207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 39
-  indentLevel: 0
-  storyText: Oh don't mind the vase, I'll take care of it... Madam got these fresh,
-    earlier today morning, we didn't think to move it.
+  nodeRect:
+    serializedVersion: 2
+    x: 25.353683
+    y: 77.39595
+    width: 113
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 223
+  blockName: Thank_You
   description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1458593229}
+  - {fileID: 1458593228}
+  - {fileID: 1458593227}
+  suppressAllAutoSelections: 0
 --- !u!114 &1458593209
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -82784,7 +82671,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -117.4306
     y: 76.5263
-    width: 95.05494
+    width: 97
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -82797,7 +82684,6 @@ MonoBehaviour:
   - {fileID: 1458593219}
   - {fileID: 1458593324}
   - {fileID: 1458593318}
-  - {fileID: 1458593295}
   - {fileID: 1458593294}
   - {fileID: 1458593281}
   - {fileID: 1458593240}
@@ -82813,6 +82699,7 @@ MonoBehaviour:
   - {fileID: 1458593212}
   - {fileID: 1458593215}
   - {fileID: 1458593263}
+  - {fileID: 1458593213}
   - {fileID: 1458593274}
   suppressAllAutoSelections: 0
 --- !u!114 &1458593210
@@ -82828,21 +82715,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 293.09158, y: -6.2664337}
+  scrollPos: {x: 121.64632, y: 9.604046}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 563
-  zoom: 0.9100001
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1458593209}
-  selectedCommands:
-  - {fileID: 1458593240}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -82870,7 +82755,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1458593212
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -82882,9 +82767,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 221
   indentLevel: 0
-  storyText: '**Also, this makes me wonder why they left each other when I just learnt
-    that papa used to visit her and was good friends with her until his last days!
-    **'
+  storyText: '**And yet, that Papa used to visit her lately and was good friends
+    with her until his last days. Why must they all leave me with so many questions**'
   description: 
   character: {fileID: 1844474985}
   portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
@@ -82906,27 +82790,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458593207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 24
+  itemId: 222
   indentLevel: 0
-  storyText: A Hindu Temple altar in an Anglo-Indian's house. That's...uncommon?
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 1458593208}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &1458593214
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -82938,8 +82816,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 220
   indentLevel: 0
-  storyText: '** I can''t imagine how everyone around here must''ve talked about
-    her when they left each other... must be terrible**'
+  storyText: '** The things the family says. How everyone around here must have spoken
+    about her when they separated... People can be terrible**'
   description: 
   character: {fileID: 1844474985}
   portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
@@ -82954,7 +82832,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1458593215
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -82966,8 +82844,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 219
   indentLevel: 0
-  storyText: '**I guess the only way to get answers is by waiting 30 minutes for
-    Meher Aunty now... She definitely must be knowing something!**'
+  storyText: '**All I can do for answers is waiting for this afternoon to pass...If
+    anyone will be knowing things about this, it will be Meher Aunty**'
   description: 
   character: {fileID: 1844474985}
   portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
@@ -82982,7 +82860,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1458593216
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -82994,10 +82872,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 218
   indentLevel: 0
-  storyText: '**Just why...
-
-    Also, Frieda aunty gave up her education to get
-    married to Papa! Was she just a trophy wife for him?**'
+  storyText: '**All these stories, nothing but questions...Also, Frieda aunty giving
+    up her education to get married! Was she a trophy wife for him?**'
   description: 
   character: {fileID: 1844474985}
   portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
@@ -83012,7 +82888,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1458593217
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -83024,11 +82900,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 217
   indentLevel: 0
-  storyText: '**As she leaves you think to yourself-
+  storyText: '**You stand alone in the room now, thoughts filling your mind**
 
-    Why did Papa stop me from
-    pursuing acting when he knew how it felt to get your dreams snatched from you...
-    ** '
+    Why
+    did Papa stop me pursuing my own dreams, if he knew how it felt to get them snatched
+    from you... **'
   description: 
   character: {fileID: 1844474985}
   portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
@@ -83043,7 +82919,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1458593218
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -83055,7 +82931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 216
   indentLevel: 0
-  storyText: 'Bye Aapa... '
+  storyText: Yes, thank your for everything Aapa...
   description: 
   character: {fileID: 1844474985}
   portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
@@ -83082,7 +82958,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 0
-  storyText: Hmmm... I see... Thanks for telling me Aapa
+  storyText: Thank you Aapa. I wish Papa had told me more of this. He did not share
+    much.
   description: 
   character: {fileID: 1844474985}
   portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
@@ -83097,7 +82974,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1947864239}
 --- !u!114 &1458593220
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -83109,7 +82986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 215
   indentLevel: 0
-  storyText: Now bye beta!
+  storyText: Goodbye beta!
   description: 
   character: {fileID: 759292556}
   portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
@@ -83124,7 +83001,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 509815680}
 --- !u!114 &1458593221
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -83136,8 +83013,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 214
   indentLevel: 0
-  storyText: She has spare keys to let herself in. Make sure to tell her that madam-ji
-    is out today so she too can decide if she wants to wait or leave...
+  storyText: What am I saying, she has spare keys to let herself in. Make sure to
+    tell her that madam-ji is out today? She'll decide if she wants to wait or leave...
   description: 
   character: {fileID: 759292556}
   portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
@@ -83152,7 +83029,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 509815680}
 --- !u!114 &1458593222
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -83164,9 +83041,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 213
   indentLevel: 0
-  storyText: Yes yes. She usually visits every Wednesday afternoons so chances are
-    she'll be coming today too. it's good that you are here so she won't have to
-    wait oustide the house
+  storyText: Yes, yes. She usually visits mid afternoon on Wednesdays, to chat and
+    watch the sea from the balcony. I suspect she'll be coming today too. Good you
+    are here, she won't have to wait outside the house.
   description: 
   character: {fileID: 759292556}
   portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
@@ -83181,7 +83058,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 509815680}
 --- !u!114 &1458593223
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -83208,7 +83085,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1458593224
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -83220,7 +83097,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 211
   indentLevel: 0
-  storyText: Your aunty will be coming here in about half an hour anyways.
+  storyText: In any case, it won't be so long, your aunty will likely be by here
+    soon.
   description: 
   character: {fileID: 759292556}
   portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
@@ -83247,18 +83125,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 484
-    y: 28
-    width: 96.15384
+    x: 175.35368
+    y: 114.39595
+    width: 90
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 23
-  blockName: Temple1
+  itemId: 228
+  blockName: Restart
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1458593213}
+  - {fileID: 1458593230}
   suppressAllAutoSelections: 0
 --- !u!114 &1458593226
 MonoBehaviour:
@@ -83269,24 +83147,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458593207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 22
-  indentLevel: 0
-  storyText: A lady's personal almirah isn't exactly a thing I should be opening...
+  nodeRect:
+    serializedVersion: 2
+    x: 183.35368
+    y: 53.39595
+    width: 73
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 227
+  blockName: Quit
   description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1458593231}
+  suppressAllAutoSelections: 0
 --- !u!114 &1458593227
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -83296,24 +83174,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458593207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 363.2658
-    y: 75
-    width: 108.24175
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 21
-  blockName: Cupboard1
+  itemId: 226
+  indentLevel: 0
+  text: Restart
   description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593226}
-  suppressAllAutoSelections: 0
+  targetBlock: {fileID: 1458593225}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &1458593228
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -83323,25 +83199,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458593207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 20
+  itemId: 225
   indentLevel: 0
-  storyText: A bed in a study, so well kept. This seems to be the most lived room
-    in the house.
+  text: Quit
   description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
+  targetBlock: {fileID: 1458593226}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &1458593229
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -83351,24 +83224,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458593207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 264.2658
-    y: 77.83725
-    width: 76.37363
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 19
-  blockName: Bed1
+  itemId: 224
+  indentLevel: 0
+  storyText: Thank you for playing our prototype. Let us know what you think about
+    it!
   description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593228}
-  suppressAllAutoSelections: 0
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1947864239}
 --- !u!114 &1458593230
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -83378,24 +83252,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458593207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 18
+  itemId: 230
   indentLevel: 0
-  storyText: Hmmm, it doesn't look like the stamp is here...
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 4a91fd6de66221c45a99913cb1d89ee7, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Intro_Scene
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!114 &1458593231
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -83405,191 +83271,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458593207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e1337544a71d4d5dab5510fe86ddca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 154.42857
-    y: 78.57143
-    width: 82.967026
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 17
-  blockName: Desk1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593230}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593232
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 32
+  itemId: 229
   indentLevel: 0
-  storyText: Why is Frieda ji having my childhood photograph in her room? How much
-    does she know me?
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593233
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 31
-  indentLevel: 0
-  storyText: Is that me? I think it is! I can recognize Meher aunty's backyard!
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593234
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 946.64636
-    y: 74.038925
-    width: 87.36263
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 30
-  blockName: Photo1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593233}
-  - {fileID: 1458593232}
-  - {fileID: 1458593299}
-  - {fileID: 1458593302}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593235
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 29
-  indentLevel: 0
-  storyText: '** Wait, that photograph! **'
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1458593236
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 28
-  indentLevel: 0
-  storyText: '** Here it is... **'
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1458593237
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 549.2504
-    y: 86.13636
-    width: 90.65933
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 27
-  blockName: Stamp1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593236}
-  - {fileID: 1458593235}
-  suppressAllAutoSelections: 0
 --- !u!114 &1458593238
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -83605,37 +83291,9 @@ MonoBehaviour:
   parentBlock: {fileID: 1458593209}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
---- !u!114 &1458593239
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 83
-  indentLevel: 0
-  storyText: '**Krishna on her altar. Seems to be the new icon all over Bombay lately.
-    George Harrison gets credit for that too. **'
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
 --- !u!114 &1458593240
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -83647,10 +83305,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 210
   indentLevel: 0
-  storyText: '**Turning and pointing at you**
+  storyText: '**She turns and smiles as you get up to follow, lifting her hand **
 
-    Feel free to stay here beta! I
-    am leaving now but you can wait here for Frieda madam.'
+    Stay
+    beta, your father would be happy to know you are here. He came often and spoke
+    of you. You are most welcome to wait here for Frieda madam''s return.'
   description: 
   character: {fileID: 759292556}
   portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
@@ -83663,621 +83322,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 509815680}
---- !u!114 &1458593241
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 36
-  indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 9ce9ef26c65832144a0d6de0b820bd40, type: 3}
-  volume: 1
-  waitUntilFinished: 0
---- !u!114 &1458593242
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 685.7342
-    y: 166.12659
-    width: 76.37363
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 35
-  blockName: Bell1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593241}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593243
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 38
-  indentLevel: 0
-  storyText: Orchids? That's an unusual choice, so rare and expensive this season...
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593244
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 509
-    y: 145
-    width: 98.35164
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 37
-  blockName: Flowers1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593208}
-  - {fileID: 1458593243}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593245
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1162.4818
-    y: 244.56883
-    width: 77.47253
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 42
-  blockName: Bell2
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593255}
-  - {fileID: 1458593254}
-  - {fileID: 1458593300}
-  - {fileID: 1458593251}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593246
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 41
-  indentLevel: 0
-  text: Ask about the temple altar
-  description: 
-  targetBlock: {fileID: 1458593245}
-  hideIfVisited: 1
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 1137112138}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &1458593247
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 979.71985
-    y: 254.15863
-    width: 112.63736
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 40
-  blockName: CallNajma1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593325}
-  - {fileID: 1458593355}
-  - {fileID: 1458593354}
-  - {fileID: 1458593353}
-  - {fileID: 1458593253}
-  - {fileID: 1458593252}
-  - {fileID: 1458593246}
-  - {fileID: 1458593361}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593248
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 929.7831
-    y: 117.180046
-    width: 112.63736
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 44
-  blockName: Herbarium1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593288}
-  - {fileID: 1458593250}
-  - {fileID: 1458593283}
-  - {fileID: 1458593311}
-  - {fileID: 1458593268}
-  - {fileID: 1458593350}
-  - {fileID: 1458593301}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593249
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1170.181
-    y: 303.24387
-    width: 89.56044
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 43
-  blockName: Photo3
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593262}
-  - {fileID: 1458593261}
-  - {fileID: 1458593260}
-  - {fileID: 1458593257}
-  - {fileID: 1458593273}
-  - {fileID: 1458593272}
-  - {fileID: 1458593256}
-  - {fileID: 1458593271}
-  - {fileID: 1458593269}
-  - {fileID: 1458593266}
-  - {fileID: 1458593278}
-  - {fileID: 1458593277}
-  - {fileID: 1458593276}
-  - {fileID: 1458593270}
-  - {fileID: 1458593267}
-  - {fileID: 1458593265}
-  - {fileID: 1458593264}
-  - {fileID: 1458593287}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593250
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 45
-  indentLevel: 0
-  storyText: A Herbarium? Frieda keeps more things here than my whole family combined.
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593251
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 51
-  indentLevel: 0
-  targetFlowchart: {fileID: 1458593210}
-  targetBlock: {fileID: 1458593247}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 5
-  callMode: 0
---- !u!114 &1458593252
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 54
-  indentLevel: 0
-  text: Ask how Frieda came to have this photograph
-  description: 
-  targetBlock: {fileID: 1458593249}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 1137112138}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &1458593253
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 190
-  indentLevel: 0
-  storyText: I just wished to hear a couple more things, quickly
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593254
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 48
-  indentLevel: 0
-  storyText: From what she has told me, her father was desi and Hindu. They were
-    very close, he passed just before she was married.
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593255
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 47
-  indentLevel: 0
-  storyText: Aapa, is your madam-ji a Hindu? Based on her name, I thought she was
-    Christian.
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593256
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 59
-  indentLevel: 0
-  storyText: Yes yes. She sometimes comes and stays a while. Madam ji says she's
-    jealous of the balcony **she smiles**
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593257
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 58
-  indentLevel: 0
-  storyText: '**This strange afternoon is not getting any less strange... What was
-    Papa thinking.. **'
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593258
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 53
-  indentLevel: 0
-  storyText: Use LMB on furnitures to zoom in on objects and click on items; 'Back'
-    to zoom out.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1458593259
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 212.94453
-    y: 151.5538
-    width: 80.769226
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 52
-  blockName: Help1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593258}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593260
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 57
-  indentLevel: 0
-  storyText: It was given to Madam ji by Feroz Saab. They were talking much more
-    of late. There may be more you would recognize in the room.
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593261
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 56
-  indentLevel: 0
-  storyText: "That? \nOh that is you! \nIt did cross my mind, I can see the similarity
-    now..."
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593262
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 55
-  indentLevel: 0
-  storyText: Aapa...my picture. Does Frieda ji have more photographs like this here?
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
 --- !u!114 &1458593263
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -84298,274 +83342,6 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 0}
   fadeTexture: {fileID: 0}
   fadeTweenType: 4
---- !u!114 &1458593264
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 63
-  indentLevel: 0
-  duration: 1
-  targetAlpha: 0
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  fadeTweenType: 4
---- !u!114 &1458593265
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 62
-  indentLevel: 0
-  storyText: ....
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593266
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 61
-  indentLevel: 0
-  storyText: I have come and gone for a long time here. First when she arrived as
-    a newly wed bride with Feroz Saab... That was long before you of course.
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593267
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 60
-  indentLevel: 0
-  storyText: ....
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593268
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 85
-  indentLevel: 0
-  storyText: Marrying right now, I can't even imagine it! What could they both have
-    been feeling that day...
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593269
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 69
-  indentLevel: 0
-  storyText: Aapa, how long have you been working for Frieda ji?
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593270
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 68
-  indentLevel: 0
-  storyText: There was, there was. Let's see... I may remember hearing of the day
-    it started, a bit hazily. Let me think...
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593271
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 67
-  indentLevel: 0
-  storyText: '**Is this really how less I know my own family? Why have they been
-    hiding all this?**'
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593272
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 66
-  indentLevel: 0
-  storyText: Meher Aunty? You know her as well?
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593273
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 65
-  indentLevel: 0
-  storyText: Or maybe it was Meher madam ji, it has been too long now. **she smiles**
-    I am growing older everyday...
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
 --- !u!114 &1458593274
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -84580,174 +83356,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 79
   indentLevel: 0
---- !u!114 &1458593275
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 40.064583
-    y: 35.661568
-    width: 96.15384
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 81
-  blockName: Krishna1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593239}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593276
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 73
-  indentLevel: 0
-  storyText: Certainly there was more than that, no?
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593277
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 72
-  indentLevel: 0
-  storyText: They wouldn't have said much to me you know. I suppose they both had
-    different wants, different expectations.
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593278
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 71
-  indentLevel: 0
-  storyText: Do you know why their mariage ended?
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593279
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 77
-  indentLevel: 0
-  storyText: '**I should go closer to the door and call her, she might not hear me
-    from here...**'
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1458593280
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 191.17001
-    y: 231.52354
-    width: 113.73626
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 76
-  blockName: CallNajma2
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593279}
-  - {fileID: 1458593282}
-  suppressAllAutoSelections: 0
 --- !u!114 &1458593281
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -84759,8 +83370,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 209
   indentLevel: 0
-  storyText: Haye Allah! I hope he hasn't misplaced the ironed clothes like the last
-    time I went late to collect them
+  storyText: Haye Allah! He misplaced the ironed clothes the last time I came late.
+    Let me get there in time.
   description: 
   character: {fileID: 759292556}
   portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
@@ -84773,310 +83384,9 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 509815680}
---- !u!114 &1458593282
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d52ce2dfbc0b4dc4aa04334fc76695e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 80
-  indentLevel: 0
-  flowchart: {fileID: 1458593210}
-  blockName:
-    stringRef: {fileID: 0}
-    stringVal: CallNajma2
---- !u!114 &1458593283
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 84
-  indentLevel: 0
-  storyText: "Wait, is that Father? He looks so young... \nIf he hears me thinking
-    this he will be frowning. But I still see why people compared him to Dev Anand."
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593284
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 87
-  indentLevel: 0
-  storyText: Very calming music... It's as if I am in Krishna's temple in Vrindavan
-    right now...
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593285
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 395.20148
-    y: 131.79544
-    width: 97.25275
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 86
-  blockName: Temple2
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593284}
-  - {fileID: 1458593286}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593286
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 88
-  indentLevel: 0
-  storyText: I wonder if Frieda is a follower of Krishna...
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593287
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 200
-  indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: Trial_Scene 1
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
---- !u!114 &1458593288
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 90
-  indentLevel: 0
-  storyText: 'The Herbarium is the archive of what Frieda treasures. It holds names
-    and traces of the most important moments of her life. '
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 387116519}
---- !u!114 &1458593289
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 92
-  indentLevel: 0
-  storyText: You are here in a stifling afternoon of 1966. But Frieda's time in this
-    room extends several periods. These are arcs of time that will help keep track
-    of the period of time attached to a moment, or memory.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 387116519}
---- !u!114 &1458593290
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 370.3991
-    y: 214.78592
-    width: 162.08789
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 91
-  blockName: Time Period Tutorial
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593289}
-  - {fileID: 1458593293}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593291
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 94
-  indentLevel: 0
-  storyText: Hold down 'I' to see your current time period.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 387116519}
---- !u!114 &1458593292
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 628.92255
-    y: 233.9288
-    width: 120.329666
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 93
-  blockName: Ring Tutorial
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593291}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593293
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f1ca510a57aa47568a5e4ee558ff41f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 95
-  indentLevel: 0
 --- !u!114 &1458593294
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -85088,8 +83398,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 208
   indentLevel: 0
-  storyText: Which I unfortunately cannot answer because I am already too late and
-    I need to leave for the Istreewala (Ironing person) now!
+  storyText: Others than myself surely have more answers for you. It's already past
+    time that I leave for the Istreewala (Ironing person) !
   description: 
   character: {fileID: 759292556}
   portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
@@ -85102,612 +83412,9 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 509815680}
---- !u!114 &1458593295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 207
-  indentLevel: 0
-  storyText: But, I have more questions now!
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1458593296
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 99
-  indentLevel: 0
-  storyText: Notice the clock! Time is special here. Only when you find an object
-    that is significant to Frieda's life will the clock move forward...
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 387116519}
---- !u!114 &1458593297
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 699.317
-    y: 70.838615
-    width: 167.5824
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 98
-  blockName: Clock Time Tutorial 1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593296}
-  - {fileID: 1458593298}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593298
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 100
-  indentLevel: 0
-  targetFlowchart: {fileID: 1458593210}
-  targetBlock: {fileID: 1458593234}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &1458593299
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 120
-  indentLevel: 0
-  storyText: Maybe, Najma Aapa would know something
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593300
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 201
-  indentLevel: 0
-  storyText: She still keeps an altar in his honor.
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1458593301
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 146
-  indentLevel: 0
-  targetFlowchart: {fileID: 1458593210}
-  targetBlock: {fileID: 1458593344}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &1458593302
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 145
-  indentLevel: 0
-  targetFlowchart: {fileID: 1458593210}
-  targetBlock: {fileID: 1458593303}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &1458593303
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1114.2946
-    y: 71.52601
-    width: 120.329666
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 144
-  blockName: NajmaTalks1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593349}
-  - {fileID: 1458593347}
-  - {fileID: 1458593346}
-  - {fileID: 1458593345}
-  - {fileID: 1458593338}
-  - {fileID: 1458593335}
-  - {fileID: 1458593330}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593304
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 143
-  indentLevel: 0
-  storyText: I should call Najma Aapa before she leaves. She might know more about
-    these plants, or why my Father sent me.
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593305
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 142
-  indentLevel: 0
-  targetFlowchart: {fileID: 1458593210}
-  targetBlock: {fileID: 1458593247}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &1458593306
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 698.8907
-    y: 115.29719
-    width: 168.6813
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 114
-  blockName: Clock Time Tutorial 2
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593308}
-  - {fileID: 1458593307}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593307
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 113
-  indentLevel: 0
-  targetFlowchart: {fileID: 1458593210}
-  targetBlock: {fileID: 1458593248}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &1458593308
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 112
-  indentLevel: 0
-  storyText: Notice the clock! Time is special here. Only when you find an object
-    that is significant to Frieda's life will the clock move forward...
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 387116519}
---- !u!114 &1458593309
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 861.7136
-    y: 165.25925
-    width: 87.36263
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 117
-  blockName: Horse1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593310}
-  - {fileID: 1458593312}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593310
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 118
-  indentLevel: 0
-  storyText: A horse race? Father did love to bet at the races at Mahalaxmi Race
-    course...
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1458593311
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 115
-  indentLevel: 0
-  storyText: He must be around my age here, most likely. Or maybe younger still.
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593312
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 119
-  indentLevel: 0
-  storyText: Could this be related?
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1458593313
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 141
-  indentLevel: 0
-  targetFlowchart: {fileID: 1458593210}
-  targetBlock: {fileID: 1458593247}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &1458593314
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 140
-  indentLevel: 0
-  storyText: I should ask Najma Aapa before she leaves. She could know more about
-    some of this.
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593315
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 139
-  indentLevel: 0
-  storyText: Why is Frieda ji having my childhood photograph in her room? That is
-    so strange!
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593316
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 138
-  indentLevel: 0
-  storyText: Is that me? I think it is! I can recognize Meher aunty's backyard!
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593317
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 750.51733
-    y: 292.11203
-    width: 88.46153
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 194
-  blockName: Photo2
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593316}
-  - {fileID: 1458593315}
-  - {fileID: 1458593314}
-  - {fileID: 1458593313}
-  suppressAllAutoSelections: 0
 --- !u!114 &1458593318
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -85719,8 +83426,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 206
   indentLevel: 0
-  storyText: And now learning that he wanted to be a professional player explains
-    so much... He used to be so happy on those days
+  storyText: He seemed so happy on those days. Knowing he longed to be a professional
+    player explains many things. There is so much more I wish I knew...
   description: 
   character: {fileID: 1844474985}
   portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
@@ -85733,153 +83440,9 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1458593319
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 131
-  indentLevel: 0
-  storyText: "He must be around my age here, most likely. Or maybe younger still.
-    \nMarrying right now, I can't even imagine it! What could they both have been
-    feeling that day..."
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593320
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 130
-  indentLevel: 0
-  storyText: "Wait, is that Father? He looks so young... \nIf he hears me thinking
-    this he will be frowning. But I still see why people compared him to Dev Anand."
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593321
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 129
-  indentLevel: 0
-  storyText: A Herbarium? Frieda keeps more things here than my whole family combined.
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593322
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 128
-  indentLevel: 0
-  storyText: 'The Herbarium is the archive of what Frieda treasures. It holds names
-    and traces of the most important moments of her life. '
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 387116519}
---- !u!114 &1458593323
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 759.86957
-    y: 235.20688
-    width: 113.73626
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 193
-  blockName: Herbarium2
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593322}
-  - {fileID: 1458593321}
-  - {fileID: 1458593320}
-  - {fileID: 1458593319}
-  - {fileID: 1458593304}
-  - {fileID: 1458593305}
-  suppressAllAutoSelections: 0
 --- !u!114 &1458593324
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -85891,8 +83454,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 204
   indentLevel: 0
-  storyText: 'I remember playing cricket with Papa on sunday mornings while growing
-    up... Some of my fondest memories with him... '
+  storyText: There were Sunday mornings we played cricket at Oval Maidan when I was
+    a child. Some of our closest times.
   description: 
   character: {fileID: 1844474985}
   portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
@@ -85905,191 +83468,9 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593325
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 149
-  indentLevel: 0
-  storyText: Aapa!
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593326
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 178
-  indentLevel: 0
-  storyText: Waiting for Frieda is simply all you can do now.. Look around the room,
-    see if you can find other items that may pass the time.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 387116519}
---- !u!114 &1458593327
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1296.977
-    y: 95.26854
-    width: 75.27472
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 175
-  blockName: Wait
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593328}
-  - {fileID: 1458593326}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593328
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 179
-  indentLevel: 0
-  storyText: "**You remember Bombay evenings, the sun dipping into the waters of
-    Arabian Sea, bright and reliable. Sunset at 6:45pm** \nThank you Aapa. If you
-    insist, I can... I will wait here."
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593329
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 177
-  indentLevel: 0
-  targetFlowchart: {fileID: 1458593210}
-  targetBlock: {fileID: 1458593327}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &1458593330
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 176
-  indentLevel: 0
-  targetFlowchart: {fileID: 1458593210}
-  targetBlock: {fileID: 1458593327}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &1458593331
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 174
-  indentLevel: 0
-  storyText: Frieda Madam doesn't like to be out when it is dark. She will be back
-    by sunset. I will be leaving soon but let me know if there is anything.
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
 --- !u!114 &1458593332
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -86101,7 +83482,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 202
   indentLevel: 0
-  storyText: ... And that was what had happened.
+  storyText: ...You see, this is how things were in the early days of your father's
+    first mariage.
   description: 
   character: {fileID: 759292556}
   portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
@@ -86114,622 +83496,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 509815680}
---- !u!114 &1458593334
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 171
-  indentLevel: 0
-  storyText: "**she sighs, and smiles lightly** Feroz Saab's son...Of course. \nShe
-    will be happy to give you many answers, I am sure. It is best you see her, and
-    ask her yourself. "
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593335
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 170
-  indentLevel: 0
-  storyText: Frieda Madam doesn't like to be out when it is dark. She will be back
-    by sunset. I will be leaving soon but let me know if there is anything.
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593338
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 167
-  indentLevel: 0
-  storyText: '**she sighs, and smiles lightly** Feroz Saab''s son...Of course.
-
-    She
-    will be happy to give you many answers, I am sure. It is best you see her, and
-    ask her yourself. '
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593339
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 166
-  indentLevel: 0
-  storyText: Then why did my father...Why would he have come so much to visit here
-    lately?
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593340
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 165
-  indentLevel: 0
-  storyText: Actually, I wanted to ask of you as well... It's just. I was certain
-    Frieda ji had little contact with our family all these years.
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593341
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 164
-  indentLevel: 0
-  storyText: "Thank you so much Aapa. \n**You take the plate and glass she hands
-    you**"
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593343
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 162
-  indentLevel: 0
-  storyText: '**Najma Aapa enters with a plate full of snacks and a glass of chilled
-    Nimbu Paani.**
-
-    I hope you are hungry still.These Chaklis are freshly made.'
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593344
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1109.9049
-    y: 114.16264
-    width: 121.428566
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 195
-  blockName: NajmaTalks2
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593343}
-  - {fileID: 1458593341}
-  - {fileID: 1458593340}
-  - {fileID: 1458593339}
-  - {fileID: 1458593334}
-  - {fileID: 1458593331}
-  - {fileID: 1458593329}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593345
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 154
-  indentLevel: 0
-  storyText: How is it she would know so much about me? And why does she keep my
-    photograph?
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593346
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 153
-  indentLevel: 0
-  storyText: Actually, I wanted to ask of you as well... It's just. I was certain
-    Frieda ji had little contact with our family all these years.
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593347
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 152
-  indentLevel: 0
-  storyText: "Thank you so much Aapa. \n**You take the plate and glass she hands
-    you**"
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593349
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 150
-  indentLevel: 0
-  storyText: '**Najma Aapa enters with a plate full of snacks and a glass of chilled
-    Nimbu Paani.**
-
-    I hope you are hungry still.These Chaklis are freshly made.'
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593350
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 180
-  indentLevel: 0
-  storyText: ...
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593353
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 183
-  indentLevel: 0
-  storyText: I'm sorry, it will be short.
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593354
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 182
-  indentLevel: 0
-  storyText: Is there something you need? I was about to go.
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593355
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 181
-  indentLevel: 0
-  storyText: Can I ask of you to come here once?
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593356
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 189
-  indentLevel: 0
-  storyText: There is not much I can tell you, I am sorry. I only see Madam-ji spend
-    a lot of time with it.
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593357
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 188
-  indentLevel: 0
-  storyText: Is that what the book is called? I was not even aware, she was right,
-    you're very smart beta!
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593358
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 185
-  indentLevel: 0
-  storyText: Do you know why she keeps a herbarium? and with all the images inside?
-  description: 
-  character: {fileID: 1844474985}
-  portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 1947864239}
---- !u!114 &1458593359
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1161.7633
-    y: 185.60124
-    width: 114.83516
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 184
-  blockName: Herbarium3
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1458593358}
-  - {fileID: 1458593357}
-  - {fileID: 1458593356}
-  - {fileID: 1458593360}
-  suppressAllAutoSelections: 0
---- !u!114 &1458593360
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 192
-  indentLevel: 0
-  targetFlowchart: {fileID: 1458593210}
-  targetBlock: {fileID: 1458593247}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 5
-  callMode: 0
---- !u!114 &1458593361
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 191
-  indentLevel: 0
-  text: Ask about the open herbarium
-  description: 
-  targetBlock: {fileID: 1458593359}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 1137112138}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
 --- !u!114 &1493303299 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7904503064264776291, guid: 769d65c1913fce846a92ba44a47cc8b0, type: 3}
@@ -87809,7 +84575,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2182
+  m_Name: pb_Mesh-13500
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -87973,7 +84739,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22584
+  m_Name: pb_Mesh31544
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -88211,7 +84977,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21778
+  m_Name: pb_Mesh30740
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -88749,7 +85515,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2194
+  m_Name: pb_Mesh-13512
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
