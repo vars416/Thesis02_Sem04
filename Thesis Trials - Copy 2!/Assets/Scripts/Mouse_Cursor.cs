@@ -24,13 +24,14 @@ public class Mouse_Cursor : MonoBehaviour
         {
             Ray ray = CAM.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-
+            
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, LayerMask.GetMask("Interact")))
             {
                 /*if (gameObject.tag == "interact")
                 {
                     Cursor.SetCursor(new_cursor, hotSpot, cursorMode);
                 }*/
+                //print(hit.transform.name);
                 Cursor.SetCursor(new_cursor, hotSpot, cursorMode);
             }
 
@@ -52,16 +53,6 @@ public class Mouse_Cursor : MonoBehaviour
         Cursor.SetCursor(new_cursor, hotSpot, cursorMode);
         print("cursor working");
     }
-
-    /*void OnMouseOver()
-    {
-        if (gameObject.tag == "interact")
-        {
-            Cursor.SetCursor(new_cursor, hotSpot, cursorMode);
-            
-        }
-        print("cursor working");
-    }*/
 
     void OnMouseExit()
     {
