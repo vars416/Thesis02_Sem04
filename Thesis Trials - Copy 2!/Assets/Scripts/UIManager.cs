@@ -34,6 +34,9 @@ public class UIManager : MonoBehaviour
 
     public Button Back_Button;
 
+    //public Button Pull_Herb;
+    //public Animator Herb_Slide;
+
     //public UITrial2 uitrial2;
     public Clocks clocks;
 
@@ -55,12 +58,14 @@ public class UIManager : MonoBehaviour
         Right_Herbarium.GetComponent<Button>();
         Left_Herbarium.GetComponent<Button>();
 
+        //Pull_Herb.GetComponent<Button>();
+
         if (scene.name == "First_Scene")
         {
             Herbarium.enabled = false;
             Baby_Herbarium.enabled = false;
 
-            Feroz_Wedding_Full.enabled = false;
+            //Feroz_Wedding_Full.enabled = false;
             //Feroz_Wedding_Flower.enabled = false;
 
             //Memory_Herbarium.enabled = false;
@@ -76,6 +81,8 @@ public class UIManager : MonoBehaviour
 
             Right_Herbarium.gameObject.SetActive(false);
             Left_Herbarium.gameObject.SetActive(false);
+
+            //Pull_Herb.gameObject.SetActive(false);
         }
 
         if (scene.name == "Second_Scene")
@@ -294,7 +301,7 @@ public class UIManager : MonoBehaviour
         Color temp3 = Feroz_Wedding_Full.color;
         temp3.a = 0.1f;
         Feroz_Wedding_Full.color = temp3;
-
+        //Slide_Herb();
         Herbarium_Button_Down();
     }
 
@@ -317,13 +324,14 @@ public class UIManager : MonoBehaviour
         Left_Herbarium.gameObject.SetActive(false);
     }
 
-    public void RightOn()
+    /*public void RightOn()
     {
+        Herb_Slide.SetTrigger("Slide");
+        //Pull_Herb.gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(1070, 485, 0), Time.deltaTime);
+    }*/
 
-    }
-
-    public void LeftOn ()
+    public void Slide_Herb ()
     {
-
+        //Herb_Slide.SetTrigger("Slide");
     }
 }

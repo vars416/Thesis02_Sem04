@@ -14,7 +14,7 @@ public class UITrial2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (scene.name == "First_Scene")
+        /*if (scene.name == "First_Scene")
         {
             sprites[0].SetActive(true);
         }
@@ -22,7 +22,7 @@ public class UITrial2 : MonoBehaviour
         if (scene.name == "Second_Scene")
         {
             sprites[1].SetActive(true);
-        }
+        }*/
     }
 
     // Update is called once per frame
@@ -38,6 +38,7 @@ public class UITrial2 : MonoBehaviour
             Number++;
             sprites[Number - 1].SetActive(false);
             sprites[Number].SetActive(true);
+            print(Number);
             //HerbariumElement.GetComponent<Image>().sprite = sprites[Number].GetComponent<Image>().sprite;
         }
     }
@@ -49,6 +50,7 @@ public class UITrial2 : MonoBehaviour
             Number--;
             sprites[Number + 1].SetActive(false);
             sprites[Number].SetActive(true);
+            print(Number);
             //HerbariumElement.GetComponent<Image>().sprite = sprites[Number].GetComponent<Image>().sprite;
         }
     }

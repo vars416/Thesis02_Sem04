@@ -18,7 +18,7 @@ public class MemorySceneManager : MonoBehaviour
     public Image Slot3;
 
     public Light[] SpotLights;
-    float intensity = 1.0f;
+    //float intensity = 1.0f;
     public bool lighter = false;
 
     private bool trigger1 = false;

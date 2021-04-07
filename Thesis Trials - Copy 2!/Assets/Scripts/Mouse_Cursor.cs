@@ -10,6 +10,9 @@ public class Mouse_Cursor : MonoBehaviour
     public Camera CAM;
     private Vector2 hotSpot = Vector2.zero;
 
+    [SerializeField]
+    private GameManager gm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +30,16 @@ public class Mouse_Cursor : MonoBehaviour
             
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, LayerMask.GetMask("Interact")))
             {
-                /*if (gameObject.tag == "interact")
+                /*if (*//*(gameObject.tag == "object") && *//*(gm.camControl.currentSceneCam == gm.camControl.sceneCams[1]))
                 {
-                    Cursor.SetCursor(new_cursor, hotSpot, cursorMode);
+                    
                 }*/
                 //print(hit.transform.name);
+                if (gameObject.tag == "object")
+                {
+                    Cursor.SetCursor(new_cursor, hotSpot, cursorMode);
+                }
+
                 Cursor.SetCursor(new_cursor, hotSpot, cursorMode);
             }
 
