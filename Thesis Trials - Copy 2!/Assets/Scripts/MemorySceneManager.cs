@@ -65,6 +65,8 @@ public class MemorySceneManager : MonoBehaviour
 
         ContinueButton();
         //HitBlinkingLight();
+
+
     }
 
     void Bat_Memory(RaycastHit hit, Flowchart flowchart, Scene scene)
@@ -142,7 +144,7 @@ public class MemorySceneManager : MonoBehaviour
         }
     }
 
-    void OnMouseEnter()
+    /*void OnMouseEnter()
     {
         if ((gameObject.tag == "interact") || (gameObject.layer == 9))
         {
@@ -154,6 +156,6 @@ public class MemorySceneManager : MonoBehaviour
     void OnMouseExit()
     {
         Cursor.SetCursor(null, Vector2.zero, cursorMode);
-    }
+    }*/
 
 }
