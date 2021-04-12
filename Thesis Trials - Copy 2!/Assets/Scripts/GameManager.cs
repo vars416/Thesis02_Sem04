@@ -377,7 +377,7 @@ public class GameManager : MonoBehaviour
             if (clocks.HerbSwitch == true)  //Bring the Herbarium again when players
             {
                 ui.HerbariumPopUp();
-                //HerbImageDelay();
+                HerbImageDelay();
             }
         }
 
@@ -698,7 +698,7 @@ public class GameManager : MonoBehaviour
             ColliderEnabler();
             //cameraPositionChange(0);
             //cameraChangeCounter2();
-            if (clocks.HerbSwitch == true)
+            if ((clocks.HerbSwitch == true) && (camControl.sceneCams[1].transform.position == camControl.cameraPositions[5].transform.position))
             {
                 ui.HerbariumPopDown();
             }
@@ -732,9 +732,9 @@ public class GameManager : MonoBehaviour
     void HerbImageDelay()
     {
         //ui.Pull_Herb.gameObject.SetActive(true);
+        ui.Slide_Herb();
         ui.Herbarium.enabled = true;
         ui2.sprites[0].SetActive(true);
-        //ui.Slide_Herb();
         //ui.Feroz_Wedding_Full.enabled = true;
         ui.Herbarium_Button_Up();
     }

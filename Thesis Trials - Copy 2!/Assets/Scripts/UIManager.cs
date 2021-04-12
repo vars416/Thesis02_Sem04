@@ -35,7 +35,7 @@ public class UIManager : MonoBehaviour
     public Button Back_Button;
 
     //public Button Pull_Herb;
-    //public Animator Herb_Slide;
+    public Animator Herb_Slide;
 
     //public UITrial2 uitrial2;
     public Clocks clocks;
@@ -301,7 +301,7 @@ public class UIManager : MonoBehaviour
         Color temp3 = Feroz_Wedding_Full.color;
         temp3.a = 0.1f;
         Feroz_Wedding_Full.color = temp3;
-        //Slide_Herb();
+        Slide_Herb();
         Herbarium_Button_Down();
     }
 
@@ -332,6 +332,6 @@ public class UIManager : MonoBehaviour
 
     public void Slide_Herb ()
     {
-        //Herb_Slide.SetTrigger("Slide");
+        Herb_Slide.SetTrigger("Slide");
     }
 }

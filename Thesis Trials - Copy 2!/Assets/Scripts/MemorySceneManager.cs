@@ -17,6 +17,10 @@ public class MemorySceneManager : MonoBehaviour
     public Image Slot2;
     public Image Slot3;
 
+    public Texture2D new_cursor;
+    public CursorMode cursorMode = CursorMode.Auto;
+    private Vector2 hotSpot = Vector2.zero;
+
     public Light[] SpotLights;
     //float intensity = 1.0f;
     public bool lighter = false;
@@ -138,5 +142,18 @@ public class MemorySceneManager : MonoBehaviour
         }
     }
 
+    void OnMouseEnter()
+    {
+        if ((gameObject.tag == "interact") || (gameObject.layer == 9))
+        {
+            Cursor.SetCursor(new_cursor, hotSpot, cursorMode);
+            print("cursor working");
+        }
+    }
+
+    void OnMouseExit()
+    {
+        Cursor.SetCursor(null, Vector2.zero, cursorMode);
+    }
 
 }
