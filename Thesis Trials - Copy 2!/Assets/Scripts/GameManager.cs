@@ -412,7 +412,7 @@ public class GameManager : MonoBehaviour
             //print("hit!!!!");
             if (scene.name == "First_Scene")
             {
-                if (camControl.sceneCams[1].transform.position == camControl.cameraPositions[1].transform.position)
+                if (camControl.sceneCams[1].transform.position == camControl.cameraPositions[0].transform.position)
                 {
                     if ((hit.transform.name == "Orchids") /*&& (ui.Herbarium.enabled == true)*/)
                     {
