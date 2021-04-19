@@ -90,8 +90,6 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0)) //if lmb is down
             {
-                /*CAM1.GetComponent<Camera>()*/
-
                 Ray ray = camControl.currentSceneCam.ScreenPointToRay(Input.mousePosition); //hit raycast from screen/mouse pointer to wherever player is clicking
                 //Debug.Log(Camera.main.transform.gameObject.name);
                 RaycastHit hit;
@@ -104,7 +102,7 @@ public class GameManager : MonoBehaviour
 
                     ShelfInteractions(hit, flowchart, scene);
 
-                    BedInterations(hit, flowchart, scene);
+                    BedInteractions(hit, flowchart, scene);
 
                     CupboardInteractions(hit, flowchart, scene);
 
@@ -114,10 +112,10 @@ public class GameManager : MonoBehaviour
 
                     ObjectInteractions(hit, flowchart, scene);
 
-                    if (hit.transform.gameObject.layer != 10)
+                    /*if (hit.transform.gameObject.layer != 10)
                     {
 
-                    }
+                    }*/
 
                     /*else if (hit.transform.gameObject.layer == 5)
                     {
@@ -299,11 +297,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void BedInterations(RaycastHit hit, Flowchart flowchart, Scene scene)
+    void BedInteractions(RaycastHit hit, Flowchart flowchart, Scene scene)
     {
         if ((hit.transform.tag == "interact") && (hit.transform.name == "Bed"))
         {
             //CameraHolding(2);
+            print("doing");
             camControl.SetCamPosition(2);
             ColliderDisabler(hit);
 
@@ -428,6 +427,7 @@ public class GameManager : MonoBehaviour
                             //clocks.TimeChange1();
                             flowchart.ExecuteBlock("Photo_Time_01");
                             clocks.PhotoSwitch = true;
+                            hit.transform.gameObject.layer = 0;
                             //flowchart.ExecuteBlock("Clock Time Tutorial 1");
                             //print("working");
                         }
@@ -438,6 +438,7 @@ public class GameManager : MonoBehaviour
                             //clocks.TimeChange2();
                             flowchart.ExecuteBlock("Photo_Time_02");
                             clocks.PhotoSwitch = true;
+                            hit.transform.gameObject.layer = 0;
                             //flowchart.ExecuteBlock("Photo2");
                         }
 
@@ -482,35 +483,37 @@ public class GameManager : MonoBehaviour
                         //ui.Baby_Herbarium.enabled = true;
 
                         //ui.Herbarium_Button_Up();
-
-                        if ((clocks.TimeSwap == false) && (clocks.HerbSwitch == false))
+                        if (scene.name == "First_Scene")
                         {
-                            //clocks.TimeChange1();
-                            //ui.Herbarium.enabled = true;
-                            //ui.Feroz_Wedding_Full.enabled = true;
-                            /*Invoke("HerbAnim1Delay", 3);
-                            Invoke("HerbDialogueDelay", 1);
-                            Invoke("HerbImageDelay", 6);*/
-                            flowchart.ExecuteBlock("Herbarium_Time_01");
-                            clocks.HerbSwitch = true;
-                            //flowchart.ExecuteBlock("Clock Time Tutorial 2");
-                            //ui.Herbarium_Button_Up();
-                            SwitchHerbariumBook();
-                        }
+                            if ((clocks.TimeSwap == false) && (clocks.HerbSwitch == false))
+                            {
+                                //clocks.TimeChange1();
+                                //ui.Herbarium.enabled = true;
+                                //ui.Feroz_Wedding_Full.enabled = true;
+                                /*Invoke("HerbAnim1Delay", 3);
+                                Invoke("HerbDialogueDelay", 1);
+                                Invoke("HerbImageDelay", 6);*/
+                                flowchart.ExecuteBlock("Herbarium_Time_01");
+                                clocks.HerbSwitch = true;
+                                //flowchart.ExecuteBlock("Clock Time Tutorial 2");
+                                //ui.Herbarium_Button_Up();
+                                SwitchHerbariumBook();
+                            }
 
-                        if ((clocks.TimeSwap == true) && (clocks.HerbSwitch == false))
-                        {
-                            //ui.Herbarium.enabled = true;
-                            //ui.Feroz_Wedding_Full.enabled = true;
-                            //clocks.TimeChange2();
-                            /*Invoke("HerbAnim2Delay", 4);
-                            Invoke("HerbDialogueDelay", 1);
-                            Invoke("HerbImageDelay", 2);*/
-                            flowchart.ExecuteBlock("Herbarium_Time_02");
-                            clocks.HerbSwitch = true;
-                            //flowchart.ExecuteBlock("Herbarium2");
-                            //ui.Herbarium_Button_Up();
-                            SwitchHerbariumBook();
+                            if ((clocks.TimeSwap == true) && (clocks.HerbSwitch == false))
+                            {
+                                //ui.Herbarium.enabled = true;
+                                //ui.Feroz_Wedding_Full.enabled = true;
+                                //clocks.TimeChange2();
+                                /*Invoke("HerbAnim2Delay", 4);
+                                Invoke("HerbDialogueDelay", 1);
+                                Invoke("HerbImageDelay", 2);*/
+                                flowchart.ExecuteBlock("Herbarium_Time_02");
+                                clocks.HerbSwitch = true;
+                                //flowchart.ExecuteBlock("Herbarium2");
+                                //ui.Herbarium_Button_Up();
+                                SwitchHerbariumBook();
+                            }
                         }
 
                         /*if ((clocks.TimeSwap == true) && (clocks.HerbSwitch == true))

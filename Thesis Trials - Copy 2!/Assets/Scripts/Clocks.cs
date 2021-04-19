@@ -14,8 +14,14 @@ public class Clocks : MonoBehaviour
     public Animator BigHourHand;
     public Animator BigMinuteHand;
 
+    public Animator BigHourHand1;
+    public Animator BigMinuteHand1;
+
     public Animator SmallHourHand;
     public Animator SmallMinuteHand;
+
+    public Animator SmallHourHand1;
+    public Animator SmallMinuteHand1;
 
     //public AudioSource ClockSound;
     public AudioSource TickingSound;
@@ -89,5 +95,25 @@ public class Clocks : MonoBehaviour
         SmallMinuteHand.SetTrigger("AlarmMinuteTrigger");
     }
 
-    //public void 
+    public void TimeChange3()
+    {
+        TickingSound.Play();
+
+        BigHourHand.SetTrigger("HourTrigger");
+        BigMinuteHand.SetTrigger("MinTrig");
+
+        SmallHourHand.SetTrigger("AlarmHourTrigger");
+        SmallMinuteHand.SetTrigger("AlarmMinuteTrigger");
+    }
+
+    public void TimeChange4()
+    {
+        TickingSound.Play();
+
+        BigHourHand1.SetTrigger("HourTrigger");
+        BigMinuteHand1.SetTrigger("MinTrig");
+
+        SmallHourHand1.SetTrigger("AlarmHourTrigger");
+        SmallMinuteHand1.SetTrigger("AlarmMinuteTrigger");
+    }
 }

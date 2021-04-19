@@ -23,11 +23,11 @@ public class Mouse_Cursor : MonoBehaviour
     void Update()
     {
         Scene scene = SceneManager.GetActiveScene();
-        if (scene.name == "First_Scene")
+        if ((scene.name == "First_Scene") || (scene.name == "Sec_Scene"))
         {
             Ray ray = gm.camControl.currentSceneCam.ScreenPointToRay(Input.mousePosition);//CAM.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            
+
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, LayerMask.GetMask("Interact")))
             {
                 /*if (*//*(hit.transform.gameObject.tag == "object") && *//*(gm.camControl.currentSceneCam == gm.camControl.sceneCams[1]))

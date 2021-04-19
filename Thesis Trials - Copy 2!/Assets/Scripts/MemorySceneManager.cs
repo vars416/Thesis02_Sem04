@@ -17,6 +17,10 @@ public class MemorySceneManager : MonoBehaviour
     public Image Slot2;
     public Image Slot3;
 
+    public Animator S1;
+    public Animator S2;
+    public Animator S3;
+
     public Texture2D new_cursor;
     public CursorMode cursorMode = CursorMode.Auto;
     private Vector2 hotSpot = Vector2.zero;
@@ -144,18 +148,19 @@ public class MemorySceneManager : MonoBehaviour
         }
     }
 
-    /*void OnMouseEnter()
+    void Slot1Anim ()
     {
-        if ((gameObject.tag == "interact") || (gameObject.layer == 9))
-        {
-            Cursor.SetCursor(new_cursor, hotSpot, cursorMode);
-            print("cursor working");
-        }
+        S1.SetTrigger("Slot1");
     }
 
-    void OnMouseExit()
+    void Slot2Anim()
     {
-        Cursor.SetCursor(null, Vector2.zero, cursorMode);
-    }*/
+        S2.SetTrigger("Slot2");
+    }
+
+    void Slot3Anim()
+    {
+        S3.SetTrigger("Slot3");
+    }
 
 }

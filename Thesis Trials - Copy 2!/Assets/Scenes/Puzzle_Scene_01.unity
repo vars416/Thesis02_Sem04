@@ -2117,6 +2117,7 @@ GameObject:
   - component: {fileID: 192977132}
   - component: {fileID: 192977134}
   - component: {fileID: 192977133}
+  - component: {fileID: 192977135}
   m_Layer: 5
   m_Name: Slot3
   m_TagString: Untagged
@@ -2140,7 +2141,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35, y: -73.999985}
+  m_AnchoredPosition: {x: -35, y: -105}
   m_SizeDelta: {x: 190, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &192977133
@@ -2181,6 +2182,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192977131}
   m_CullTransparentMesh: 1
+--- !u!95 &192977135
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192977131}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5df2606c7ab525b4b854da4013262bb8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &198612427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3584,7 +3604,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2188756
+  m_Name: pb_Mesh-9009110
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3748,7 +3768,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh493870
+  m_Name: pb_Mesh30386
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3912,7 +3932,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2188932
+  m_Name: pb_Mesh-9009286
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7438,6 +7458,7 @@ GameObject:
   - component: {fileID: 575081698}
   - component: {fileID: 575081700}
   - component: {fileID: 575081699}
+  - component: {fileID: 575081701}
   m_Layer: 5
   m_Name: Slot2
   m_TagString: Untagged
@@ -7461,7 +7482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 81, y: 91.000015}
+  m_AnchoredPosition: {x: 120, y: 91.000015}
   m_SizeDelta: {x: 80, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &575081699
@@ -7502,6 +7523,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575081697}
   m_CullTransparentMesh: 1
+--- !u!95 &575081701
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575081697}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 024ea1844b24bf84eaf6e78956fa85be, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &575856665
 GameObject:
   m_ObjectHideFlags: 0
@@ -9889,8 +9929,12 @@ MonoBehaviour:
   Clock2: {fileID: 1023411242}
   BigHourHand: {fileID: 833432402}
   BigMinuteHand: {fileID: 833432401}
+  BigHourHand1: {fileID: 0}
+  BigMinuteHand1: {fileID: 0}
   SmallHourHand: {fileID: 769376019}
   SmallMinuteHand: {fileID: 613187892}
+  SmallHourHand1: {fileID: 0}
+  SmallMinuteHand1: {fileID: 0}
   TickingSound: {fileID: 743962288}
   TimeSwap: 0
   HerbSwitch: 0
@@ -13714,7 +13758,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2188908
+  m_Name: pb_Mesh-9009262
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15382,7 +15426,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2188920
+  m_Name: pb_Mesh-9009274
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17444,7 +17488,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh493012
+  m_Name: pb_Mesh29528
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43455,6 +43499,12 @@ GameObject:
   - component: {fileID: 1458593275}
   - component: {fileID: 1458593276}
   - component: {fileID: 1458593254}
+  - component: {fileID: 1458593208}
+  - component: {fileID: 1458593209}
+  - component: {fileID: 1458593213}
+  - component: {fileID: 1458593212}
+  - component: {fileID: 1458593215}
+  - component: {fileID: 1458593214}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -43462,6 +43512,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1458593208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458593207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 267
+  indentLevel: 0
+  targetObject: {fileID: 2049747552}
+  methodName: Slot3Anim
+  delay: 0
+--- !u!114 &1458593209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458593207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 268
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
 --- !u!114 &1458593210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43487,9 +43572,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1458593258}
+  - {fileID: 1458593231}
   selectedCommands:
-  - {fileID: 1458593254}
+  - {fileID: 1458593215}
   variables: []
   description: 
   stepPause: 0
@@ -43515,6 +43600,76 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1458593212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458593207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 270
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &1458593213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458593207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 269
+  indentLevel: 0
+  targetObject: {fileID: 2049747552}
+  methodName: Slot1Anim
+  delay: 0
+--- !u!114 &1458593214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458593207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 272
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &1458593215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458593207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 271
+  indentLevel: 0
+  targetObject: {fileID: 2049747552}
+  methodName: Slot2Anim
+  delay: 0
 --- !u!114 &1458593226
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -43614,6 +43769,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 1458593233}
   - {fileID: 1458593273}
+  - {fileID: 1458593213}
+  - {fileID: 1458593212}
   - {fileID: 1458593241}
   - {fileID: 1458593228}
   - {fileID: 1458593227}
@@ -43680,6 +43837,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 1458593242}
   - {fileID: 1458593274}
+  - {fileID: 1458593215}
+  - {fileID: 1458593214}
   - {fileID: 1458593234}
   - {fileID: 1458593238}
   - {fileID: 1458593236}
@@ -44047,6 +44206,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 1458593245}
   - {fileID: 1458593275}
+  - {fileID: 1458593208}
+  - {fileID: 1458593209}
   - {fileID: 1458593246}
   - {fileID: 1458593251}
   - {fileID: 1458593250}
@@ -47770,7 +47931,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2188896
+  m_Name: pb_Mesh-9009250
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -48769,6 +48930,7 @@ GameObject:
   - component: {fileID: 1902125505}
   - component: {fileID: 1902125507}
   - component: {fileID: 1902125506}
+  - component: {fileID: 1902125508}
   m_Layer: 5
   m_Name: Slot1
   m_TagString: Untagged
@@ -48792,7 +48954,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: 71.000015}
+  m_AnchoredPosition: {x: -350, y: 71.000015}
   m_SizeDelta: {x: 70, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1902125506
@@ -48833,6 +48995,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902125504}
   m_CullTransparentMesh: 1
+--- !u!95 &1902125508
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902125504}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c328b1d04cf382147a8e571ecbc8b6b7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1924668532
 GameObject:
   m_ObjectHideFlags: 0
@@ -50310,6 +50491,9 @@ MonoBehaviour:
   Slot1: {fileID: 1902125506}
   Slot2: {fileID: 575081699}
   Slot3: {fileID: 192977133}
+  S1: {fileID: 1902125508}
+  S2: {fileID: 575081701}
+  S3: {fileID: 192977135}
   new_cursor: {fileID: 2800000, guid: ab9e9464711ddb147beca40f47119b2e, type: 3}
   cursorMode: 0
   SpotLights:
@@ -51259,7 +51443,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2188884
+  m_Name: pb_Mesh-9009238
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
