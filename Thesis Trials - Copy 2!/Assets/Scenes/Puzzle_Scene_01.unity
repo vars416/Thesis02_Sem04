@@ -7432,7 +7432,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: fd00e9a6520d2814bb42085fbe2f2a15, type: 2}
+  sharedProfile: {fileID: 11400000, guid: be9a601eff7f35647b665a1b740ceec0, type: 2}
 --- !u!4 &567911780
 Transform:
   m_ObjectHideFlags: 0
@@ -9939,6 +9939,7 @@ MonoBehaviour:
   TimeSwap: 0
   HerbSwitch: 0
   PhotoSwitch: 0
+  HerbSwitch2: 0
 --- !u!4 &743962287
 Transform:
   m_ObjectHideFlags: 0
@@ -43572,9 +43573,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1458593231}
-  selectedCommands:
-  - {fileID: 1458593215}
+  - {fileID: 1458593229}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -43758,7 +43758,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 204.95122
     y: 120.409325
-    width: 69.17808
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -43824,9 +43824,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 278.21704
-    y: 105.310425
-    width: 141.78079
+    x: 272.73755
+    y: 106.68029
+    width: 101.78079
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -44195,7 +44195,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 322.21704
     y: 156.31042
-    width: 91.09587
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -44493,7 +44493,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 445.21704
     y: 117.0446
-    width: 125.34244
+    width: 85.34244
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -44575,9 +44575,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 185.52954
-    y: 167.1696
-    width: 100.68491
+    x: 184.15968
+    y: 168.53946
+    width: 60.684914
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -44883,7 +44883,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 459.64136
     y: 182.47714
-    width: 103.42464
+    width: 63.424637
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -44947,7 +44947,7 @@ MonoBehaviour:
     booleanVal: 1
   duration:
     floatRef: {fileID: 0}
-    floatVal: 2
+    floatVal: 1
   fadeMode: 0
   targetColor:
     colorRef: {fileID: 0}
@@ -44977,7 +44977,7 @@ MonoBehaviour:
     booleanVal: 1
   duration:
     floatRef: {fileID: 0}
-    floatVal: 2
+    floatVal: 1
   fadeMode: 0
   targetColor:
     colorRef: {fileID: 0}

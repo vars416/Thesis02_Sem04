@@ -27,7 +27,7 @@ public class UIManager : MonoBehaviour
     //public Image Feroz_Wedding_Flower;
 
     public Text TutorialText;
-    public Text CounterText;
+    //public Text CounterText;
 
     public Button Right_Herbarium;
     public Button Left_Herbarium;
@@ -73,11 +73,8 @@ public class UIManager : MonoBehaviour
             Memory_Completed.enabled = false;
             //BellStarting();
             PortraitsStarting();
-            RingStarting(scene);
-            Feroz.enabled = false;
-            Frieda.enabled = false;
-            Meher.enabled = false;
-            CounterText.enabled = false;
+            //RingStarting(scene);
+            //CounterText.enabled = false;
 
             Right_Herbarium.gameObject.SetActive(false);
             Left_Herbarium.gameObject.SetActive(false);
@@ -90,16 +87,17 @@ public class UIManager : MonoBehaviour
 
             //Herbarium.enabled = false;
             //Baby_Herbarium.enabled = false;
-            HerbariumPopDown();
-            Feroz_Wedding_Full.enabled = false;
+            //HerbariumPopDown();
+            //HerbariumDown();
+            //Feroz_Wedding_Full.enabled = false;
+            Color tempC = Herbarium.color;
+            tempC.a = 0.1f;
+            Herbarium.color = tempC;
             Memory_Layout.enabled = false;
             Memory_Completed.enabled = false;
-            PortraitsStarting();
-            RingStarting(scene);
-            Feroz.enabled = false;
-            Frieda.enabled = false;
-            Meher.enabled = false;
-            CounterText.enabled = false;
+            //PortraitsStarting();
+            //RingStarting(scene);
+            //CounterText.enabled = false;
 
             Right_Herbarium.gameObject.SetActive(false);
             Left_Herbarium.gameObject.SetActive(false);
@@ -139,9 +137,9 @@ public class UIManager : MonoBehaviour
         Frieda.GetComponent<Image>();
         Meher.GetComponent<Image>();
 
-        Feroz.enabled = false;
-        Frieda.enabled = false;
-        Meher.enabled = false;
+        Feroz.gameObject.SetActive(false);
+        Frieda.gameObject.SetActive(false);
+        Meher.gameObject.SetActive(false);
     }
 
     public void HerbariumStarting()
@@ -285,6 +283,7 @@ public class UIManager : MonoBehaviour
         temp3.a = 1.0f;
         Feroz_Wedding_Full.color = temp3;
 
+        Slide_Herb();
         Herbarium_Button_Up();
     }
 
@@ -301,6 +300,7 @@ public class UIManager : MonoBehaviour
         Color temp3 = Feroz_Wedding_Full.color;
         temp3.a = 0.1f;
         Feroz_Wedding_Full.color = temp3;
+
         Slide_Herb();
         Herbarium_Button_Down();
     }
@@ -333,5 +333,21 @@ public class UIManager : MonoBehaviour
     public void Slide_Herb ()
     {
         Herb_Slide.SetTrigger("Slide");
+    }
+
+    public void HerbariumDown()
+    {
+        Color temp2 = Herbarium.color;
+        temp2.a = 0.1f;
+        Herbarium.color = temp2;
+
+        Color temp1 = Memory_Herbarium.color;
+        temp1.a = 0.1f;
+        Memory_Herbarium.color = temp1;
+
+        Color temp3 = Feroz_Wedding_Full.color;
+        temp3.a = 0.1f;
+        Feroz_Wedding_Full.color = temp3;
+        Herbarium_Button_Down();
     }
 }

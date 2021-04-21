@@ -129,7 +129,7 @@ public class GameManager : MonoBehaviour
             {
                 flowchart.ExecuteBlock("Help1");
             }
-            
+
             /*if (Input.GetMouseButtonDown(1))
             {
                 //cameraPositionChange(0);
@@ -153,6 +153,7 @@ public class GameManager : MonoBehaviour
                     DisableUI_Herbarium();
                 }*//*
             }*/
+            
         }
         BackButtonEnabler();
 
@@ -244,22 +245,31 @@ public class GameManager : MonoBehaviour
 
     void DeskInteractions(RaycastHit hit, Flowchart flowchart, Scene scene)
     {
-        if (hit.transform.name == "Desk") //if ray hits a gameobject with transform having the tag "interact"
+        if (scene.name == "First_Scene")
         {
-            //Debug.Log("Registering Desk condition");
-            //CameraHolding(0);
-            camControl.SetCamPosition(0);
-            ColliderDisabler(hit);
-
-            if ((scene.name == "First_Scene"))
+            if ((hit.transform.tag == "interact") && (hit.transform.name == "Desk")) //if ray hits a gameobject with transform having the tag "interact"
             {
+                //Debug.Log("Registering Desk condition");
+                //CameraHolding(0);
+                camControl.SetCamPosition(0);
+                ColliderDisabler(hit);
+
                 //flowchart.ExecuteBlock("Desk1"); //do this
             }
+        }
 
-            if (scene.name == "Puzzle_Scene")
+        if (scene.name == "Sec_Scene")
+        {
+            if ((hit.transform.tag == "interact") && (hit.transform.name == "Stool")) //if ray hits a gameobject with transform having the tag "interact"
             {
-                flowchart.ExecuteBlock("Audio_Shelf"); //execute this block in Fungus flowchart only if the particular scene is playing
+                //Debug.Log("Registering Desk condition");
+                //CameraHolding(0);
+                camControl.SetCamPosition(0);
+                ColliderDisabler(hit);
+
+                //flowchart.ExecuteBlock("Desk1"); //do this
             }
+            //flowchart.ExecuteBlock("Audio_Shelf"); //execute this block in Fungus flowchart only if the particular scene is playing
         }
     }
 
@@ -376,9 +386,26 @@ public class GameManager : MonoBehaviour
             if (clocks.HerbSwitch == true)  //Bring the Herbarium again when players
             {
                 ui.HerbariumPopUp();
-                HerbImageDelay();
+                //HerbImageDelay();
+            }
+
+            if (scene.name == "Sec_Scene")
+            {
+                clocks.HerbSwitch = true;
+                if (clocks.HerbSwitch2 == false)
+                {
+                    //HerbImageDelay();
+                    ui2.sprites[1].SetActive(true);
+                    ui2.Number = 1;
+                    clocks.HerbSwitch2 = true;
+                }
+                ui.HerbariumPopUp();
+                //ui2.sprites[1].SetActive(true);
+                //HerbImageDelay();
             }
         }
+
+        
 
         /*if ((scene.name == "First_Scene") && (hit.transform.name == "Gramophone") && (CAM2.activeInHierarchy == true))
         {

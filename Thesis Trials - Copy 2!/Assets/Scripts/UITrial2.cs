@@ -16,12 +16,14 @@ public class UITrial2 : MonoBehaviour
     {
         /*if (scene.name == "First_Scene")
         {
-            sprites[0].SetActive(true);
+            //sprites[0].SetActive(true);
+            Number = 0;
         }
 
         if (scene.name == "Second_Scene")
         {
-            sprites[1].SetActive(true);
+            //sprites[1].SetActive(true);
+            Number = 1;
         }*/
     }
 

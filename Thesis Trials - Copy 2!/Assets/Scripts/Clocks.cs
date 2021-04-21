@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Clocks : MonoBehaviour
 {
@@ -29,6 +30,10 @@ public class Clocks : MonoBehaviour
     public bool HerbSwitch = false;
     public bool PhotoSwitch = false;
 
+    public bool HerbSwitch2 = false;
+
+    private Scene scene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,12 +49,18 @@ public class Clocks : MonoBehaviour
         TimeSwap = false;
         HerbSwitch = false;
         PhotoSwitch = false;
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        /*if (scene.name == "Sec_Scene")
+        {
+            HerbSwitch = true;
+            print(HerbSwitch);
+        }*/
     }
 
     public void TimeChange1()
