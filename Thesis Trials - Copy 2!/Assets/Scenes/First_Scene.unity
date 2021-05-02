@@ -282,7 +282,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23188
+  m_Name: pb_Mesh269270
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1308,7 +1308,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -145, y: 38.074993}
+  m_AnchoredPosition: {x: -145, y: 84}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &126940843
@@ -1457,7 +1457,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2546
+  m_Name: pb_Mesh-1253882
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1738,7 +1738,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2684
+  m_Name: pb_Mesh-1254020
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2044,7 +2044,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2660
+  m_Name: pb_Mesh-1253996
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2813,7 +2813,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3120
+  m_Name: pb_Mesh-1254456
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4292,7 +4292,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2672
+  m_Name: pb_Mesh-1254008
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4474,7 +4474,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23156
+  m_Name: pb_Mesh269238
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6278,8 +6278,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -38.900024, y: 38.074993}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: -38, y: 48}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &608952803
 MonoBehaviour:
@@ -8674,7 +8674,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2648
+  m_Name: pb_Mesh-1253984
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8838,7 +8838,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21988
+  m_Name: pb_Mesh268070
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11334,7 +11334,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3108
+  m_Name: pb_Mesh-1254444
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11542,7 +11542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1169614976
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11582,7 +11582,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -11592,9 +11592,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: e8003b99168d1c54b860beec5729c0f5, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: f50e6f8c1e8f7c246a164de7a368a21c, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: c7ba3e535173d364a985e58aab01d50b, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -11639,9 +11639,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 226248ac6f184e448af731df91b91958, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c7ba3e535173d364a985e58aab01d50b, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -12206,7 +12206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.3137255}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12440,7 +12440,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3096
+  m_Name: pb_Mesh-1254432
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36913,7 +36913,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21452
+  m_Name: pb_Mesh267534
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37077,7 +37077,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3072
+  m_Name: pb_Mesh-1254408
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38465,7 +38465,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 50
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -38682,7 +38682,6 @@ GameObject:
   - component: {fileID: 1458593292}
   - component: {fileID: 1458593291}
   - component: {fileID: 1458593293}
-  - component: {fileID: 1458593295}
   - component: {fileID: 1458593294}
   - component: {fileID: 1458593297}
   - component: {fileID: 1458593296}
@@ -38800,6 +38799,7 @@ GameObject:
   - component: {fileID: 1458593401}
   - component: {fileID: 1458593221}
   - component: {fileID: 1458593405}
+  - component: {fileID: 1458593406}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -38851,7 +38851,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -118.650116
     y: 75.38994
-    width: 133
+    width: 135.36588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -38877,7 +38877,6 @@ MonoBehaviour:
   - {fileID: 1458593240}
   - {fileID: 1458593263}
   - {fileID: 1458593274}
-  - {fileID: 1458593295}
   suppressAllAutoSelections: 0
 --- !u!114 &1458593210
 MonoBehaviour:
@@ -38892,11 +38891,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 159.43588, y: -6.688038}
+  scrollPos: {x: 149.92491, y: 21.755621}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 506
-  zoom: 1
+  blockViewHeight: 598
+  zoom: 0.8199997
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -38906,7 +38905,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1458593209}
   selectedCommands:
-  - {fileID: 1458593215}
+  - {fileID: 1458593263}
   variables: []
   description: 
   stepPause: 0
@@ -39302,7 +39301,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 484
     y: 28
-    width: 98
+    width: 98.7805
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39356,7 +39355,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 363.2658
     y: 75
-    width: 111
+    width: 112.195145
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39411,7 +39410,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 255.26581
     y: 78.83725
-    width: 78
+    width: 79.2683
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39465,7 +39464,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 154.42857
     y: 78.57143
-    width: 85
+    width: 85.36587
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39547,7 +39546,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 946.64636
     y: 74.038925
-    width: 89
+    width: 90.24391
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39631,7 +39630,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 549.2504
     y: 86.13636
-    width: 92
+    width: 92.68294
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39749,7 +39748,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 685.7342
     y: 166.12659
-    width: 77
+    width: 76.82928
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39803,7 +39802,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 509
     y: 145
-    width: 100
+    width: 100.000015
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39831,7 +39830,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1192.4818
     y: 302.56885
-    width: 78
+    width: 78.04879
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39886,7 +39885,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 982.42255
     y: 254.15863
-    width: 114
+    width: 112.195145
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39922,7 +39921,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 929.7831
     y: 117.180046
-    width: 114
+    width: 113.41466
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39955,7 +39954,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1146.181
     y: 192.24387
-    width: 91
+    width: 92.68294
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -40239,7 +40238,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 212.94453
     y: 151.5538
-    width: 82
+    width: 81.70733
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -40651,7 +40650,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 40.064583
     y: 35.661568
-    width: 98
+    width: 98.7805
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -40788,7 +40787,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 191.17001
     y: 231.52354
-    width: 115
+    width: 113.41466
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -40917,7 +40916,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 395.20148
     y: 131.79544
-    width: 99
+    width: 100.000015
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -41060,7 +41059,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 370.3991
     y: 214.78592
-    width: 163
+    width: 162.19516
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -41115,7 +41114,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 628.92255
     y: 233.9288
-    width: 121
+    width: 120.731735
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -41156,33 +41155,6 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Feel free to look around. I will finish up my work and get you some
     Nimbu Paani (lemonade). It must be so hot out
-  description: 
-  character: {fileID: 759292556}
-  portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 509815680}
---- !u!114 &1458593295
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458593207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 96
-  indentLevel: 0
-  storyText: Think of it as your own room, make yourself comfortable.
   description: 
   character: {fileID: 759292556}
   portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
@@ -41239,7 +41211,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 699.317
     y: 70.838615
-    width: 169
+    width: 167.07321
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -41384,7 +41356,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1114.2946
     y: 71.52601
-    width: 123
+    width: 123.17076
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -41466,7 +41438,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 697.71423
     y: 115.29719
-    width: 170
+    width: 168.29272
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -41543,7 +41515,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 861.7136
     y: 165.25925
-    width: 89
+    width: 89.02441
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -41757,7 +41729,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 750.51733
     y: 292.11203
-    width: 90
+    width: 91.463425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -41920,7 +41892,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 758.5538
     y: 235.20688
-    width: 115
+    width: 114.63417
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -41952,7 +41924,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1350.9144
     y: 266.05862
-    width: 142
+    width: 143.90247
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -41968,12 +41940,12 @@ MonoBehaviour:
   - {fileID: 1458593348}
   - {fileID: 1458593342}
   - {fileID: 1458593332}
+  - {fileID: 1458593336}
   - {fileID: 1458593287}
   - {fileID: 1458593364}
   - {fileID: 1458593333}
   - {fileID: 1458593365}
   - {fileID: 1458593337}
-  - {fileID: 1458593336}
   suppressAllAutoSelections: 0
 --- !u!114 &1458593325
 MonoBehaviour:
@@ -42046,7 +42018,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1296.977
     y: 95.26854
-    width: 75
+    width: 74.39025
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -42179,7 +42151,7 @@ MonoBehaviour:
     booleanVal: 1
   duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 0.5
   fadeMode: 0
   targetColor:
     colorRef: {fileID: 0}
@@ -42306,7 +42278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 207
   indentLevel: 0
-  duration: 2
+  duration: 1
   targetAlpha: 0
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
@@ -42492,9 +42464,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1109.9049
-    y: 114.16264
-    width: 124
+    x: 1113.7025
+    y: 111.631
+    width: 124.390274
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -42895,7 +42867,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1179.7633
     y: 252.60124
-    width: 116
+    width: 115.85368
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -43160,7 +43132,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 971.6596
     y: 171.97176
-    width: 160
+    width: 158.53662
     height: 40
   tint: {r: 1, g: 0.5882353, b: 0.5882353, a: 1}
   useCustomTint: 1
@@ -43169,9 +43141,10 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1458593369}
   - {fileID: 1458593368}
   - {fileID: 1458593382}
+  - {fileID: 1458593369}
+  - {fileID: 1458593406}
   - {fileID: 1458593381}
   - {fileID: 1458593380}
   - {fileID: 1458593379}
@@ -43231,7 +43204,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 889.7262
     y: 346.65878
-    width: 161
+    width: 159.75613
     height: 40
   tint: {r: 1, g: 0.5882353, b: 0.5882353, a: 1}
   useCustomTint: 1
@@ -43469,7 +43442,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 3.5
+    floatVal: 3
   durationOLD: 0
 --- !u!114 &1458593383
 MonoBehaviour:
@@ -43701,7 +43674,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 3.5
+    floatVal: 1
   durationOLD: 0
 --- !u!114 &1458593393
 MonoBehaviour:
@@ -43764,7 +43737,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 849.8917
     y: 210.42546
-    width: 136
+    width: 136.58539
     height: 40
   tint: {r: 0.5882353, g: 0.5882353, b: 1, a: 1}
   useCustomTint: 1
@@ -43794,9 +43767,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 986.81506
-    y: -0.079606056
-    width: 135
+    x: 934.81506
+    y: 2.920394
+    width: 135.36588
     height: 40
   tint: {r: 0.5882353, g: 0.5882353, b: 1, a: 1}
   useCustomTint: 1
@@ -43805,9 +43778,9 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1458593394}
   - {fileID: 1458593393}
   - {fileID: 1458593392}
+  - {fileID: 1458593394}
   - {fileID: 1458593400}
   - {fileID: 1458593399}
   - {fileID: 1458593398}
@@ -44047,6 +44020,24 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1458593406
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458593207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 272
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1.5
+  durationOLD: 0
 --- !u!1 &1459387213
 GameObject:
   m_ObjectHideFlags: 0
@@ -44649,7 +44640,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23138
+  m_Name: pb_Mesh269220
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -51631,7 +51622,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2696
+  m_Name: pb_Mesh-1254032
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -51856,6 +51847,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7259061773104052270, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f44872027155afa4aaebab867e721123, type: 2}
+    - target: {fileID: -6890811061636350375, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f44872027155afa4aaebab867e721123, type: 2}
     - target: {fileID: -2193110758052600776, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -51881,6 +51880,10 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6942663744364419835, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0298
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942663744364419835, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.68609
       objectReference: {fileID: 0}
@@ -51890,31 +51893,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942663744364419835, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.18
+      value: -0.485
       objectReference: {fileID: 0}
     - target: {fileID: 6942663744364419835, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.15
+      value: -1.109
       objectReference: {fileID: 0}
     - target: {fileID: 6942663744364419835, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.72
+      value: 0.702
       objectReference: {fileID: 0}
     - target: {fileID: 6942663744364419835, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9995562
+      value: 0.99948275
       objectReference: {fileID: 0}
     - target: {fileID: 6942663744364419835, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.00036121436
       objectReference: {fileID: 0}
     - target: {fileID: 6942663744364419835, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0297903
+      value: -0.029788103
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942663744364419835, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.012119732
       objectReference: {fileID: 0}
     - target: {fileID: 6942663744364419835, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -3.414
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942663744364419835, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -1.389
       objectReference: {fileID: 0}
     - target: {fileID: 7407971921076452758, guid: e80e09ee32ddf5c4e844bdbca948d9aa, type: 3}
       propertyPath: m_Layer
@@ -51993,7 +52004,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3084
+  m_Name: pb_Mesh-1254420
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -52718,7 +52729,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23154
+  m_Name: pb_Mesh269236
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -52912,7 +52923,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -500, y: 38.074993}
+  m_AnchoredPosition: {x: -500, y: 84}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1924668534
@@ -53888,7 +53899,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1752
+  m_Name: pb_Mesh-1253088
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -54268,8 +54279,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cc9984072aad51342b9ffceab8171be4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
-  m_Pitch: 1
+  m_Volume: 0.2
+  m_Pitch: 0.2
   Loop: 0
   Mute: 0
   Spatialize: 0

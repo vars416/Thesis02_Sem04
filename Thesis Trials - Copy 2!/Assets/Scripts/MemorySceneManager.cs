@@ -50,7 +50,7 @@ public class MemorySceneManager : MonoBehaviour
 
         var SD = SayDialog.GetSayDialog();
         var MD = MenuDialog.GetMenuDialog();
-        if ((SD.isActiveAndEnabled == false) && (MD.isActiveAndEnabled == false))
+        if ((SD.isActiveAndEnabled == false) && (MD.isActiveAndEnabled == false) && (flowchart.GetExecutingBlocks().Count == 0))
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -135,8 +135,9 @@ public class MemorySceneManager : MonoBehaviour
 
     public void OnPressContinue ()
     {
-        SceneManager.LoadScene(3);
-        flowchart.ExecuteBlock("Fade_Out");
+        //SceneManager.LoadScene(3);
+        flowchart.ExecuteBlock("Transition");
+        //flowchart.ExecuteBlock("Fade_Out");
     }
 
     void HitBlinkingLight ()
