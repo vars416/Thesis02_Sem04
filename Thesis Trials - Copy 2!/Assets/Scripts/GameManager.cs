@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
 
         var SD = SayDialog.GetSayDialog();
         var MD = MenuDialog.GetMenuDialog();
-        if ((SD.isActiveAndEnabled == false) && (MD.isActiveAndEnabled == false))
+        if ((SD.isActiveAndEnabled == false) && (MD.isActiveAndEnabled == false) && (flowchart.GetExecutingBlocks().Count == 0))
         {
             if (Input.GetMouseButtonDown(0)) //if lmb is down
             {
@@ -357,6 +357,12 @@ public class GameManager : MonoBehaviour
                     //print("wtf");
                 }*/
             }
+        }
+
+        if ((hit.transform.tag == "interact") && (hit.transform.name == "Left_Window"))
+        {
+            camControl.SetCamPosition(3);
+            ColliderDisabler(hit);
         }
     }
 

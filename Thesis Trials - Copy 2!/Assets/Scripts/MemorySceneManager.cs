@@ -50,7 +50,7 @@ public class MemorySceneManager : MonoBehaviour
 
         var SD = SayDialog.GetSayDialog();
         var MD = MenuDialog.GetMenuDialog();
-        if ((SD.isActiveAndEnabled == false) && (MD.isActiveAndEnabled == false) && (flowchart.GetExecutingBlocks().Count == 0))
+        if ((SD.isActiveAndEnabled == false) && (MD.isActiveAndEnabled == false) /*&& (flowchart.GetExecutingBlocks().Count == 0)*/)
         {
             if (Input.GetMouseButtonDown(0))
             {
