@@ -359,11 +359,11 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if ((hit.transform.tag == "interact") && (hit.transform.name == "Left_Window"))
+        /*if ((hit.transform.tag == "interact") && (hit.transform.name == "Left_Window"))
         {
             camControl.SetCamPosition(3);
             ColliderDisabler(hit);
-        }
+        }*/
     }
 
     void TempleInteractions(RaycastHit hit, Flowchart flowchart, Scene scene)
@@ -454,7 +454,7 @@ public class GameManager : MonoBehaviour
 
                     if (hit.transform.name == "Photograph1")
                     {
-                        if ((clocks.TimeSwap == false) && (clocks.PhotoSwitch == false))
+                        if ((clocks.TimeSwap1 == false) && (clocks.PhotoSwitch == false))
                         {
                             //Invoke("HerbAnim1Delay", 3);
                             //clocks.TimeChange1();
@@ -465,7 +465,7 @@ public class GameManager : MonoBehaviour
                             //print("working");
                         }
 
-                        if ((clocks.TimeSwap == true) && (clocks.PhotoSwitch == false))
+                        if ((clocks.TimeSwap1 == true) && (clocks.PhotoSwitch == false))
                         {
                             //Invoke("HerbAnim2Delay", 3);
                             //clocks.TimeChange2();
@@ -518,7 +518,7 @@ public class GameManager : MonoBehaviour
                         //ui.Herbarium_Button_Up();
                         if (scene.name == "First_Scene")
                         {
-                            if ((clocks.TimeSwap == false) && (clocks.HerbSwitch == false))
+                            if ((clocks.TimeSwap1 == false) && (clocks.HerbSwitch == false))
                             {
                                 //clocks.TimeChange1();
                                 //ui.Herbarium.enabled = true;
@@ -533,7 +533,7 @@ public class GameManager : MonoBehaviour
                                 SwitchHerbariumBook();
                             }
 
-                            if ((clocks.TimeSwap == true) && (clocks.HerbSwitch == false))
+                            if ((clocks.TimeSwap1 == true) && (clocks.HerbSwitch == false))
                             {
                                 //ui.Herbarium.enabled = true;
                                 //ui.Feroz_Wedding_Full.enabled = true;
@@ -558,19 +558,40 @@ public class GameManager : MonoBehaviour
 
             }
 
-            if (scene.name == "Puzzle_Scene")
+            if (scene.name == "Sec_Scene")
             {
-                if ((hit.transform.name == "Ticket") /*&& (MemoryBool == true) && (audioplay.IsPlaying == false)*/)
+                if (camControl.sceneCams[1].transform.position == camControl.cameraPositions[4].transform.position)
                 {
-                    /*if (MemoryBool == false)
+                    if (hit.transform.name == "Lighter")
                     {
-                        ui.TutorialText.text = "You are still missing some clues, listen to the other audio tracks in the room and then come back";
+                        if ((clocks.TimeSwap2 == false) && (clocks.LighterSwitch == false))
+                        {
+                            clocks.LighterSwitch = true;
+                            flowchart.ExecuteBlock("Lighter1");
+                            hit.transform.gameObject.layer = 0;
+                        }
+
+                        if ((clocks.TimeSwap2 == true) && (clocks.LighterSwitch == false))
+                        {
+                            clocks.LighterSwitch = true;
+                            flowchart.ExecuteBlock("Lighter2");
+                            hit.transform.gameObject.layer = 0;
+                        }
                     }
-                    if ((MemoryBool == true) *//*&& (audioplay.IsPlaying == false)*//*)
+                }
+
+                if (camControl.sceneCams[1].transform.position == camControl.cameraPositions[1].transform.position)
+                {
+                    if (hit.transform.name == "Vinyl")
                     {
-                        flowchart.ExecuteBlock("Frieda_Test"); //execute this block in Fungus flowchart
-                        Invoke("MemoryComing", 5);
-                    }*/
+                        flowchart.ExecuteBlock("Vinyl Records1");
+                    }
+
+                    if (hit.transform.name == "Gramophone")
+                    {
+                        flowchart.ExecuteBlock("Gramophone1");
+                    }
+
                 }
             }
         }

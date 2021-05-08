@@ -15,22 +15,31 @@ public class Clocks : MonoBehaviour
     public Animator BigHourHand;
     public Animator BigMinuteHand;
 
-    public Animator BigHourHand1;
-    public Animator BigMinuteHand1;
+    //public Animator BigHourHand1;
+    //public Animator BigMinuteHand1;
 
     public Animator SmallHourHand;
     public Animator SmallMinuteHand;
 
-    public Animator SmallHourHand1;
-    public Animator SmallMinuteHand1;
+    //public Animator SmallHourHand1;
+    //public Animator SmallMinuteHand1;
 
     //public AudioSource ClockSound;
     public AudioSource TickingSound;
-    public bool TimeSwap = false;
+    public bool TimeSwap1 = false;
+
     public bool HerbSwitch = false;
     public bool PhotoSwitch = false;
 
+    //Scene 2 (Sec_Scene)-->
+
     public bool HerbSwitch2 = false;
+
+    public bool TimeSwap2 = false;
+    public bool LighterSwitch = false;
+    public bool GramophoneSwitch = false;
+
+    //public bool
 
     private Scene scene;
 
@@ -46,7 +55,7 @@ public class Clocks : MonoBehaviour
         Clock1.GetComponent<Animation>();
         Clock2.GetComponent<Animation>();
 
-        TimeSwap = false;
+        TimeSwap1 = false;
         HerbSwitch = false;
         PhotoSwitch = false;
 
@@ -74,7 +83,7 @@ public class Clocks : MonoBehaviour
         SmallClock[0].SetActive(false);
         SmallClock[1].SetActive(true);*/
 
-        TimeSwap = true;
+        TimeSwap1 = true;
 
         BigHourHand.SetTrigger("HourTrigger");
         BigMinuteHand.SetTrigger("MinTrig");
@@ -82,7 +91,7 @@ public class Clocks : MonoBehaviour
         SmallHourHand.SetTrigger("AlarmHourTrigger");
         SmallMinuteHand.SetTrigger("AlarmMinuteTrigger");
 
-        print(TimeSwap);
+        print(TimeSwap1);
     }
 
     public void TimeChange2()
@@ -110,8 +119,10 @@ public class Clocks : MonoBehaviour
     {
         TickingSound.Play();
 
-        BigHourHand.SetTrigger("HourTrigger");
-        BigMinuteHand.SetTrigger("MinTrig");
+        TimeSwap2 = true;
+
+        //BigHourHand.SetTrigger("HourTrigger");
+        //BigMinuteHand.SetTrigger("MinTrig");
 
         SmallHourHand.SetTrigger("AlarmHourTrigger");
         SmallMinuteHand.SetTrigger("AlarmMinuteTrigger");
@@ -121,10 +132,10 @@ public class Clocks : MonoBehaviour
     {
         TickingSound.Play();
 
-        BigHourHand1.SetTrigger("HourTrigger");
-        BigMinuteHand1.SetTrigger("MinTrig");
+        //BigHourHand1.SetTrigger("HourTrigger");
+        //BigMinuteHand1.SetTrigger("MinTrig");
 
-        SmallHourHand1.SetTrigger("AlarmHourTrigger");
-        SmallMinuteHand1.SetTrigger("AlarmMinuteTrigger");
+        SmallHourHand.SetTrigger("AlarmHourTrigger");
+        SmallMinuteHand.SetTrigger("AlarmMinuteTrigger");
     }
 }
