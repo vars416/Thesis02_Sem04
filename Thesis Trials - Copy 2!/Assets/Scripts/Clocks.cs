@@ -39,6 +39,8 @@ public class Clocks : MonoBehaviour
     public bool LighterSwitch = false;
     public bool GramophoneSwitch = false;
 
+    public bool VinylSwitch = false;
+
     //public bool
 
     private Scene scene;

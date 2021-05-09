@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject flowerpot;
 
+    [SerializeField]
+    private GameObject Tiffin;
+
     public GameObject closed_book;
     public GameObject open_book;
 
@@ -266,6 +269,7 @@ public class GameManager : MonoBehaviour
                 //CameraHolding(0);
                 camControl.SetCamPosition(0);
                 ColliderDisabler(hit);
+                Tiffin.gameObject.layer = 9;
 
                 //flowchart.ExecuteBlock("Desk1"); //do this
             }
@@ -406,6 +410,8 @@ public class GameManager : MonoBehaviour
                     clocks.HerbSwitch2 = true;
                 }
                 ui.HerbariumPopUp();
+
+                flowchart.ExecuteBlock("Herbarium");
                 //ui2.sprites[1].SetActive(true);
                 //HerbImageDelay();
             }
@@ -560,6 +566,14 @@ public class GameManager : MonoBehaviour
 
             if (scene.name == "Sec_Scene")
             {
+                if (camControl.sceneCams[1].transform.position == camControl.cameraPositions[0].transform.position)
+                {
+                    if (hit.transform.name == "Tiffin_Dabba")
+                    {
+                        flowchart.ExecuteBlock("Tiffin Box");
+                    }
+                }
+
                 if (camControl.sceneCams[1].transform.position == camControl.cameraPositions[4].transform.position)
                 {
                     if (hit.transform.name == "Lighter")
@@ -584,12 +598,35 @@ public class GameManager : MonoBehaviour
                 {
                     if (hit.transform.name == "Vinyl")
                     {
+                        /*if ((clocks.TimeSwap2 == false) && (clocks.GramophoneSwitch == false) && (clocks.VinylSwitch == false))
+                        {
+                            clocks.VinylSwitch = true;
+                            flowchart.ExecuteBlock("Vinyl Records1");
+                        }
+
+                        if ((clocks.TimeSwap2 == true) && (clocks.GramophoneSwitch == false) && (clocks.VinylSwitch == false))
+                        {
+                            clocks.VinylSwitch = true;
+                            flowchart.ExecuteBlock("Vinyl Records2");
+                        }*/
+                        clocks.VinylSwitch = true;
                         flowchart.ExecuteBlock("Vinyl Records1");
                     }
 
                     if (hit.transform.name == "Gramophone")
                     {
-                        flowchart.ExecuteBlock("Gramophone1");
+                        if ((clocks.TimeSwap2 == false) && (clocks.GramophoneSwitch == false))
+                        {
+                            flowchart.ExecuteBlock("Gramophone1");
+                            hit.transform.gameObject.layer = 0;
+                        }
+
+                        if ((clocks.TimeSwap2 == true) && (clocks.GramophoneSwitch == false))
+                        {
+                            flowchart.ExecuteBlock("Gramophone2");
+                            hit.transform.gameObject.layer = 0;
+                        }
+                        
                     }
 
                 }
@@ -758,6 +795,10 @@ public class GameManager : MonoBehaviour
             if ((clocks.HerbSwitch == true) && (camControl.sceneCams[1].transform.position == camControl.cameraPositions[5].transform.position))
             {
                 ui.HerbariumPopDown();
+            }
+            if (camControl.sceneCams[1].transform.position == camControl.cameraPositions[0].transform.position)
+            {
+                Tiffin.gameObject.layer = 0;
             }
             //DisableUI_Herbarium();
         }
