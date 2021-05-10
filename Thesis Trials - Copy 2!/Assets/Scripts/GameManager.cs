@@ -46,6 +46,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] InteractiveFurniture;
 
+    public AudioSource Walking1;
+    public AudioSource Walking2;
+
     //private int layermask = 5;
     //public bool counterbool = false;
     //public bool MemoryBool = false;
@@ -255,6 +258,7 @@ public class GameManager : MonoBehaviour
                 //Debug.Log("Registering Desk condition");
                 //CameraHolding(0);
                 camControl.SetCamPosition(0);
+                Walking1.Play();
                 ColliderDisabler(hit);
 
                 //flowchart.ExecuteBlock("Desk1"); //do this
@@ -268,6 +272,7 @@ public class GameManager : MonoBehaviour
                 //Debug.Log("Registering Desk condition");
                 //CameraHolding(0);
                 camControl.SetCamPosition(0);
+                Walking1.Play();
                 ColliderDisabler(hit);
                 Tiffin.gameObject.layer = 9;
 
@@ -283,6 +288,7 @@ public class GameManager : MonoBehaviour
         {
             //CameraHolding(1);
             camControl.SetCamPosition(1);
+            Walking1.Play();
             ColliderDisabler(hit);
 
             if (scene.name == "First_Scene")
@@ -290,7 +296,7 @@ public class GameManager : MonoBehaviour
 
             }
 
-            if (scene.name == "Puzzle_Scene")
+            /*if (scene.name == "Puzzle_Scene")
             {
                 //ui.BellUpDown2(); //show bell 1 (up)
                 flowchart.ExecuteBlock("Audio_Shelf3");
@@ -298,7 +304,7 @@ public class GameManager : MonoBehaviour
                 MusicPlayer.SetActive(true);
                 //ui.TutorialText.text = "Listen closely to what they are saying... And then play the audio snippet. The Bells are sounds that tell you that what is important to Frieda is near.";
                 //ui.TutorialText.text = "Listen closely to what they are saying... And then play the audio snippet to get a clue to the object you are searching for";
-                /*if (*//*(audioplay.IsPlaying == false) && *//* (MemoryBool == false))
+                *//*if (*//*(audioplay.IsPlaying == false) && *//* (MemoryBool == false))
                 {
                     MemoryBool = true;
                     print("wtf");
@@ -306,8 +312,8 @@ public class GameManager : MonoBehaviour
                 /*if (MemoryBool == false)
                 {
 
-                }*/
-            }
+                }*//*
+            }*/
         }
     }
 
@@ -318,6 +324,7 @@ public class GameManager : MonoBehaviour
             //CameraHolding(2);
             print("doing");
             camControl.SetCamPosition(2);
+            Walking1.Play();
             ColliderDisabler(hit);
 
             if ((scene.name == "First_Scene"))
@@ -344,6 +351,7 @@ public class GameManager : MonoBehaviour
 
             //CameraHolding(3);
             camControl.SetCamPosition(3);
+            Walking1.Play();
             ColliderDisabler(hit);
 
             if ((scene.name == "First_Scene"))
@@ -376,6 +384,7 @@ public class GameManager : MonoBehaviour
         {
             //CameraHolding(4);
             camControl.SetCamPosition(4);
+            Walking1.Play();
             ColliderDisabler(hit);
 
             if ((scene.name == "First_Scene"))
@@ -391,6 +400,7 @@ public class GameManager : MonoBehaviour
         {
             //CameraHolding(5);
             camControl.SetCamPosition(5);
+            Walking1.Play();
             ColliderDisabler(hit);
 
             if (clocks.HerbSwitch == true)  //Bring the Herbarium again when players
@@ -789,6 +799,7 @@ public class GameManager : MonoBehaviour
         if ((flowchart.GetExecutingBlocks().Count == 0) && (MD.isActiveAndEnabled == false))
         {
             camControl.ReturnCamPositionOnBack();
+            Walking2.Play();
             ColliderEnabler();
             //cameraPositionChange(0);
             //cameraChangeCounter2();
