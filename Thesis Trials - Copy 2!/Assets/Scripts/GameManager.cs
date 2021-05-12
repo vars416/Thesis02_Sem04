@@ -627,6 +627,7 @@ public class GameManager : MonoBehaviour
                     {
                         if ((clocks.TimeSwap2 == false) && (clocks.GramophoneSwitch == false))
                         {
+                            clocks.GramophoneSwitch = true;
                             flowchart.ExecuteBlock("Gramophone1");
                             hit.transform.gameObject.layer = 0;
                         }
@@ -846,5 +847,15 @@ public class GameManager : MonoBehaviour
         ui2.sprites[0].SetActive(true);
         //ui.Feroz_Wedding_Full.enabled = true;
         ui.Herbarium_Button_Up();
+    }
+
+    void GoBack()
+    {
+        camControl.ReturnCamPositionOnBack();
+    }
+
+    void MoveCameraToBalcony ()
+    {
+        camControl.SetCamPosition(3);
     }
 }
