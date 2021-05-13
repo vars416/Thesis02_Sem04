@@ -3769,25 +3769,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335233541}
   m_CullTransparentMesh: 0
---- !u!1 &343027931 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 91afa190f17f190439519911f70a8834, type: 3}
-  m_PrefabInstance: {fileID: 869922722}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &343027932
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 343027931}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1001 &376441968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10352,10 +10333,12 @@ MonoBehaviour:
   Left_Herbarium: {fileID: 2081223422}
   Back_Button: {fileID: 966656731}
   Herb_Slide: {fileID: 8729966416236900943}
+  Balcony_Zoom: {fileID: 0}
   clocks: {fileID: 743962286}
   testscene:
     m_Handle: 0
   GM: {fileID: 2049747553}
+  ui2: {fileID: 876871632}
 --- !u!4 &876871631
 Transform:
   m_ObjectHideFlags: 0
@@ -55287,25 +55270,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &2022153244 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 91afa190f17f190439519911f70a8834, type: 3}
-  m_PrefabInstance: {fileID: 1797641507}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &2022153245
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022153244}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &2045768231
 GameObject:
   m_ObjectHideFlags: 0
@@ -55849,25 +55813,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052653051}
   m_CullTransparentMesh: 0
---- !u!1 &2064568572 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 91afa190f17f190439519911f70a8834, type: 3}
-  m_PrefabInstance: {fileID: 324510550}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &2064568573
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064568572}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &2065305450
 GameObject:
   m_ObjectHideFlags: 0

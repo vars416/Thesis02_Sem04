@@ -37,12 +37,17 @@ public class UIManager : MonoBehaviour
     //public Button Pull_Herb;
     public Animator Herb_Slide;
 
+    [SerializeField]
+    private Animator Balcony_Zoom;
+
     //public UITrial2 uitrial2;
     public Clocks clocks;
 
     public Scene testscene;
 
     public GameManager GM;
+
+    public UITrial2 ui2;
 
     // Start is called before the first frame update
     void Start()
@@ -275,13 +280,20 @@ public class UIManager : MonoBehaviour
         temp2.a = 1.0f;
         Herbarium.color = temp2;
 
-        Color temp1 = Memory_Herbarium.color;
+        /*Color temp1 = Memory_Herbarium.color;
         temp1.a = 1.0f;
         Memory_Herbarium.color = temp1;
 
         Color temp3 = Feroz_Wedding_Full.color;
         temp3.a = 1.0f;
-        Feroz_Wedding_Full.color = temp3;
+        Feroz_Wedding_Full.color = temp3;*/
+
+        for (int i = 0; i < ui2.sprites.Length; i++)
+        {
+            Color tempCol = ui2.sprites[i].GetComponent<Image>().color;
+            tempCol.a = 1.0f;
+            ui2.sprites[i].GetComponent<Image>().color = tempCol;
+        }
 
         Slide_Herb();
         Herbarium_Button_Up();
@@ -293,13 +305,20 @@ public class UIManager : MonoBehaviour
         temp2.a = 0.1f;
         Herbarium.color = temp2;
 
-        Color temp1 = Memory_Herbarium.color;
+        /*Color temp1 = Memory_Herbarium.color;
         temp1.a = 0.1f;
         Memory_Herbarium.color = temp1;
 
         Color temp3 = Feroz_Wedding_Full.color;
         temp3.a = 0.1f;
-        Feroz_Wedding_Full.color = temp3;
+        Feroz_Wedding_Full.color = temp3;*/
+
+        for (int i = 0; i < ui2.sprites.Length; i++)
+        {
+            Color tempCol = ui2.sprites[i].GetComponent<Image>().color;
+            tempCol.a = 0.1f;
+            ui2.sprites[i].GetComponent<Image>().color = tempCol;
+        }
 
         Slide_Herb();
         Herbarium_Button_Down();
@@ -333,6 +352,11 @@ public class UIManager : MonoBehaviour
     public void Slide_Herb ()
     {
         Herb_Slide.SetTrigger("Slide");
+    }
+
+    public void BalconyZoom ()
+    {
+        Balcony_Zoom.SetTrigger("ZoomIn");
     }
 
     public void HerbariumDown()
