@@ -13034,10 +13034,12 @@ MonoBehaviour:
   Left_Herbarium: {fileID: 2081223422}
   Back_Button: {fileID: 966656731}
   Herb_Slide: {fileID: 0}
+  Balcony_Zoom: {fileID: 0}
   clocks: {fileID: 743962286}
   testscene:
     m_Handle: 0
   GM: {fileID: 0}
+  ui2: {fileID: 0}
 --- !u!4 &876871631
 Transform:
   m_ObjectHideFlags: 0
@@ -45315,7 +45317,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1458593255}
   selectedCommands:
-  - {fileID: 1458593270}
+  - {fileID: 1458593260}
   variables: []
   description: 
   stepPause: 0
@@ -46616,8 +46618,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 250
   indentLevel: 0
-  storyText: '**So many traces of your family here, more than you thought. What this
-    room must have seen and heard...**'
+  storyText: So many traces of your family here, more than you thought. What this
+    room must have seen and heard...
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -46840,9 +46842,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 281
   indentLevel: 0
-  storyText: '**As Najma Aapa tells you of the early days of your father''s first
-    marriage, details of the room''s past emerge in your mind, just like a set from
-    one of your favorite films**'
+  storyText: As Najma Aapa tells you of the early days of your father's first marriage,
+    details of the room's past emerge in your mind, just like a set from one of your
+    favorite films
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -48203,10 +48205,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 28241f75dfb19a94fbcf902866709352, type: 3}
-    m_FontSize: 12
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
