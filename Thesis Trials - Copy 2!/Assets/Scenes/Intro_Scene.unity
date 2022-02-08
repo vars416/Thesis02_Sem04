@@ -1791,8 +1791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  text: "Waiting for Evening | \u0938\u093E\u0902\u091D \u0915\u0947 \u0907\u0902\u0924\u091C\u093E\u0930
-    \u092E\u0947\u0902"
+  text: "Waiting for Evening | \u0938\u093E\u0902\u091D \u0915\u093E \u0907\u0902\u0924\u091C\u093E\u0930\r"
   description: 
   targetBlock: {fileID: 1647139170}
   hideIfVisited: 0
@@ -1870,8 +1869,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1647139145}
+  selectedCommands:
+  - {fileID: 1647139143}
   variables: []
   description: 
   stepPause: 0
@@ -2967,7 +2968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickMode: 1
   nextClickDelay: 0
-  cancelEnabled: 1
+  cancelEnabled: 0
   ignoreMenuClicks: 1
 --- !u!114 &1751651207
 MonoBehaviour:

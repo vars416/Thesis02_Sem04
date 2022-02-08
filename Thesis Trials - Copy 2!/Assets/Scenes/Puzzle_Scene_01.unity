@@ -3323,7 +3323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickMode: 1
   nextClickDelay: 0
-  cancelEnabled: 1
+  cancelEnabled: 0
   ignoreMenuClicks: 1
 --- !u!114 &224837336
 MonoBehaviour:
@@ -45303,11 +45303,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -74.63082, y: -33.326508}
+  scrollPos: {x: -58.841366, y: -24.469013}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 620
-  zoom: 0.8200002
+  blockViewHeight: 280
+  zoom: 0.7600002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -45316,8 +45316,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1458593255}
-  selectedCommands:
-  - {fileID: 1458593260}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -45737,7 +45736,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 207.95122
     y: 121.409325
-    width: 69.51219
+    width: 68.42105
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -45809,7 +45808,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 272.73755
     y: 106.68029
-    width: 145.12193
+    width: 139.47366
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -46178,7 +46177,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 321.21704
     y: 156.31042
-    width: 91.46341
+    width: 89.47367
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -46478,7 +46477,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 449.0951
     y: 122.264114
-    width: 125.60974
+    width: 123.68419
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -46570,9 +46569,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 184.15968
-    y: 168.53946
-    width: 101.2195
+    x: 178.8965
+    y: 184.32895
+    width: 98.6842
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -46923,7 +46922,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 460.64136
     y: 182.47714
-    width: 103.65852
+    width: 101.31577
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -47221,7 +47220,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 332.338
     y: 229.15576
-    width: 106.09755
+    width: 103.94736
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -49339,7 +49338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickMode: 1
   nextClickDelay: 0
-  cancelEnabled: 1
+  cancelEnabled: 0
   ignoreMenuClicks: 1
 --- !u!114 &1641702683
 MonoBehaviour:
