@@ -1,2 +1,2 @@
-# Thesis01_Sem03
-NYU Sem 3 Thesis 01 Prototype
+# Thesis02_Sem04
+NYU 2021 Thesis Prototype
