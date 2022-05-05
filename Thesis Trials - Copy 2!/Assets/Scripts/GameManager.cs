@@ -92,15 +92,15 @@ public class GameManager : MonoBehaviour
 
         var SD = SayDialog.GetSayDialog();
         var MD = MenuDialog.GetMenuDialog();
-        if ((SD.isActiveAndEnabled == false) && (MD.isActiveAndEnabled == false) && (flowchart.GetExecutingBlocks().Count == 0))
+        if ((SD.isActiveAndEnabled == false) && (MD.isActiveAndEnabled == false) && (flowchart.GetExecutingBlocks().Count == 0)) //If there is no dialogue, no menu and no fungus blocks executing at this moment
         {
             if (Input.GetMouseButtonDown(0)) //if lmb is down
             {
-                Ray ray = camControl.currentSceneCam.ScreenPointToRay(Input.mousePosition); //hit raycast from screen/mouse pointer to wherever player is clicking
+                Ray ray = camControl.currentSceneCam.ScreenPointToRay(Input.mousePosition); //hit raycast from center of the screen to wherever player is clicking (mouse pointer)
                 //Debug.Log(Camera.main.transform.gameObject.name);
                 RaycastHit hit;
 
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity, LayerMask.GetMask("Interact")))
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity, LayerMask.GetMask("Interact"))) //Check if raycast is hitting anything in the layer "Interact"
                 {
                     Debug.Log(hit.transform.name);
 
