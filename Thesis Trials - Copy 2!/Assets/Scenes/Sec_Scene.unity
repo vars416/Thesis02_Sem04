@@ -41552,7 +41552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -2133.4055, y: -165.34523}
+  scrollPos: {x: -1590.7834, y: -173.54195}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 572
@@ -41565,7 +41565,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1458593287}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1458593292}
   variables: []
   description: 
   stepPause: 0
@@ -41798,8 +41799,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 250
   indentLevel: 0
-  storyText: Ah so we are out of cotton wicks! I think I'l get a pack from Kirane
-    ki dukaan (conveniance store) on my way back.
+  storyText: Ah so we are out of cotton wicks! I think I'll get a pack from Kirane
+    ki dukaan (convenience store) on my way back.
   description: 
   character: {fileID: 386047845}
   portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
@@ -42872,7 +42873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 255
   indentLevel: 0
-  storyText: So many questions... Also, Frieda aunty giving up her education to get
+  storyText: So many questions... Also, Frieda aunty gave up her education to get
     married! Was she just a trophy wife for him?
   description: 
   character: {fileID: 2077753149}
@@ -42973,8 +42974,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 260
   indentLevel: 0
-  storyText: These sturdy lttle things! Can't believe I am so used to eating lunch
-    from them that I carried on with the habit even in Engand!
+  storyText: These sturdy little things! Can't believe I am so used to eating lunch
+    from them that I carried on with the habit even in England!
   description: 
   character: {fileID: 2077753149}
   portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}
@@ -43803,7 +43804,7 @@ MonoBehaviour:
   itemId: 289
   indentLevel: 0
   storyText: Why was so much of this hidden from me? Does my mother know that Papa
-    visited Frieda Aunty all these years while I was growingg up?
+    visited Frieda Aunty all these years while I was growing up?
   description: 
   character: {fileID: 2077753149}
   portrait: {fileID: 21300000, guid: 32892c28f41719742bcfa9aa076bd29b, type: 3}

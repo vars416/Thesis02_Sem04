@@ -45315,8 +45315,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1458593255}
-  selectedCommands: []
+  - {fileID: 1458593244}
+  selectedCommands:
+  - {fileID: 1458593250}
   variables: []
   description: 
   stepPause: 0
@@ -46343,7 +46344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 238
   indentLevel: 0
-  storyText: Father was so proud. His daughter in one of the first womens colleges...
+  storyText: Father was so proud. His daughter in one of the first women's colleges...
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}

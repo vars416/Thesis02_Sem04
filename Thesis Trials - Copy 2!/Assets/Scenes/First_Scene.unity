@@ -37902,7 +37902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -113.54252
+    x: -112.04998
     y: 76.95244
     width: 136.56712
     height: 40
@@ -37946,7 +37946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -948.70856, y: -16.523561}
+  scrollPos: {x: -468.11142, y: -18.016058}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 739
@@ -37958,9 +37958,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1458593324}
+  - {fileID: 1458593344}
   selectedCommands:
-  - {fileID: 1458593336}
+  - {fileID: 1458593237}
   variables: []
   description: 
   stepPause: 0
@@ -38603,7 +38603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 275
   indentLevel: 0
-  storyText: I hope you are hungry still.These Chaklis are freshly made.
+  storyText: I hope you are hungry still. These Chaklis are freshly made.
   description: 
   character: {fileID: 759292556}
   portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
@@ -38685,7 +38685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 278
   indentLevel: 0
-  storyText: I hope you are hungry still.These Chaklis are freshly made.
+  storyText: I hope you are hungry still. These Chaklis are freshly made.
   description: 
   character: {fileID: 759292556}
   portrait: {fileID: 21300000, guid: c8a33bb3495d6af41818bf7bdedf7dec, type: 3}
@@ -38755,7 +38755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 199
   indentLevel: 0
-  storyText: 'Use LMB on highlighted furnitures to zoom in on objects and click on
+  storyText: 'Use LMB on highlighted furniture to zoom in on objects and click on
     items; ''Back'' to zoom out.
 
     Press H for Help'
@@ -39244,7 +39244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 53
   indentLevel: 0
-  storyText: Use LMB on furnitures to zoom in on objects and click on items; 'Back'
+  storyText: Use LMB on furniture to zoom in on objects and click on items; 'Back'
     to zoom out.
   description: 
   character: {fileID: 0}
